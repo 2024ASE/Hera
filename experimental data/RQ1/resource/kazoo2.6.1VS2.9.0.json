@@ -1,0 +1,1461 @@
+[
+    {
+        "old_api": "kazoo.recipe.lock.Lock.__init__",
+        "new_api": "kazoo.recipe.lock.Lock.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The lock path to use.",
+                "is_optional": false
+            },
+            "identifier": {
+                "description": "Name to use for this lock contender. This\n                   can be useful for querying to see who the\n                   current lock contenders are.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The lock path to use.",
+                "is_optional": false
+            },
+            "identifier": {
+                "description": "Name to use for this lock contender. This can be\n                  useful for querying to see who the current lock\n                  contenders are.",
+                "is_optional": true
+            },
+            "extra_lock_patterns": {
+                "description": "Strings that will be used to\n                            identify other znode in the path\n                            that should be considered contenders\n                            for this lock.\n                            Use this for cross-implementation\n                            compatibility.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "extra_lock_patterns"
+    },
+    {
+        "old_api": "kazoo.handlers.utils.create_tcp_connection",
+        "new_api": "kazoo.handlers.utils.create_tcp_connection",
+        "old_parameter": {
+            "module": {
+                "description": null,
+                "is_optional": false
+            },
+            "address": {
+                "description": null,
+                "is_optional": false
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca": {
+                "description": null,
+                "is_optional": true
+            },
+            "certfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "keyfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "keyfile_password": {
+                "description": null,
+                "is_optional": true
+            },
+            "verify_certs": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "module": {
+                "description": null,
+                "is_optional": false
+            },
+            "address": {
+                "description": null,
+                "is_optional": false
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca": {
+                "description": null,
+                "is_optional": true
+            },
+            "certfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "keyfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "keyfile_password": {
+                "description": null,
+                "is_optional": true
+            },
+            "verify_certs": {
+                "description": null,
+                "is_optional": true
+            },
+            "options": {
+                "description": null,
+                "is_optional": true
+            },
+            "ciphers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "ciphers"
+    },
+    {
+        "old_api": "kazoo.client.KazooClient.create_async",
+        "new_api": "kazoo.client.KazooClient.create_async",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": true
+            },
+            "acl": {
+                "description": null,
+                "is_optional": true
+            },
+            "ephemeral": {
+                "description": null,
+                "is_optional": true
+            },
+            "sequence": {
+                "description": null,
+                "is_optional": true
+            },
+            "makepath": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": true
+            },
+            "acl": {
+                "description": null,
+                "is_optional": true
+            },
+            "ephemeral": {
+                "description": null,
+                "is_optional": true
+            },
+            "sequence": {
+                "description": null,
+                "is_optional": true
+            },
+            "makepath": {
+                "description": null,
+                "is_optional": true
+            },
+            "include_data": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "include_data"
+    },
+    {
+        "old_api": "kazoo.recipe.counter.Counter.__init__",
+        "new_api": "kazoo.recipe.counter.Counter.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The counter path to use.",
+                "is_optional": false
+            },
+            "default": {
+                "description": "The default value.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The counter path to use.",
+                "is_optional": false
+            },
+            "default": {
+                "description": "The default value to use for new counter paths.",
+                "is_optional": true
+            },
+            "support_curator": {
+                "description": "Enable if support for curator's SharedCount\n                        recipe is desired.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "support_curator"
+    },
+    {
+        "old_api": "kazoo.testing.common.ZookeeperCluster.__init__",
+        "new_api": "kazoo.testing.common.ZookeeperCluster.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "install_path": {
+                "description": null,
+                "is_optional": true
+            },
+            "classpath": {
+                "description": null,
+                "is_optional": true
+            },
+            "size": {
+                "description": null,
+                "is_optional": true
+            },
+            "port_offset": {
+                "description": null,
+                "is_optional": true
+            },
+            "observer_start_id": {
+                "description": null,
+                "is_optional": true
+            },
+            "configuration_entries": {
+                "description": null,
+                "is_optional": true
+            },
+            "java_system_properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "install_path": {
+                "description": null,
+                "is_optional": true
+            },
+            "classpath": {
+                "description": null,
+                "is_optional": true
+            },
+            "size": {
+                "description": null,
+                "is_optional": true
+            },
+            "port_offset": {
+                "description": null,
+                "is_optional": true
+            },
+            "observer_start_id": {
+                "description": null,
+                "is_optional": true
+            },
+            "configuration_entries": {
+                "description": null,
+                "is_optional": true
+            },
+            "java_system_properties": {
+                "description": null,
+                "is_optional": true
+            },
+            "jaas_config": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "jaas_config"
+    },
+    {
+        "old_api": "kazoo.testing.common.ManagedZooKeeper.__init__",
+        "new_api": "kazoo.testing.common.ManagedZooKeeper.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "software_path": {
+                "description": null,
+                "is_optional": false
+            },
+            "server_info": {
+                "description": null,
+                "is_optional": false
+            },
+            "peers": {
+                "description": null,
+                "is_optional": true
+            },
+            "classpath": {
+                "description": null,
+                "is_optional": true
+            },
+            "configuration_entries": {
+                "description": null,
+                "is_optional": true
+            },
+            "java_system_properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "software_path": {
+                "description": null,
+                "is_optional": false
+            },
+            "server_info": {
+                "description": null,
+                "is_optional": false
+            },
+            "peers": {
+                "description": null,
+                "is_optional": true
+            },
+            "classpath": {
+                "description": null,
+                "is_optional": true
+            },
+            "configuration_entries": {
+                "description": null,
+                "is_optional": true
+            },
+            "java_system_properties": {
+                "description": null,
+                "is_optional": true
+            },
+            "jaas_config": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "jaas_config"
+    },
+    {
+        "old_api": "kazoo.recipe.lock.ReadLock.__init__",
+        "new_api": "kazoo.recipe.lock.ReadLock.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The lock path to use.",
+                "is_optional": false
+            },
+            "identifier": {
+                "description": "Name to use for this lock contender. This\n                   can be useful for querying to see who the\n                   current lock contenders are.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The lock path to use.",
+                "is_optional": false
+            },
+            "identifier": {
+                "description": "Name to use for this lock contender. This can be\n                  useful for querying to see who the current lock\n                  contenders are.",
+                "is_optional": true
+            },
+            "extra_lock_patterns": {
+                "description": "Strings that will be used to\n                            identify other znode in the path\n                            that should be considered contenders\n                            for this lock.\n                            Use this for cross-implementation\n                            compatibility.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "extra_lock_patterns"
+    },
+    {
+        "old_api": "kazoo.client.KazooClient.create",
+        "new_api": "kazoo.client.KazooClient.create",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": "Path of node.",
+                "is_optional": false
+            },
+            "value": {
+                "description": "Initial bytes value of node.",
+                "is_optional": true
+            },
+            "acl": {
+                "description": ":class:`~kazoo.security.ACL` list.",
+                "is_optional": true
+            },
+            "ephemeral": {
+                "description": "Boolean indicating whether node is ephemeral\n                  (tied to this session).",
+                "is_optional": true
+            },
+            "sequence": {
+                "description": "Boolean indicating whether path is suffixed\n                 with a unique index.",
+                "is_optional": true
+            },
+            "makepath": {
+                "description": "Whether the path should be created if it\n                 doesn't exist.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": "Path of node.",
+                "is_optional": false
+            },
+            "value": {
+                "description": "Initial bytes value of node.",
+                "is_optional": true
+            },
+            "acl": {
+                "description": ":class:`~kazoo.security.ACL` list.",
+                "is_optional": true
+            },
+            "ephemeral": {
+                "description": "Boolean indicating whether node is ephemeral\n                  (tied to this session).",
+                "is_optional": true
+            },
+            "sequence": {
+                "description": "Boolean indicating whether path is suffixed\n                 with a unique index.",
+                "is_optional": true
+            },
+            "makepath": {
+                "description": "Whether the path should be created if it\n                 doesn't exist.",
+                "is_optional": true
+            },
+            "include_data": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "include_data"
+    },
+    {
+        "old_api": "kazoo.recipe.lock.WriteLock.__init__",
+        "new_api": "kazoo.recipe.lock.WriteLock.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The lock path to use.",
+                "is_optional": false
+            },
+            "identifier": {
+                "description": "Name to use for this lock contender. This\n                   can be useful for querying to see who the\n                   current lock contenders are.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": "A :class:`~kazoo.client.KazooClient` instance.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The lock path to use.",
+                "is_optional": false
+            },
+            "identifier": {
+                "description": "Name to use for this lock contender. This can be\n                  useful for querying to see who the current lock\n                  contenders are.",
+                "is_optional": true
+            },
+            "extra_lock_patterns": {
+                "description": "Strings that will be used to\n                            identify other znode in the path\n                            that should be considered contenders\n                            for this lock.\n                            Use this for cross-implementation\n                            compatibility.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "extra_lock_patterns"
+    },
+    {
+        "old_api": "kazoo.protocol.connection.ConnectionHandler.__init__",
+        "new_api": "kazoo.protocol.connection.ConnectionHandler.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": null,
+                "is_optional": false
+            },
+            "retry_sleeper": {
+                "description": null,
+                "is_optional": false
+            },
+            "logger": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "client": {
+                "description": null,
+                "is_optional": false
+            },
+            "retry_sleeper": {
+                "description": null,
+                "is_optional": false
+            },
+            "logger": {
+                "description": null,
+                "is_optional": true
+            },
+            "sasl_options": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "sasl_options"
+    },
+    {
+        "old_api": "kazoo.client.LOST_STATES",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.recipe.lock.Lock.predecessor",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "children": {
+                "description": null,
+                "is_optional": false
+            },
+            "index": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.recipe.lock.ReadLock.predecessor",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "children": {
+                "description": null,
+                "is_optional": false
+            },
+            "index": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.recipe.lock.WriteLock.predecessor",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "children": {
+                "description": null,
+                "is_optional": false
+            },
+            "index": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.handlers.threading._HAS_EPOLL",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.handlers.threading.chain",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.handlers.threading.defaultdict",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.handlers.threading.errno",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.handlers.threading.select",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.retry.warnings",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_exceptions.ExceptionsTestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_exceptions.TestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.BaseNameTestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.IsAbsTestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.JoinTestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.NormPathTestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.NormRootTestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.PrefixRootTestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.TestCase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.paths",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.test_paths.u",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.util.TRAVIS",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "kazoo.tests.util.TRAVIS_ZK_VERSION",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.client.CLOSED_STATES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.exceptions.SASLException",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.handlers.utils.fileobj_to_fd",
+        "old_parameter": {},
+        "new_parameter": {
+            "fileobj": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.handlers.utils.selector_select",
+        "old_parameter": {},
+        "new_parameter": {
+            "rlist": {
+                "description": null,
+                "is_optional": false
+            },
+            "wlist": {
+                "description": null,
+                "is_optional": false
+            },
+            "xlist": {
+                "description": null,
+                "is_optional": false
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "selectors_module": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.serialization.Create2.__getnewargs__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.serialization.Create2.__new__",
+        "old_parameter": {},
+        "new_parameter": {
+            "_cls": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "acl": {
+                "description": null,
+                "is_optional": false
+            },
+            "flags": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.serialization.Create2.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.serialization.Create2.serialize",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.serialization.Create2",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.testing.common.ManagedZooKeeper.get_logs",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.testing.common.ZookeeperCluster.get_logs",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.testing.harness.CLUSTER_DEFAULTS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.client.Create2",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.handlers.threading.selector_select",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.handlers.utils.defaultdict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.handlers.utils.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.handlers.utils.selectors",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.handlers.utils.six",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.connection.SASLException",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.connection.six",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.protocol.connection.ssl",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.recipe.counter.struct",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.recipe.lock.re",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.testing.common.pathlib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.testing.harness.CLUSTER_CONF",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.conftest.log",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.conftest.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.conftest.pytest_exception_interact",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_barrier.KazooBarrierTests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_barrier.KazooDoubleBarrierTests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_barrier.KazooTestCase",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_barrier.threading",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_party.KazooPartyTests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_party.KazooShallowPartyTests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_party.KazooTestCase",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_party.uuid",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_security.Permissions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_security.TestACL",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_security.unittest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.SelectTestCase",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.errno",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.select",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.selector_select",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.socket",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.sys",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.test_selectors_select.unittest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.util.CI",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "kazoo.tests.util.CI_ZK_VERSION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

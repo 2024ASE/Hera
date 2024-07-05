@@ -1,0 +1,5724 @@
+[
+    {
+        "old_api": "ldap3.extend.PersistentSearch.next",
+        "new_api": "ldap3.extend.PersistentSearch.next",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "block": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "timeout"
+    },
+    {
+        "old_api": "ldap3.strategy.restartable.RestartableStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.restartable.RestartableStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.strategy.mockSync.MockSyncStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.mockSync.MockSyncStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.utils.ciDict.CaseInsensitiveWithAliasDict.set_alias",
+        "new_api": "ldap3.utils.ciDict.CaseInsensitiveWithAliasDict.set_alias",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "alias": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "alias": {
+                "description": null,
+                "is_optional": false
+            },
+            "ignore_duplicates": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "ignore_duplicates"
+    },
+    {
+        "old_api": "ldap3.extend.NmasGetUniversalPassword.decode_response",
+        "new_api": "ldap3.extend.NmasGetUniversalPassword.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.strategy.mockSync.MockSyncStrategy.add_entry",
+        "new_api": "ldap3.strategy.mockSync.MockSyncStrategy.add_entry",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dn": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dn": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            },
+            "validate": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "validate"
+    },
+    {
+        "old_api": "ldap3.Entry.entry_writable",
+        "new_api": "ldap3.Entry.entry_writable",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": true
+            },
+            "writer_cursor": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "custom_validator": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": true
+            },
+            "writer_cursor": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "custom_validator": {
+                "description": null,
+                "is_optional": true
+            },
+            "auxiliary_class": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "auxiliary_class"
+    },
+    {
+        "old_api": "ldap3.strategy.asynchronous.AsyncStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.asynchronous.AsyncStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.Server.check_availability",
+        "new_api": "ldap3.Server.check_availability",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "source_address": {
+                "description": null,
+                "is_optional": true
+            },
+            "source_port": {
+                "description": null,
+                "is_optional": true
+            },
+            "source_port_list": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "source_port_list"
+    },
+    {
+        "old_api": "ldap3.Writer.__init__",
+        "new_api": "ldap3.Writer.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": false
+            },
+            "get_operational_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": false
+            },
+            "get_operational_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            },
+            "auxiliary_class": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "auxiliary_class"
+    },
+    {
+        "old_api": "ldap3.extend.GetBindDn.decode_response",
+        "new_api": "ldap3.extend.GetBindDn.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.ServerPool.__init__",
+        "new_api": "ldap3.ServerPool.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "servers": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_strategy": {
+                "description": null,
+                "is_optional": true
+            },
+            "active": {
+                "description": null,
+                "is_optional": true
+            },
+            "exhaust": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "servers": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_strategy": {
+                "description": null,
+                "is_optional": true
+            },
+            "active": {
+                "description": null,
+                "is_optional": true
+            },
+            "exhaust": {
+                "description": null,
+                "is_optional": true
+            },
+            "single_state": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "single_state"
+    },
+    {
+        "old_api": "ldap3.strategy.mockAsync.MockAsyncStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.mockAsync.MockAsyncStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.operation.search.parse_filter",
+        "new_api": "ldap3.operation.search.parse_filter",
+        "old_parameter": {
+            "search_filter": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "search_filter": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "validator": {
+                "description": null,
+                "is_optional": false
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "validator"
+    },
+    {
+        "old_api": "ldap3.strategy.mockAsync.MockAsyncStrategy.add_entry",
+        "new_api": "ldap3.strategy.mockAsync.MockAsyncStrategy.add_entry",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dn": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dn": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            },
+            "validate": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "validate"
+    },
+    {
+        "old_api": "ldap3.extend.EndTransaction.decode_response",
+        "new_api": "ldap3.extend.EndTransaction.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.extend.ad_add_members_to_groups",
+        "new_api": "ldap3.extend.ad_add_members_to_groups",
+        "old_parameter": {
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "members_dn": {
+                "description": "the list of members to add to groups",
+                "is_optional": false
+            },
+            "groups_dn": {
+                "description": "the list of groups where members are to be added",
+                "is_optional": false
+            },
+            "fix": {
+                "description": "checks for group existence and already assigned members",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "members_dn": {
+                "description": "the list of members to add to groups",
+                "is_optional": false
+            },
+            "groups_dn": {
+                "description": "the list of groups where members are to be added",
+                "is_optional": false
+            },
+            "fix": {
+                "description": "checks for group existence and already assigned members",
+                "is_optional": true
+            },
+            "raise_error": {
+                "description": "If the operation fails it raises an error instead of returning False",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "raise_error"
+    },
+    {
+        "old_api": "ldap3.Tls.__init__",
+        "new_api": "ldap3.Tls.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "local_private_key_file": {
+                "description": null,
+                "is_optional": true
+            },
+            "local_certificate_file": {
+                "description": null,
+                "is_optional": true
+            },
+            "validate": {
+                "description": null,
+                "is_optional": true
+            },
+            "version": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs_file": {
+                "description": null,
+                "is_optional": true
+            },
+            "valid_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs_path": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs_data": {
+                "description": null,
+                "is_optional": true
+            },
+            "local_private_key_password": {
+                "description": null,
+                "is_optional": true
+            },
+            "ciphers": {
+                "description": null,
+                "is_optional": true
+            },
+            "sni": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "local_private_key_file": {
+                "description": null,
+                "is_optional": true
+            },
+            "local_certificate_file": {
+                "description": null,
+                "is_optional": true
+            },
+            "validate": {
+                "description": null,
+                "is_optional": true
+            },
+            "version": {
+                "description": null,
+                "is_optional": true
+            },
+            "ssl_options": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs_file": {
+                "description": null,
+                "is_optional": true
+            },
+            "valid_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs_path": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs_data": {
+                "description": null,
+                "is_optional": true
+            },
+            "local_private_key_password": {
+                "description": null,
+                "is_optional": true
+            },
+            "ciphers": {
+                "description": null,
+                "is_optional": true
+            },
+            "sni": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "ssl_options"
+    },
+    {
+        "old_api": "ldap3.extend.NmasSetUniversalPassword.decode_response",
+        "new_api": "ldap3.extend.NmasSetUniversalPassword.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.extend.ListReplicas.decode_response",
+        "new_api": "ldap3.extend.ListReplicas.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.Connection.__init__",
+        "new_api": "ldap3.Connection.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "server": {
+                "description": null,
+                "is_optional": false
+            },
+            "user": {
+                "description": null,
+                "is_optional": true
+            },
+            "password": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_bind": {
+                "description": null,
+                "is_optional": true
+            },
+            "version": {
+                "description": null,
+                "is_optional": true
+            },
+            "authentication": {
+                "description": null,
+                "is_optional": true
+            },
+            "client_strategy": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_referrals": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "sasl_mechanism": {
+                "description": null,
+                "is_optional": true
+            },
+            "sasl_credentials": {
+                "description": null,
+                "is_optional": true
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "collect_usage": {
+                "description": null,
+                "is_optional": true
+            },
+            "read_only": {
+                "description": null,
+                "is_optional": true
+            },
+            "lazy": {
+                "description": null,
+                "is_optional": true
+            },
+            "raise_exceptions": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_lifetime": {
+                "description": null,
+                "is_optional": true
+            },
+            "fast_decoder": {
+                "description": null,
+                "is_optional": true
+            },
+            "receive_timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "return_empty_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_referral_cache": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_keepalive": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "server": {
+                "description": null,
+                "is_optional": false
+            },
+            "user": {
+                "description": null,
+                "is_optional": true
+            },
+            "password": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_bind": {
+                "description": null,
+                "is_optional": true
+            },
+            "version": {
+                "description": null,
+                "is_optional": true
+            },
+            "authentication": {
+                "description": null,
+                "is_optional": true
+            },
+            "client_strategy": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_referrals": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "sasl_mechanism": {
+                "description": null,
+                "is_optional": true
+            },
+            "sasl_credentials": {
+                "description": null,
+                "is_optional": true
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "collect_usage": {
+                "description": null,
+                "is_optional": true
+            },
+            "read_only": {
+                "description": null,
+                "is_optional": true
+            },
+            "lazy": {
+                "description": null,
+                "is_optional": true
+            },
+            "raise_exceptions": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_lifetime": {
+                "description": null,
+                "is_optional": true
+            },
+            "cred_store": {
+                "description": null,
+                "is_optional": true
+            },
+            "fast_decoder": {
+                "description": null,
+                "is_optional": true
+            },
+            "receive_timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "return_empty_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_referral_cache": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": true
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_keepalive": {
+                "description": null,
+                "is_optional": true
+            },
+            "source_address": {
+                "description": null,
+                "is_optional": true
+            },
+            "source_port": {
+                "description": null,
+                "is_optional": true
+            },
+            "source_port_list": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "source_port_list"
+    },
+    {
+        "old_api": "ldap3.extend.ad_remove_members_from_groups",
+        "new_api": "ldap3.extend.ad_remove_members_from_groups",
+        "old_parameter": {
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "members_dn": {
+                "description": "the list of members to remove from groups",
+                "is_optional": false
+            },
+            "groups_dn": {
+                "description": "the list of groups where members are to be removed",
+                "is_optional": false
+            },
+            "fix": {
+                "description": "checks for group existence and existing members",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "members_dn": {
+                "description": "the list of members to remove from groups",
+                "is_optional": false
+            },
+            "groups_dn": {
+                "description": "the list of groups where members are to be removed",
+                "is_optional": false
+            },
+            "fix": {
+                "description": "checks for group existence and existing members",
+                "is_optional": false
+            },
+            "raise_error": {
+                "description": "If the operation fails it raises an error instead of returning False",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "raise_error"
+    },
+    {
+        "old_api": "ldap3.extend.StartTransaction.decode_response",
+        "new_api": "ldap3.extend.StartTransaction.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.Reader.__init__",
+        "new_api": "ldap3.Reader.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": false
+            },
+            "base": {
+                "description": null,
+                "is_optional": false
+            },
+            "query": {
+                "description": null,
+                "is_optional": true
+            },
+            "components_in_and": {
+                "description": null,
+                "is_optional": true
+            },
+            "sub_tree": {
+                "description": null,
+                "is_optional": true
+            },
+            "get_operational_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": false
+            },
+            "base": {
+                "description": null,
+                "is_optional": false
+            },
+            "query": {
+                "description": null,
+                "is_optional": true
+            },
+            "components_in_and": {
+                "description": null,
+                "is_optional": true
+            },
+            "sub_tree": {
+                "description": null,
+                "is_optional": true
+            },
+            "get_operational_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            },
+            "auxiliary_class": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "auxiliary_class"
+    },
+    {
+        "old_api": "ldap3.abstract.cursor.Cursor.__init__",
+        "new_api": "ldap3.abstract.cursor.Cursor.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": false
+            },
+            "get_operational_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_def": {
+                "description": null,
+                "is_optional": false
+            },
+            "get_operational_attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            },
+            "auxiliary_class": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "auxiliary_class"
+    },
+    {
+        "old_api": "ldap3.extend.ReplicaInfo.decode_response",
+        "new_api": "ldap3.extend.ReplicaInfo.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.extend.WhoAmI.decode_response",
+        "new_api": "ldap3.extend.WhoAmI.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.extend.operation.ExtendedOperation.decode_response",
+        "new_api": "ldap3.extend.operation.ExtendedOperation.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.extend.PartitionEntryCount.decode_response",
+        "new_api": "ldap3.extend.PartitionEntryCount.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.strategy.asyncStream.AsyncStreamStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.asyncStream.AsyncStreamStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.utils.conv.format_json",
+        "new_api": "ldap3.utils.conv.format_json",
+        "old_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "iso_format": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "iso_format"
+    },
+    {
+        "old_api": "ldap3.ObjectDef.__init__",
+        "new_api": "ldap3.ObjectDef.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_class": {
+                "description": null,
+                "is_optional": true
+            },
+            "schema": {
+                "description": null,
+                "is_optional": true
+            },
+            "custom_validator": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "object_class": {
+                "description": null,
+                "is_optional": true
+            },
+            "schema": {
+                "description": null,
+                "is_optional": true
+            },
+            "custom_validator": {
+                "description": null,
+                "is_optional": true
+            },
+            "auxiliary_class": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "auxiliary_class"
+    },
+    {
+        "old_api": "ldap3.extend.PersistentSearch.stop",
+        "new_api": "ldap3.extend.PersistentSearch.stop",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "unbind": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "unbind"
+    },
+    {
+        "old_api": "ldap3.strategy.ldifProducer.LdifProducerStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.ldifProducer.LdifProducerStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.core.exceptions.start_tls_exception_factory",
+        "new_api": "ldap3.core.exceptions.start_tls_exception_factory",
+        "old_parameter": {
+            "exc_to_raise": {
+                "description": null,
+                "is_optional": false
+            },
+            "exc": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "exc": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "exc_to_raise"
+    },
+    {
+        "old_api": "ldap3.strategy.reusable.ReusableStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.reusable.ReusableStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.strategy.sync.SyncStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.sync.SyncStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.strategy.base.BaseStrategy.decode_control_fast",
+        "new_api": "ldap3.strategy.base.BaseStrategy.decode_control_fast",
+        "old_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "from_server"
+    },
+    {
+        "old_api": "ldap3.extend.ModifyPassword.decode_response",
+        "new_api": "ldap3.extend.ModifyPassword.decode_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "response"
+    },
+    {
+        "old_api": "ldap3.protocol.convert.validate_assertion_value",
+        "new_api": "ldap3.protocol.convert.validate_assertion_value",
+        "old_parameter": {
+            "schema": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "schema": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "validator": {
+                "description": null,
+                "is_optional": false
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "validator"
+    },
+    {
+        "old_api": "ldap3.operation.search.search_operation",
+        "new_api": "ldap3.operation.search.search_operation",
+        "old_parameter": {
+            "search_base": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_filter": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_scope": {
+                "description": null,
+                "is_optional": false
+            },
+            "dereference_aliases": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            },
+            "size_limit": {
+                "description": null,
+                "is_optional": false
+            },
+            "time_limit": {
+                "description": null,
+                "is_optional": false
+            },
+            "types_only": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": null,
+                "is_optional": true
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "search_base": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_filter": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_scope": {
+                "description": null,
+                "is_optional": false
+            },
+            "dereference_aliases": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            },
+            "size_limit": {
+                "description": null,
+                "is_optional": false
+            },
+            "time_limit": {
+                "description": null,
+                "is_optional": false
+            },
+            "types_only": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": null,
+                "is_optional": true
+            },
+            "validator": {
+                "description": null,
+                "is_optional": true
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "validator"
+    },
+    {
+        "old_api": "ldap3.operation.search.evaluate_match",
+        "new_api": "ldap3.operation.search.evaluate_match",
+        "old_parameter": {
+            "match": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "match": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_escape": {
+                "description": null,
+                "is_optional": false
+            },
+            "auto_encode": {
+                "description": null,
+                "is_optional": false
+            },
+            "validator": {
+                "description": null,
+                "is_optional": false
+            },
+            "check_names": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "validator"
+    },
+    {
+        "old_api": "ldap3.strategy.mockBase.MockBaseStrategy.add_entry",
+        "new_api": "ldap3.strategy.mockBase.MockBaseStrategy.add_entry",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dn": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dn": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            },
+            "validate": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "validate"
+    },
+    {
+        "old_api": "ldap3.Connection.do_auto_bind",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.protocol.rfc2849.LDIF_LINE_LENGTH",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.strategy.base.exc_info",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.strategy.base.sleep",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.strategy.mockBase.Lock",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.strategy.restartable.exc_info",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.protocol.formatters.validators.validate_minus_one",
+        "new_api": "",
+        "old_parameter": {
+            "input_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.core.connection.LDAPConfigurationError",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.protocol.formatters.standard.validate_minus_one",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.protocol.rfc4512.CaseInsensitiveDict",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.strategy.base.datetime",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.strategy.restartable.datetime",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.utils.ciDict.__warningregistry__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "ldap3.utils.ciDict.collections",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.AUTO_BIND_DEFAULT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.Attribute.__getstate__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.INTEGER_TYPES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.OFFLINE_EDIR_9_1_4",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.OperationalAttribute.__getstate__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.ReverseDnsSetting",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.SAFE_RESTARTABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.SAFE_SYNC",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.Server.has_control",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.Server.has_extension",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "extension": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.Server.has_feature",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "feature": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.WritableAttribute.__getstate__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.ADPersistentSearch.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_base": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_scope": {
+                "description": null,
+                "is_optional": false
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": false
+            },
+            "streaming": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.ADPersistentSearch.funnel",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "block": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.ADPersistentSearch.next",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "block": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.ADPersistentSearch.start",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.ADPersistentSearch.stop",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "unbind": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.ADPersistentSearch",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.MicrosoftExtendedOperations.persistent_search",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_base": {
+                "description": null,
+                "is_optional": true
+            },
+            "search_scope": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "streaming": {
+                "description": null,
+                "is_optional": true
+            },
+            "callback": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.PersistentSearch.funnel",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "block": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.StandardExtendedOperations.funnel_search",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "search_base": {
+                "description": null,
+                "is_optional": true
+            },
+            "search_filter": {
+                "description": null,
+                "is_optional": true
+            },
+            "search_scope": {
+                "description": null,
+                "is_optional": true
+            },
+            "dereference_aliases": {
+                "description": null,
+                "is_optional": true
+            },
+            "attributes": {
+                "description": null,
+                "is_optional": true
+            },
+            "size_limit": {
+                "description": null,
+                "is_optional": true
+            },
+            "time_limit": {
+                "description": null,
+                "is_optional": true
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            },
+            "streaming": {
+                "description": null,
+                "is_optional": true
+            },
+            "callback": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.abstract.cursor.CLASS_AUXILIARY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.abstract.entry.EntryState.__getstate__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.exceptions.LDAPCursorAttributeError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.exceptions.LDAPInfoError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.exceptions.LDAPSignatureVerificationFailedError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.pooling.ServerState.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "server": {
+                "description": null,
+                "is_optional": false
+            },
+            "last_checked_time": {
+                "description": null,
+                "is_optional": false
+            },
+            "available": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.pooling.ServerState",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.rdns.get_hostname_by_addr",
+        "old_parameter": {},
+        "new_parameter": {
+            "addr": {
+                "description": null,
+                "is_optional": false
+            },
+            "success_required": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.rdns.is_ip_addr",
+        "old_parameter": {},
+        "new_parameter": {
+            "addr": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.server.NETWORK",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.convert.to_str_or_normalized_unicode",
+        "old_parameter": {},
+        "new_parameter": {
+            "val": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__bool__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__contains__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__eq__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__ge__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__getitem__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "idx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__gt__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__iter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__le__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__len__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__lt__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__ne__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__setattr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__setitem__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "idx": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.__str__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.clear",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.clone",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getComponentByName",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "default": {
+                "description": null,
+                "is_optional": true
+            },
+            "instantiate": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getComponentByPosition",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "idx": {
+                "description": null,
+                "is_optional": false
+            },
+            "default": {
+                "description": null,
+                "is_optional": true
+            },
+            "instantiate": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getComponentPositionNearType",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "tagSet": {
+                "description": null,
+                "is_optional": false
+            },
+            "idx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getComponentTagMapNearPosition",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "idx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getComponentType",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getEffectiveTagSet",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getNameByPosition",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "idx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getSubtypeSpec",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getTagMap",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.getTagSet",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.hasValue",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.isNoValue",
+        "old_parameter": {},
+        "new_parameter": {
+            "values": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.isSameTypeWith",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            },
+            "matchTags": {
+                "description": null,
+                "is_optional": true
+            },
+            "matchConstraints": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.isSuperTypeOf",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            },
+            "matchTags": {
+                "description": null,
+                "is_optional": true
+            },
+            "matchConstraints": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.items",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.keys",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.prettyPrint",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "scope": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.prettyPrintType",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "scope": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.reset",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.setComponentByName",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": true
+            },
+            "verifyConstraints": {
+                "description": null,
+                "is_optional": true
+            },
+            "matchTags": {
+                "description": null,
+                "is_optional": true
+            },
+            "matchConstraints": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.setComponentByPosition",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "idx": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": true
+            },
+            "verifyConstraints": {
+                "description": null,
+                "is_optional": true
+            },
+            "matchTags": {
+                "description": null,
+                "is_optional": true
+            },
+            "matchConstraints": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.setComponents",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.setDefaultComponents",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.subtype",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "iterValue": {
+                "description": null,
+                "is_optional": false
+            },
+            "mappingValue": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.values",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags.verifySizeSpec",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.persistent_search_control",
+        "old_parameter": {},
+        "new_parameter": {
+            "criticality": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.security_descriptor_control",
+        "old_parameter": {},
+        "new_parameter": {
+            "criticality": {
+                "description": null,
+                "is_optional": true
+            },
+            "sdflags": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.rfc2849.conf_ldif_line_length",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asyncStream.AsyncStreamStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asyncStream.AsyncStreamStrategy.set_event_for_message",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asynchronous.AsyncStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asynchronous.AsyncStrategy.set_event_for_message",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.base.AF_UNIX",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.base.BaseStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.base.unix_socket_available",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.ldifProducer.LdifProducerStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.mockAsync.MockAsyncStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.mockAsync.MockAsyncStrategy.set_event_for_message",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.mockBase.RESULT_CONSTRAINT_VIOLATION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.mockBase.RESULT_NOT_ALLOWED_ON_RDN",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.mockBase.RESULT_PROTOCOL_ERROR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.mockSync.MockSyncStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.restartable.RestartableStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.reusable.ReusableStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.__str__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.close",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.compute_ldap_message_size",
+        "old_parameter": {},
+        "new_parameter": {
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.decode_control",
+        "old_parameter": {},
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.decode_control_fast",
+        "old_parameter": {},
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.decode_request",
+        "old_parameter": {},
+        "new_parameter": {
+            "message_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "component": {
+                "description": null,
+                "is_optional": false
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.decode_response",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_message": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.decode_response_fast",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_message": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.do_next_range_search",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": false
+            },
+            "attr_name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.do_operation_on_referral",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.do_search_on_auto_range",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.get_response",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "get_request": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.get_stream",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.open",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "reset_usage": {
+                "description": null,
+                "is_optional": true
+            },
+            "read_server_info": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.post_send_search",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.post_send_single_response",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.receiving",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.send",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.sending",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_message": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.set_stream",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.unbind_referral_cache",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy.valid_referral_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.SafeRestartableStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.__str__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.close",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.compute_ldap_message_size",
+        "old_parameter": {},
+        "new_parameter": {
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.decode_control",
+        "old_parameter": {},
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.decode_control_fast",
+        "old_parameter": {},
+        "new_parameter": {
+            "control": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_server": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.decode_request",
+        "old_parameter": {},
+        "new_parameter": {
+            "message_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "component": {
+                "description": null,
+                "is_optional": false
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.decode_response",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_message": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.decode_response_fast",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_message": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.do_next_range_search",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": false
+            },
+            "attr_name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.do_operation_on_referral",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.do_search_on_auto_range",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.get_response",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "get_request": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.get_stream",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.open",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "reset_usage": {
+                "description": null,
+                "is_optional": true
+            },
+            "read_server_info": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.post_send_search",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.post_send_single_response",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.receiving",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.send",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "controls": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.sending",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ldap_message": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.set_stream",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.unbind_referral_cache",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy.valid_referral_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SafeSyncStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.sync.SyncStrategy.create_referral_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "referrals": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.config.PARAMETERS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.conv.ldap_escape_to_bytes",
+        "old_parameter": {},
+        "new_parameter": {
+            "text": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.conv.unescape_filter_chars",
+        "old_parameter": {},
+        "new_parameter": {
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.dn.escape_rdn",
+        "old_parameter": {},
+        "new_parameter": {
+            "rdn": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.port_validators.check_port",
+        "old_parameter": {},
+        "new_parameter": {
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.port_validators.check_port_and_port_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "port": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_list": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.formatters.format_ad_timedelta",
+        "old_parameter": {},
+        "new_parameter": {
+            "raw_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.formatters.format_time_with_0_year",
+        "old_parameter": {},
+        "new_parameter": {
+            "raw_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.formatters.time_format",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.a2b_hex",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.check_backslash",
+        "old_parameter": {},
+        "new_parameter": {
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.hexlify",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.validate_ad_timedelta",
+        "old_parameter": {},
+        "new_parameter": {
+            "input_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.validate_guid",
+        "old_parameter": {},
+        "new_parameter": {
+            "input_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.validate_sid",
+        "old_parameter": {},
+        "new_parameter": {
+            "input_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.validate_time_with_0_year",
+        "old_parameter": {},
+        "new_parameter": {
+            "input_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.validate_zero_and_minus_one_and_positive_int",
+        "old_parameter": {},
+        "new_parameter": {
+            "input_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.schemas.edir914.edir_9_1_4_dsa_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.schemas.edir914.edir_9_1_4_schema",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.abstract.entry.LDAPCursorAttributeError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.abstract.entry.MODIFY_ADD",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.abstract.entry.MODIFY_REPLACE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.abstract.entry.deepcopy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.rdns",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.ALL",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.AUTO_BIND_DEFAULT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.DSA",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.LDAPInvalidPortError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.LDAPStartTLSError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.SAFE_RESTARTABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.SAFE_SYNC",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.SCHEMA",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.SafeRestartableStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.SafeSyncStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.check_port_and_port_list",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.copy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.connection.deepcopy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.rdns.ReverseDnsSetting",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.rdns.socket",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.server.LDAPInfoError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.server.OFFLINE_EDIR_9_1_4",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.server.check_port",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.core.server.check_port_and_port_list",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.persistentSearch",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.addMembersToGroups.LDAPOperationsErrorResult",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.addMembersToGroups.safe_dn",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.persistentSearch.ADPersistentSearch",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.persistentSearch.Empty",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.persistentSearch.LDAPExtensionError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.persistentSearch.persistent_search_control",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.persistentSearch.safe_dn",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.microsoft.removeMembersFromGroups.LDAPOperationsErrorResult",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.extend.standard.PagedSearch.RESULT_SIZE_LIMIT_EXCEEDED",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.operation.bind.LDAPUserNameIsMandatoryError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.formatters.re",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.formatters.timezone",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.formatters.to_unicode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.standard.format_ad_timedelta",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.standard.format_time_with_0_year",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.standard.validate_ad_timedelta",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.standard.validate_guid",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.standard.validate_sid",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.standard.validate_time_with_0_year",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.standard.validate_zero_and_minus_one_and_positive_int",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.INTEGER_TYPES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.NUMERIC_TYPES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.escape_bytes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.formatters.validators.ldap_escape_to_bytes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.microsoft.SdFlags",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.rfc2849.get_config_parameter",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.protocol.rfc4512.CaseInsensitiveWithAliasDict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asynchronous.DIGEST_MD5",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asynchronous.Event",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asynchronous.LDAPSignatureVerificationFailedError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.asynchronous.md5_hmac",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.base.DIGEST_MD5",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.base.LDAPStartTLSError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.base.md5_h",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.base.md5_hmac",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.mockBase.ldap_escape_to_bytes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.restartable.LDAPStartTLSError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.reusable.AUTO_BIND_DEFAULT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeRestartable.RestartableStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.safeSync.SyncStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.sync.DIGEST_MD5",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.sync.LDAPSignatureVerificationFailedError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.strategy.sync.md5_hmac",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.port_validators",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.ciDict.Mapping",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.ciDict.MutableMapping",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.config._ADDITIONAL_CLIENT_ENCODINGS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ldap3.utils.config._LDIF_LINE_LENGTH",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

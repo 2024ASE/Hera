@@ -1,0 +1,275 @@
+[
+    {
+        "old_api": "livereload.Server.serve",
+        "new_api": "livereload.Server.serve",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": "serve on this port, default is 5500",
+                "is_optional": true
+            },
+            "liveport": {
+                "description": "live reload on this port",
+                "is_optional": true
+            },
+            "host": {
+                "description": "serve on this hostname, default is 127.0.0.1",
+                "is_optional": true
+            },
+            "root": {
+                "description": "serve static on this root directory",
+                "is_optional": true
+            },
+            "debug": {
+                "description": "set debug mode, which autoreloads the app on code changes",
+                "is_optional": true
+            },
+            "open_url": {
+                "description": null,
+                "is_optional": true
+            },
+            "restart_delay": {
+                "description": null,
+                "is_optional": true
+            },
+            "open_url_delay": {
+                "description": null,
+                "is_optional": true
+            },
+            "live_css": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": "serve on this port, default is 5500",
+                "is_optional": true
+            },
+            "liveport": {
+                "description": "live reload on this port",
+                "is_optional": true
+            },
+            "host": {
+                "description": "serve on this hostname, default is 127.0.0.1",
+                "is_optional": true
+            },
+            "root": {
+                "description": "serve static on this root directory",
+                "is_optional": true
+            },
+            "debug": {
+                "description": "set debug mode, which autoreloads the app on code changes",
+                "is_optional": true
+            },
+            "open_url": {
+                "description": null,
+                "is_optional": true
+            },
+            "restart_delay": {
+                "description": null,
+                "is_optional": true
+            },
+            "open_url_delay": {
+                "description": null,
+                "is_optional": true
+            },
+            "live_css": {
+                "description": null,
+                "is_optional": true
+            },
+            "default_filename": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "default_filename"
+    },
+    {
+        "old_api": "livereload.watcher.INotifyWatcher.is_glob_changed",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "ignore": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "livereload.watcher.Watcher.is_glob_changed",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "ignore": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.Server.setHeader",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "The name of the header field to be defined.",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The value of the header field to be defined.",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.server.set_header",
+        "old_parameter": {},
+        "new_parameter": {
+            "fn": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.watcher.INotifyWatcher.get_changed_glob_files",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "ignore": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.watcher.Watcher.get_changed_glob_files",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "ignore": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.server.errno",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.server.sys",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.watcher.signature",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "livereload.watcher.sys",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

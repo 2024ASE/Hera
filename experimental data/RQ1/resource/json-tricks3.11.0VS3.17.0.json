@@ -1,0 +1,1784 @@
+[
+    {
+        "old_api": "json_tricks.loads",
+        "new_api": "json_tricks.loads",
+        "old_parameter": {
+            "string": {
+                "description": "The string containing a json encoded data structure.",
+                "is_optional": false
+            },
+            "preserve_order": {
+                "description": "Whether to preserve order by using OrderedDicts or not.",
+                "is_optional": true
+            },
+            "ignore_comments": {
+                "description": "Remove comments (starting with # or //).",
+                "is_optional": true
+            },
+            "decompression": {
+                "description": "True to use gzip decompression, False to use raw data, None to automatically determine (default). Assumes utf-8 encoding!",
+                "is_optional": true
+            },
+            "obj_pairs_hooks": {
+                "description": "A list of dictionary hooks to apply.",
+                "is_optional": true
+            },
+            "extra_obj_pairs_hooks": {
+                "description": "Like `obj_pairs_hooks` but on top of them: use this to add hooks without replacing defaults. Since v3.5 these happen before default hooks.",
+                "is_optional": true
+            },
+            "cls_lookup_map": {
+                "description": "If set to a dict, for example ``globals()``, then classes encoded from __main__ are looked up this dict.",
+                "is_optional": true
+            },
+            "allow_duplicates": {
+                "description": "If set to False, an error will be raised when loading a json-map that contains duplicate keys.",
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": "Try to automatically convert between strings and bytes (assuming utf-8) (default False).",
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "string": {
+                "description": "The string containing a json encoded data structure.",
+                "is_optional": false
+            },
+            "preserve_order": {
+                "description": "Whether to preserve order by using OrderedDicts or not.",
+                "is_optional": true
+            },
+            "ignore_comments": {
+                "description": "Remove comments (starting with # or //). By default (`None`), try without comments first, and re-try with comments upon failure.",
+                "is_optional": true
+            },
+            "decompression": {
+                "description": "True to use gzip decompression, False to use raw data, None to automatically determine (default). Assumes utf-8 encoding!",
+                "is_optional": true
+            },
+            "obj_pairs_hooks": {
+                "description": "A list of dictionary hooks to apply.",
+                "is_optional": true
+            },
+            "extra_obj_pairs_hooks": {
+                "description": "Like `obj_pairs_hooks` but on top of them: use this to add hooks without replacing defaults. Since v3.5 these happen before default hooks.",
+                "is_optional": true
+            },
+            "cls_lookup_map": {
+                "description": "If set to a dict, for example ``globals()``, then classes encoded from __main__ are looked up this dict.",
+                "is_optional": true
+            },
+            "allow_duplicates": {
+                "description": "If set to False, an error will be raised when loading a json-map that contains duplicate keys.",
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": "Try to automatically convert between strings and bytes (assuming utf-8) (default False).",
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.ClassInstanceHook.get_cls_from_instance_type",
+        "new_api": "json_tricks.ClassInstanceHook.get_cls_from_instance_type",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "mod": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "mod": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "cls_lookup_map"
+    },
+    {
+        "old_api": "json_tricks.dump",
+        "new_api": "json_tricks.dump",
+        "old_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "fp": {
+                "description": "File handle or path to write to.",
+                "is_optional": false
+            },
+            "sort_keys": {
+                "description": null,
+                "is_optional": true
+            },
+            "cls": {
+                "description": null,
+                "is_optional": true
+            },
+            "obj_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_obj_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            },
+            "compression": {
+                "description": "The gzip compression level, or None for no compression.",
+                "is_optional": true
+            },
+            "force_flush": {
+                "description": "If True, flush the file handle used, when possibly also in the operating system (default False).",
+                "is_optional": true
+            },
+            "allow_nan": {
+                "description": null,
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": null,
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "fp": {
+                "description": "File handle or path to write to.",
+                "is_optional": false
+            },
+            "sort_keys": {
+                "description": null,
+                "is_optional": true
+            },
+            "cls": {
+                "description": null,
+                "is_optional": true
+            },
+            "obj_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_obj_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            },
+            "compression": {
+                "description": "The gzip compression level, or None for no compression.",
+                "is_optional": true
+            },
+            "force_flush": {
+                "description": "If True, flush the file handle used, when possibly also in the operating system (default False).",
+                "is_optional": true
+            },
+            "allow_nan": {
+                "description": null,
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": null,
+                "is_optional": true
+            },
+            "fallback_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.encoders.numpy_encode",
+        "new_api": "json_tricks.encoders.numpy_encode",
+        "old_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": "If True, arrays are serialized as (nested) lists without meta info.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": "If True, arrays are serialized as (nested) lists without meta info.",
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.numpy_encode",
+        "new_api": "json_tricks.numpy_encode",
+        "old_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": "If True, arrays are serialized as (nested) lists without meta info.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": "If True, arrays are serialized as (nested) lists without meta info.",
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.TricksPairHook.__init__",
+        "new_api": "json_tricks.TricksPairHook.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ordered": {
+                "description": null,
+                "is_optional": true
+            },
+            "obj_pairs_hooks": {
+                "description": "An iterable of hooks to apply to elements.",
+                "is_optional": true
+            },
+            "allow_duplicates": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ordered": {
+                "description": null,
+                "is_optional": true
+            },
+            "obj_pairs_hooks": {
+                "description": "An iterable of hooks to apply to elements.",
+                "is_optional": true
+            },
+            "allow_duplicates": {
+                "description": null,
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.ClassInstanceHook.__call__",
+        "new_api": "json_tricks.ClassInstanceHook.__call__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dct": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dct": {
+                "description": null,
+                "is_optional": false
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.dumps",
+        "new_api": "json_tricks.dumps",
+        "old_parameter": {
+            "obj": {
+                "description": "The Python object to convert.",
+                "is_optional": false
+            },
+            "sort_keys": {
+                "description": "Keep this False if you want order to be preserved.",
+                "is_optional": true
+            },
+            "cls": {
+                "description": "The json encoder class to use, defaults to NoNumpyEncoder which gives a warning for numpy arrays.",
+                "is_optional": true
+            },
+            "obj_encoders": {
+                "description": "Iterable of encoders to use to convert arbitrary objects into json-able promitives.",
+                "is_optional": true
+            },
+            "extra_obj_encoders": {
+                "description": "Like `obj_encoders` but on top of them: use this to add encoders without replacing defaults. Since v3.5 these happen before default encoders.",
+                "is_optional": true
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            },
+            "compression": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_nan": {
+                "description": "Allow NaN and Infinity values, which is a (useful) violation of the JSON standard (default False).",
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": "Try to automatically convert between strings and bytes (assuming utf-8) (default False).",
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "obj": {
+                "description": "The Python object to convert.",
+                "is_optional": false
+            },
+            "sort_keys": {
+                "description": "Keep this False if you want order to be preserved.",
+                "is_optional": true
+            },
+            "cls": {
+                "description": "The json encoder class to use, defaults to NoNumpyEncoder which gives a warning for numpy arrays.",
+                "is_optional": true
+            },
+            "obj_encoders": {
+                "description": "Iterable of encoders to use to convert arbitrary objects into json-able promitives.",
+                "is_optional": true
+            },
+            "extra_obj_encoders": {
+                "description": "Like `obj_encoders` but on top of them: use this to add encoders without replacing defaults. Since v3.5 these happen before default encoders.",
+                "is_optional": true
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            },
+            "compression": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_nan": {
+                "description": "Allow NaN and Infinity values, which is a (useful) violation of the JSON standard (default False).",
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": "Try to automatically convert between strings and bytes (assuming utf-8) (default False).",
+                "is_optional": true
+            },
+            "fallback_encoders": {
+                "description": "These are extra `obj_encoders` that 1) are ran after all others and 2) only run if the object hasn't yet been changed.",
+                "is_optional": true
+            },
+            "properties": {
+                "description": "A dictionary of properties that is passed to each encoder that will accept it.",
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.TricksEncoder.__init__",
+        "new_api": "json_tricks.TricksEncoder.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "obj_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "silence_typeerror": {
+                "description": "If set to True, ignore the TypeErrors that Encoder instances throw (default False).",
+                "is_optional": true
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            },
+            "json_kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "obj_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "silence_typeerror": {
+                "description": "DEPRECATED - If set to True, ignore the TypeErrors that Encoder instances throw (default False).",
+                "is_optional": true
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            },
+            "fallback_encoders": {
+                "description": null,
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            },
+            "json_kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.decoders.EnumInstanceHook.get_cls_from_instance_type",
+        "new_api": "json_tricks.decoders.EnumInstanceHook.get_cls_from_instance_type",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "mod": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "mod": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "cls_lookup_map"
+    },
+    {
+        "old_api": "json_tricks.load",
+        "new_api": "json_tricks.load",
+        "old_parameter": {
+            "fp": {
+                "description": "File handle or path to load from.",
+                "is_optional": false
+            },
+            "preserve_order": {
+                "description": null,
+                "is_optional": true
+            },
+            "ignore_comments": {
+                "description": null,
+                "is_optional": true
+            },
+            "decompression": {
+                "description": null,
+                "is_optional": true
+            },
+            "obj_pairs_hooks": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_obj_pairs_hooks": {
+                "description": null,
+                "is_optional": true
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_duplicates": {
+                "description": null,
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": null,
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "fp": {
+                "description": "File handle or path to load from.",
+                "is_optional": false
+            },
+            "preserve_order": {
+                "description": null,
+                "is_optional": true
+            },
+            "ignore_comments": {
+                "description": null,
+                "is_optional": true
+            },
+            "decompression": {
+                "description": null,
+                "is_optional": true
+            },
+            "obj_pairs_hooks": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_obj_pairs_hooks": {
+                "description": null,
+                "is_optional": true
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_duplicates": {
+                "description": null,
+                "is_optional": true
+            },
+            "conv_str_byte": {
+                "description": null,
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            },
+            "jsonkwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.decoders.EnumInstanceHook.__call__",
+        "new_api": "json_tricks.decoders.EnumInstanceHook.__call__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dct": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dct": {
+                "description": null,
+                "is_optional": false
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "properties"
+    },
+    {
+        "old_api": "json_tricks.utils.ClassInstanceHookBase.get_cls_from_instance_type",
+        "new_api": "json_tricks.utils.ClassInstanceHookBase.get_cls_from_instance_type",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "mod": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "mod": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "cls_lookup_map"
+    },
+    {
+        "old_api": "json_tricks.ClassInstanceHook.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.decoders.EnumInstanceHook.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.version",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.utils.ClassInstanceHookBase.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "cls_lookup_map": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.utils.call_with_optional_kwargs",
+        "new_api": "",
+        "old_parameter": {
+            "callable": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "optional_kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.decoders.warning",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.encoders.call_with_optional_kwargs",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.encoders.warning",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.BytesIO",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.ClassInstanceEncoder",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.DuplicateJsonKeyException",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.GzipFile",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.JSONEncoder",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.NoNumpyEncoder",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.nonp.strip_comment_line_with_symbol",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.utils.warn",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "json_tricks.utils.warning",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.VERSION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.bytes_encode",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": "any object, which will be transformed if it is of type bytes",
+                "is_optional": false
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.fallback_ignore_unknown",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "is_changed": {
+                "description": null,
+                "is_optional": true
+            },
+            "fallback_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.json_bytes_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "dct": {
+                "description": "any object, if it is a dict containing encoded bytes, they will be converted",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.pathlib_encode",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.pathlib_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "dct": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.slice_encode",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.json_bytes_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "dct": {
+                "description": "any object, if it is a dict containing encoded bytes, they will be converted",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.nopathlib_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "dct": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.pathlib_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "dct": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.slice_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "dct": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.fallback_ignore_unknown",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "is_changed": {
+                "description": null,
+                "is_optional": true
+            },
+            "fallback_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.is_py3",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.pathlib_encode",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.slice_encode",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "primitives": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.stderr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.JsonTricksDeprecation.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.JsonTricksDeprecation",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.NoPathlibException",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.dict_default",
+        "old_parameter": {},
+        "new_parameter": {
+            "dictionary": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "default_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.filtered_wrapper",
+        "old_parameter": {},
+        "new_parameter": {
+            "encoder": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.gzip_compress",
+        "old_parameter": {},
+        "new_parameter": {
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "compresslevel": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.gzip_decompress",
+        "old_parameter": {},
+        "new_parameter": {
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.is_py3",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.nested_index",
+        "old_parameter": {},
+        "new_parameter": {
+            "collection": {
+                "description": null,
+                "is_optional": false
+            },
+            "indices": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.version",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.__version__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks._version",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks._version.VERSION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders._bin_str_to_ndarray",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders._lists_of_numbers_to_ndarray",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders._lists_of_obj_to_ndarray",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders._scalar_to_numpy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.filtered_wrapper",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.gzip_decompress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.nested_index",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.standard_b64decode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.str_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.decoders.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.JsonTricksDeprecation",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders._fallback_wrapper",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders._ndarray_to_bin_str",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.bytes_encode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.filtered_wrapper",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.gzip_compress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.standard_b64encode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.str_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.encoders.wraps",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.JsonTricksDeprecation",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp._strip_loads",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.bytes_encode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.dict_default",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.gzip_compress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.gzip_decompress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.json_bytes_hook",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.nopathlib_hook",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.pathlib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.pathlib_encode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.pathlib_hook",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.slice_encode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.slice_hook",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.nonp.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.gzip",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.io",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.str_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "json_tricks.utils.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

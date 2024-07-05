@@ -1,0 +1,2821 @@
+[
+    {
+        "old_api": "keras_preprocessing.image.random_shift",
+        "new_api": "keras_preprocessing.image.random_shift",
+        "old_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "wrg": {
+                "description": null,
+                "is_optional": false
+            },
+            "hrg": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "wrg": {
+                "description": null,
+                "is_optional": false
+            },
+            "hrg": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "interpolation_order"
+    },
+    {
+        "old_api": "keras_preprocessing.image.DataFrameIterator.__init__",
+        "new_api": "keras_preprocessing.image.DataFrameIterator.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dataframe": {
+                "description": null,
+                "is_optional": false
+            },
+            "directory": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "x_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "y_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "has_ext": {
+                "description": null,
+                "is_optional": true
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "classes": {
+                "description": null,
+                "is_optional": true
+            },
+            "class_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "shuffle": {
+                "description": null,
+                "is_optional": true
+            },
+            "seed": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "follow_links": {
+                "description": null,
+                "is_optional": true
+            },
+            "subset": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": true
+            },
+            "dtype": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dataframe": {
+                "description": null,
+                "is_optional": false
+            },
+            "directory": {
+                "description": null,
+                "is_optional": true
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": true
+            },
+            "x_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "y_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "weight_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "classes": {
+                "description": null,
+                "is_optional": true
+            },
+            "class_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "shuffle": {
+                "description": null,
+                "is_optional": true
+            },
+            "seed": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "subset": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": true
+            },
+            "dtype": {
+                "description": null,
+                "is_optional": true
+            },
+            "validate_filenames": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "image_data_generator"
+    },
+    {
+        "old_api": "keras_preprocessing.image.random_zoom",
+        "new_api": "keras_preprocessing.image.random_zoom",
+        "old_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "zoom_range": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "zoom_range": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "interpolation_order"
+    },
+    {
+        "old_api": "keras_preprocessing.image.random_shear",
+        "new_api": "keras_preprocessing.image.random_shear",
+        "old_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "intensity": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "intensity": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "interpolation_order"
+    },
+    {
+        "old_api": "keras_preprocessing.image.ImageDataGenerator.__init__",
+        "new_api": "keras_preprocessing.image.ImageDataGenerator.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "featurewise_center": {
+                "description": null,
+                "is_optional": true
+            },
+            "samplewise_center": {
+                "description": null,
+                "is_optional": true
+            },
+            "featurewise_std_normalization": {
+                "description": null,
+                "is_optional": true
+            },
+            "samplewise_std_normalization": {
+                "description": null,
+                "is_optional": true
+            },
+            "zca_whitening": {
+                "description": null,
+                "is_optional": true
+            },
+            "zca_epsilon": {
+                "description": null,
+                "is_optional": true
+            },
+            "rotation_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "width_shift_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "height_shift_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "brightness_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "shear_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "zoom_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_shift_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "horizontal_flip": {
+                "description": null,
+                "is_optional": true
+            },
+            "vertical_flip": {
+                "description": null,
+                "is_optional": true
+            },
+            "rescale": {
+                "description": null,
+                "is_optional": true
+            },
+            "preprocessing_function": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "validation_split": {
+                "description": null,
+                "is_optional": true
+            },
+            "dtype": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "featurewise_center": {
+                "description": null,
+                "is_optional": true
+            },
+            "samplewise_center": {
+                "description": null,
+                "is_optional": true
+            },
+            "featurewise_std_normalization": {
+                "description": null,
+                "is_optional": true
+            },
+            "samplewise_std_normalization": {
+                "description": null,
+                "is_optional": true
+            },
+            "zca_whitening": {
+                "description": null,
+                "is_optional": true
+            },
+            "zca_epsilon": {
+                "description": null,
+                "is_optional": true
+            },
+            "rotation_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "width_shift_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "height_shift_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "brightness_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "shear_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "zoom_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_shift_range": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "horizontal_flip": {
+                "description": null,
+                "is_optional": true
+            },
+            "vertical_flip": {
+                "description": null,
+                "is_optional": true
+            },
+            "rescale": {
+                "description": null,
+                "is_optional": true
+            },
+            "preprocessing_function": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "validation_split": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            },
+            "dtype": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "interpolation_order"
+    },
+    {
+        "old_api": "keras_preprocessing.image.random_rotation",
+        "new_api": "keras_preprocessing.image.random_rotation",
+        "old_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "rg": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "rg": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "interpolation_order"
+    },
+    {
+        "old_api": "keras_preprocessing.image.ImageDataGenerator.flow_from_dataframe",
+        "new_api": "keras_preprocessing.image.ImageDataGenerator.flow_from_dataframe",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dataframe": {
+                "description": null,
+                "is_optional": false
+            },
+            "directory": {
+                "description": null,
+                "is_optional": false
+            },
+            "x_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "y_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "has_ext": {
+                "description": null,
+                "is_optional": true
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "classes": {
+                "description": null,
+                "is_optional": true
+            },
+            "class_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "shuffle": {
+                "description": null,
+                "is_optional": true
+            },
+            "seed": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "subset": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dataframe": {
+                "description": null,
+                "is_optional": false
+            },
+            "directory": {
+                "description": null,
+                "is_optional": true
+            },
+            "x_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "y_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "weight_col": {
+                "description": null,
+                "is_optional": true
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "classes": {
+                "description": null,
+                "is_optional": true
+            },
+            "class_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "shuffle": {
+                "description": null,
+                "is_optional": true
+            },
+            "seed": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": true
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "subset": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": true
+            },
+            "validate_filenames": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "validate_filenames"
+    },
+    {
+        "old_api": "keras_preprocessing.image.apply_affine_transform",
+        "new_api": "keras_preprocessing.image.apply_affine_transform",
+        "old_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "theta": {
+                "description": null,
+                "is_optional": true
+            },
+            "tx": {
+                "description": null,
+                "is_optional": true
+            },
+            "ty": {
+                "description": null,
+                "is_optional": true
+            },
+            "shear": {
+                "description": null,
+                "is_optional": true
+            },
+            "zx": {
+                "description": null,
+                "is_optional": true
+            },
+            "zy": {
+                "description": null,
+                "is_optional": true
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "theta": {
+                "description": null,
+                "is_optional": true
+            },
+            "tx": {
+                "description": null,
+                "is_optional": true
+            },
+            "ty": {
+                "description": null,
+                "is_optional": true
+            },
+            "shear": {
+                "description": null,
+                "is_optional": true
+            },
+            "zx": {
+                "description": null,
+                "is_optional": true
+            },
+            "zy": {
+                "description": null,
+                "is_optional": true
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "order"
+    },
+    {
+        "old_api": "keras_preprocessing.image.DataFrameIterator.common_init",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": false
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "subset": {
+                "description": null,
+                "is_optional": false
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.DirectoryIterator.common_init",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": false
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "subset": {
+                "description": null,
+                "is_optional": false
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.Iterator.common_init",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": false
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "subset": {
+                "description": null,
+                "is_optional": false
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.NumpyArrayIterator.common_init",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": false
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "subset": {
+                "description": null,
+                "is_optional": false
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.IteratorType",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image._iter_valid_files",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image._list_valid_filenames_in_directory",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.get_keras_submodule",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.multiprocessing",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.range",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.re",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "keras_preprocessing.image.threading",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.DataFrameIterator.__new__",
+        "old_parameter": {},
+        "new_parameter": {
+            "cls": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.DataFrameIterator.get_classes",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "df": {
+                "description": null,
+                "is_optional": false
+            },
+            "y_col": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.DataFrameIterator.set_processing_attrs",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": false
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "subset": {
+                "description": null,
+                "is_optional": false
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.DirectoryIterator.__new__",
+        "old_parameter": {},
+        "new_parameter": {
+            "cls": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.DirectoryIterator.set_processing_attrs",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": false
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "subset": {
+                "description": null,
+                "is_optional": false
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.Iterator.next",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.NumpyArrayIterator.__new__",
+        "old_parameter": {},
+        "new_parameter": {
+            "cls": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.validate_filename",
+        "old_parameter": {},
+        "new_parameter": {
+            "filename": {
+                "description": null,
+                "is_optional": false
+            },
+            "white_list_formats": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.apply_affine_transform",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "theta": {
+                "description": null,
+                "is_optional": true
+            },
+            "tx": {
+                "description": null,
+                "is_optional": true
+            },
+            "ty": {
+                "description": null,
+                "is_optional": true
+            },
+            "shear": {
+                "description": null,
+                "is_optional": true
+            },
+            "zx": {
+                "description": null,
+                "is_optional": true
+            },
+            "zy": {
+                "description": null,
+                "is_optional": true
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.apply_brightness_shift",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "brightness": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.apply_channel_shift",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "intensity": {
+                "description": null,
+                "is_optional": false
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.flip_axis",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "axis": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.random_brightness",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "brightness_range": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.random_channel_shift",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "intensity_range": {
+                "description": null,
+                "is_optional": false
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.random_rotation",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "rg": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.random_shear",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "intensity": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.random_shift",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "wrg": {
+                "description": null,
+                "is_optional": false
+            },
+            "hrg": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.random_zoom",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "zoom_range": {
+                "description": null,
+                "is_optional": false
+            },
+            "row_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "col_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "channel_axis": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill_mode": {
+                "description": null,
+                "is_optional": true
+            },
+            "cval": {
+                "description": null,
+                "is_optional": true
+            },
+            "interpolation_order": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.transform_matrix_offset_center",
+        "old_parameter": {},
+        "new_parameter": {
+            "matrix": {
+                "description": null,
+                "is_optional": false
+            },
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "y": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.BatchFromFilesMixin.set_processing_attrs",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "image_data_generator": {
+                "description": null,
+                "is_optional": false
+            },
+            "target_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "color_mode": {
+                "description": null,
+                "is_optional": false
+            },
+            "data_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_to_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "save_format": {
+                "description": null,
+                "is_optional": false
+            },
+            "subset": {
+                "description": null,
+                "is_optional": false
+            },
+            "interpolation": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.validate_filename",
+        "old_parameter": {},
+        "new_parameter": {
+            "filename": {
+                "description": null,
+                "is_optional": false
+            },
+            "white_list_formats": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.__path__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.io",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.ImageEnhance",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.array_to_img",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.division",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.img_to_array",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.np",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.pil_image",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.affine_transformations.scipy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.BatchFromFilesMixin",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.DataFrameIterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.Iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.division",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.np",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.validate_filename",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.dataframe_iterator.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.BatchFromFilesMixin",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.DirectoryIterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.Iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator._list_valid_filenames_in_directory",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.division",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.multiprocessing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.np",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.directory_iterator.range",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.DataFrameIterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.DirectoryIterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.ImageDataGenerator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.NumpyArrayIterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.apply_affine_transform",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.apply_brightness_shift",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.apply_channel_shift",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.division",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.flip_axis",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.np",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.range",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.scipy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.image_data_generator.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.BatchFromFilesMixin",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.Iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.IteratorType",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.array_to_img",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.division",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.get_keras_submodule",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.img_to_array",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.load_img",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.np",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.iterator.threading",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.Iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.NumpyArrayIterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.array_to_img",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.division",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.np",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.numpy_array_iterator.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.ImageEnhance",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils._iter_valid_files",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils._list_valid_filenames_in_directory",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.array_to_img",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.division",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.img_to_array",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.io",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.list_pictures",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.load_img",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.np",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.pil_image",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.save_img",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "keras_preprocessing.image.utils.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

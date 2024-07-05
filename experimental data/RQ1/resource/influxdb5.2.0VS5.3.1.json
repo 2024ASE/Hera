@@ -1,0 +1,1146 @@
+[
+    {
+        "old_api": "influxdb.InfluxDBClient.query",
+        "new_api": "influxdb.InfluxDBClient.query",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "query": {
+                "description": "the actual query string",
+                "is_optional": false
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "epoch": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "raise_errors": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunked": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunk_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "query": {
+                "description": "the actual query string",
+                "is_optional": false
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "bind_params": {
+                "description": null,
+                "is_optional": true
+            },
+            "epoch": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "raise_errors": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunked": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunk_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "bind_params"
+    },
+    {
+        "old_api": "influxdb.DataFrameClient.query",
+        "new_api": "influxdb.DataFrameClient.query",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "query": {
+                "description": "the actual query string",
+                "is_optional": false
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "epoch": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "raise_errors": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunked": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunk_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "query": {
+                "description": "the actual query string",
+                "is_optional": false
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "bind_params": {
+                "description": null,
+                "is_optional": true
+            },
+            "epoch": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "raise_errors": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunked": {
+                "description": null,
+                "is_optional": true
+            },
+            "chunk_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "bind_params"
+    },
+    {
+        "old_api": "influxdb.InfluxDBClient.write_points",
+        "new_api": "influxdb.InfluxDBClient.write_points",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "points": {
+                "description": "the list of points to be written in the database",
+                "is_optional": false
+            },
+            "time_precision": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "retention_policy": {
+                "description": null,
+                "is_optional": true
+            },
+            "tags": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "protocol": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "points": {
+                "description": "the list of points to be written in the database",
+                "is_optional": false
+            },
+            "time_precision": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "retention_policy": {
+                "description": null,
+                "is_optional": true
+            },
+            "tags": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "protocol": {
+                "description": null,
+                "is_optional": true
+            },
+            "consistency": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consistency"
+    },
+    {
+        "old_api": "influxdb.DataFrameClient.request",
+        "new_api": "influxdb.DataFrameClient.request",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "url": {
+                "description": "the path of the HTTP request, e.g. write, query, etc.",
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "headers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "url": {
+                "description": "the path of the HTTP request, e.g. write, query, etc.",
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "stream": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "headers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "stream"
+    },
+    {
+        "old_api": "influxdb.DataFrameClient.write_points",
+        "new_api": "influxdb.DataFrameClient.write_points",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "points": {
+                "description": "the list of points to be written in the database",
+                "is_optional": false
+            },
+            "time_precision": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "retention_policy": {
+                "description": null,
+                "is_optional": true
+            },
+            "tags": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "protocol": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "points": {
+                "description": "the list of points to be written in the database",
+                "is_optional": false
+            },
+            "time_precision": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "retention_policy": {
+                "description": null,
+                "is_optional": true
+            },
+            "tags": {
+                "description": null,
+                "is_optional": true
+            },
+            "batch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "protocol": {
+                "description": null,
+                "is_optional": true
+            },
+            "consistency": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consistency"
+    },
+    {
+        "old_api": "influxdb.InfluxDBClient.__init__",
+        "new_api": "influxdb.InfluxDBClient.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": true
+            },
+            "port": {
+                "description": null,
+                "is_optional": true
+            },
+            "username": {
+                "description": null,
+                "is_optional": true
+            },
+            "password": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "verify_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "retries": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_udp": {
+                "description": null,
+                "is_optional": true
+            },
+            "udp_port": {
+                "description": null,
+                "is_optional": true
+            },
+            "proxies": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "path": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": true
+            },
+            "port": {
+                "description": null,
+                "is_optional": true
+            },
+            "username": {
+                "description": null,
+                "is_optional": true
+            },
+            "password": {
+                "description": null,
+                "is_optional": true
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "verify_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            },
+            "retries": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_udp": {
+                "description": null,
+                "is_optional": true
+            },
+            "udp_port": {
+                "description": null,
+                "is_optional": true
+            },
+            "proxies": {
+                "description": null,
+                "is_optional": true
+            },
+            "pool_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "path": {
+                "description": null,
+                "is_optional": true
+            },
+            "cert": {
+                "description": null,
+                "is_optional": true
+            },
+            "gzip": {
+                "description": null,
+                "is_optional": true
+            },
+            "session": {
+                "description": null,
+                "is_optional": true
+            },
+            "headers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "headers"
+    },
+    {
+        "old_api": "influxdb.InfluxDBClient.request",
+        "new_api": "influxdb.InfluxDBClient.request",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "url": {
+                "description": "the path of the HTTP request, e.g. write, query, etc.",
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "headers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "url": {
+                "description": "the path of the HTTP request, e.g. write, query, etc.",
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "stream": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected_response_code": {
+                "description": null,
+                "is_optional": true
+            },
+            "headers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "stream"
+    },
+    {
+        "old_api": "influxdb.client.xrange",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "influxdb.line_protocol.iteritems",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "influxdb.tests.skipIfPYpy",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "influxdb.tests.skipServerTests",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.DataFrameClient.__enter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.DataFrameClient.__exit__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "_exc_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "_exc_value": {
+                "description": null,
+                "is_optional": false
+            },
+            "_traceback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.DataFrameClient.create_continuous_query",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of continuous query to create",
+                "is_optional": false
+            },
+            "select": {
+                "description": null,
+                "is_optional": false
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "resample_opts": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.DataFrameClient.drop_continuous_query",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of continuous query to drop",
+                "is_optional": false
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.DataFrameClient.get_list_continuous_queries",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.DataFrameClient.get_list_series",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "measurement": {
+                "description": "Show all series from a measurement",
+                "is_optional": true
+            },
+            "tags": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.InfluxDBClient.__enter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.InfluxDBClient.__exit__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "_exc_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "_exc_value": {
+                "description": null,
+                "is_optional": false
+            },
+            "_traceback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.InfluxDBClient.create_continuous_query",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of continuous query to create",
+                "is_optional": false
+            },
+            "select": {
+                "description": null,
+                "is_optional": false
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "resample_opts": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.InfluxDBClient.drop_continuous_query",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of continuous query to drop",
+                "is_optional": false
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.InfluxDBClient.get_list_continuous_queries",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.InfluxDBClient.get_list_series",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "database": {
+                "description": null,
+                "is_optional": true
+            },
+            "measurement": {
+                "description": "Show all series from a measurement",
+                "is_optional": true
+            },
+            "tags": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.line_protocol.make_line",
+        "old_parameter": {},
+        "new_parameter": {
+            "measurement": {
+                "description": null,
+                "is_optional": false
+            },
+            "tags": {
+                "description": null,
+                "is_optional": true
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            },
+            "time": {
+                "description": null,
+                "is_optional": true
+            },
+            "precision": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client._msgpack_parse_hook",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.chain",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.datetime",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.gzip",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.io",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.islice",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.itertools",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.msgpack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.client.struct",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.line_protocol._to_nanos",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.tests.skip_if_pypy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.tests.skip_server_tests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.tests.server_tests.base.ManyTestCasesWithServerGzipMixin",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.tests.server_tests.base.SingleTestCaseWithServerGzipMixin",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.tests.server_tests.base._setup_gzip_client",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "influxdb.tests.test_line_protocol.Decimal",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
