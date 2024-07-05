@@ -1,0 +1,1897 @@
+[
+    {
+        "old_api": "pypowervm.tasks.sriov.set_vnic_back_devs",
+        "new_api": "pypowervm.tasks.sriov.set_vnic_back_devs",
+        "old_parameter": {
+            "vnic_w": {
+                "description": "iocard.VNIC wrapper, as created via VNIC.bld().  If",
+                "is_optional": false
+            },
+            "pports": {
+                "description": null,
+                "is_optional": false
+            },
+            "sys_w": {
+                "description": null,
+                "is_optional": true
+            },
+            "vioses": {
+                "description": null,
+                "is_optional": true
+            },
+            "redundancy": {
+                "description": null,
+                "is_optional": true
+            },
+            "capacity": {
+                "description": null,
+                "is_optional": true
+            },
+            "max_capacity": {
+                "description": null,
+                "is_optional": true
+            },
+            "check_port_status": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "vnic_w": {
+                "description": "iocard.VNIC wrapper, as created via VNIC.bld().  If",
+                "is_optional": false
+            },
+            "pports": {
+                "description": null,
+                "is_optional": false
+            },
+            "sys_w": {
+                "description": null,
+                "is_optional": true
+            },
+            "vioses": {
+                "description": null,
+                "is_optional": true
+            },
+            "redundancy": {
+                "description": null,
+                "is_optional": true
+            },
+            "capacity": {
+                "description": null,
+                "is_optional": true
+            },
+            "max_capacity": {
+                "description": null,
+                "is_optional": true
+            },
+            "check_port_status": {
+                "description": null,
+                "is_optional": true
+            },
+            "redundant_pports": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "redundant_pports"
+    },
+    {
+        "old_api": "pypowervm.tasks.vterm.open_localhost_vnc_vterm",
+        "new_api": "pypowervm.tasks.vterm.open_localhost_vnc_vterm",
+        "old_parameter": {
+            "adapter": {
+                "description": "The adapter to drive the PowerVM API",
+                "is_optional": false
+            },
+            "lpar_uuid": {
+                "description": "Partition UUID.",
+                "is_optional": false
+            },
+            "force": {
+                "description": "(Optional, Default: False) If set to true will force the",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "adapter": {
+                "description": "The adapter to drive the PowerVM API",
+                "is_optional": false
+            },
+            "lpar_uuid": {
+                "description": "Partition UUID.",
+                "is_optional": false
+            },
+            "force": {
+                "description": "(Optional, Default: False) If set to true will force the",
+                "is_optional": true
+            },
+            "codepage": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "codepage"
+    },
+    {
+        "old_api": "pypowervm.tasks.vterm.open_remotable_vnc_vterm",
+        "new_api": "pypowervm.tasks.vterm.open_remotable_vnc_vterm",
+        "old_parameter": {
+            "adapter": {
+                "description": null,
+                "is_optional": false
+            },
+            "lpar_uuid": {
+                "description": null,
+                "is_optional": false
+            },
+            "local_ip": {
+                "description": null,
+                "is_optional": false
+            },
+            "remote_ips": {
+                "description": null,
+                "is_optional": true
+            },
+            "vnc_path": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_x509_auth": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs": {
+                "description": null,
+                "is_optional": true
+            },
+            "server_cert": {
+                "description": null,
+                "is_optional": true
+            },
+            "server_key": {
+                "description": null,
+                "is_optional": true
+            },
+            "force": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "adapter": {
+                "description": null,
+                "is_optional": false
+            },
+            "lpar_uuid": {
+                "description": null,
+                "is_optional": false
+            },
+            "local_ip": {
+                "description": null,
+                "is_optional": false
+            },
+            "remote_ips": {
+                "description": null,
+                "is_optional": true
+            },
+            "vnc_path": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_x509_auth": {
+                "description": null,
+                "is_optional": true
+            },
+            "ca_certs": {
+                "description": null,
+                "is_optional": true
+            },
+            "server_cert": {
+                "description": null,
+                "is_optional": true
+            },
+            "server_key": {
+                "description": null,
+                "is_optional": true
+            },
+            "force": {
+                "description": null,
+                "is_optional": true
+            },
+            "codepage": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "codepage"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "entry": {
+                "description": null,
+                "is_optional": false
+            },
+            "etag": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.create",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parent_type": {
+                "description": "If creating a CHILD, specify either the parent\n                    parameter or BOTH parent_type and parent_uuid.\n                    This parameter may be either the schema_type or the\n                    EntryWrapper subclass of the parent ROOT object.",
+                "is_optional": true
+            },
+            "parent_uuid": {
+                "description": "If creating a CHILD, specify either the parent\n                    parameter or BOTH parent_type and parent_uuid.\n                    This parameter indicates the UUID of the parent\n                    ROOT object.",
+                "is_optional": true
+            },
+            "timeout": {
+                "description": "(Optional) Integer number of seconds after which to\n                time out the PUT request.  -1, the default, causes the\n                request to use the timeout value configured on the\n                Session belonging to the Adapter.",
+                "is_optional": true
+            },
+            "parent": {
+                "description": "If creating a CHILD, specify either the parent parameter",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.delete",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.get_href",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "propname": {
+                "description": "The name of the schema element containing the 'href'\n                 attribute.",
+                "is_optional": false
+            },
+            "one_result": {
+                "description": "If True, we are expecting exactly one result, and\n                   will return that one (string) result, or None.  If\n                   False (the default), we will return a tuple of\n                   strings which may be empty.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.inject",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "subelement": {
+                "description": null,
+                "is_optional": false
+            },
+            "replace": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.log_missing_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "param": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.refresh",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "use_etag": {
+                "description": "(Optional) If False, the object's etag will not be\n                 sent with the request, ensuring that the object is\n                 retrieved afresh from the server.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.replace_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "prop_name": {
+                "description": "The property name to replace with the new value.",
+                "is_optional": false
+            },
+            "prop_children": {
+                "description": "A list of ElementWrapper objects that represent\n                      the new children for the property list.",
+                "is_optional": false
+            },
+            "attrib": {
+                "description": "The attributes to use if the property.  Defaults to",
+                "is_optional": true
+            },
+            "indirect": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.set_float_gb_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_name": {
+                "description": "The schema name of the property to set (see\n                      set_parm_value).",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The floating point number or floating point string to be",
+                "is_optional": false
+            },
+            "create": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.set_href",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "propname": {
+                "description": "XPath to the property.",
+                "is_optional": false
+            },
+            "href": {
+                "description": "The URI value to assign to the href attribute.",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.set_parm_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_name": {
+                "description": "The schema name of the property to set.",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The (string) value to assign to the property's 'text'.",
+                "is_optional": false
+            },
+            "create": {
+                "description": "If True, and the property is not found, it will be",
+                "is_optional": true
+            },
+            "attrib": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.toxmlstring",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pretty": {
+                "description": "If True, format the XML in a visually-pleasing manner.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice.update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "xag": {
+                "description": "DEPRECATED - do not use.",
+                "is_optional": true
+            },
+            "timeout": {
+                "description": "(Optional) Integer number of seconds after which to\n                time out the POST request.  -1, the default, causes the\n                request to use the timeout value configured on the\n                Session belonging to the Adapter.",
+                "is_optional": true
+            },
+            "force": {
+                "description": "True if this is called as part of force resize.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "entry": {
+                "description": null,
+                "is_optional": false
+            },
+            "etag": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.create",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parent_type": {
+                "description": "If creating a CHILD, specify either the parent\n                    parameter or BOTH parent_type and parent_uuid.\n                    This parameter may be either the schema_type or the\n                    EntryWrapper subclass of the parent ROOT object.",
+                "is_optional": true
+            },
+            "parent_uuid": {
+                "description": "If creating a CHILD, specify either the parent\n                    parameter or BOTH parent_type and parent_uuid.\n                    This parameter indicates the UUID of the parent\n                    ROOT object.",
+                "is_optional": true
+            },
+            "timeout": {
+                "description": "(Optional) Integer number of seconds after which to\n                time out the PUT request.  -1, the default, causes the\n                request to use the timeout value configured on the\n                Session belonging to the Adapter.",
+                "is_optional": true
+            },
+            "parent": {
+                "description": "If creating a CHILD, specify either the parent parameter",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.delete",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.get_href",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "propname": {
+                "description": "The name of the schema element containing the 'href'\n                 attribute.",
+                "is_optional": false
+            },
+            "one_result": {
+                "description": "If True, we are expecting exactly one result, and\n                   will return that one (string) result, or None.  If\n                   False (the default), we will return a tuple of\n                   strings which may be empty.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.inject",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "subelement": {
+                "description": null,
+                "is_optional": false
+            },
+            "replace": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.log_missing_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "param": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.refresh",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "use_etag": {
+                "description": "(Optional) If False, the object's etag will not be\n                 sent with the request, ensuring that the object is\n                 retrieved afresh from the server.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.replace_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "prop_name": {
+                "description": "The property name to replace with the new value.",
+                "is_optional": false
+            },
+            "prop_children": {
+                "description": "A list of ElementWrapper objects that represent\n                      the new children for the property list.",
+                "is_optional": false
+            },
+            "attrib": {
+                "description": "The attributes to use if the property.  Defaults to",
+                "is_optional": true
+            },
+            "indirect": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.set_float_gb_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_name": {
+                "description": "The schema name of the property to set (see\n                      set_parm_value).",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The floating point number or floating point string to be",
+                "is_optional": false
+            },
+            "create": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.set_href",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "propname": {
+                "description": "XPath to the property.",
+                "is_optional": false
+            },
+            "href": {
+                "description": "The URI value to assign to the href attribute.",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.set_parm_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_name": {
+                "description": "The schema name of the property to set.",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The (string) value to assign to the property's 'text'.",
+                "is_optional": false
+            },
+            "create": {
+                "description": "If True, and the property is not found, it will be",
+                "is_optional": true
+            },
+            "attrib": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.toxmlstring",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pretty": {
+                "description": "If True, format the XML in a visually-pleasing manner.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume.update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "xag": {
+                "description": "DEPRECATED - do not use.",
+                "is_optional": true
+            },
+            "timeout": {
+                "description": "(Optional) Integer number of seconds after which to\n                time out the POST request.  -1, the default, causes the\n                request to use the timeout value configured on the\n                Session belonging to the Adapter.",
+                "is_optional": true
+            },
+            "force": {
+                "description": "True if this is called as part of force resize.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "entry": {
+                "description": null,
+                "is_optional": false
+            },
+            "etag": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.create",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parent_type": {
+                "description": "If creating a CHILD, specify either the parent\n                    parameter or BOTH parent_type and parent_uuid.\n                    This parameter may be either the schema_type or the\n                    EntryWrapper subclass of the parent ROOT object.",
+                "is_optional": true
+            },
+            "parent_uuid": {
+                "description": "If creating a CHILD, specify either the parent\n                    parameter or BOTH parent_type and parent_uuid.\n                    This parameter indicates the UUID of the parent\n                    ROOT object.",
+                "is_optional": true
+            },
+            "timeout": {
+                "description": "(Optional) Integer number of seconds after which to\n                time out the PUT request.  -1, the default, causes the\n                request to use the timeout value configured on the\n                Session belonging to the Adapter.",
+                "is_optional": true
+            },
+            "parent": {
+                "description": "If creating a CHILD, specify either the parent parameter",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.delete",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.get_href",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "propname": {
+                "description": "The name of the schema element containing the 'href'\n                 attribute.",
+                "is_optional": false
+            },
+            "one_result": {
+                "description": "If True, we are expecting exactly one result, and\n                   will return that one (string) result, or None.  If\n                   False (the default), we will return a tuple of\n                   strings which may be empty.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.inject",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "subelement": {
+                "description": null,
+                "is_optional": false
+            },
+            "replace": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.log_missing_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "param": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.refresh",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "use_etag": {
+                "description": "(Optional) If False, the object's etag will not be\n                 sent with the request, ensuring that the object is\n                 retrieved afresh from the server.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.replace_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "prop_name": {
+                "description": "The property name to replace with the new value.",
+                "is_optional": false
+            },
+            "prop_children": {
+                "description": "A list of ElementWrapper objects that represent\n                      the new children for the property list.",
+                "is_optional": false
+            },
+            "attrib": {
+                "description": "The attributes to use if the property.  Defaults to",
+                "is_optional": true
+            },
+            "indirect": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.set_float_gb_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_name": {
+                "description": "The schema name of the property to set (see\n                      set_parm_value).",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The floating point number or floating point string to be",
+                "is_optional": false
+            },
+            "create": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.set_href",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "propname": {
+                "description": "XPath to the property.",
+                "is_optional": false
+            },
+            "href": {
+                "description": "The URI value to assign to the href attribute.",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.set_parm_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_name": {
+                "description": "The schema name of the property to set.",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The (string) value to assign to the property's 'text'.",
+                "is_optional": false
+            },
+            "create": {
+                "description": "If True, and the property is not found, it will be",
+                "is_optional": true
+            },
+            "attrib": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.set_uuid",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.toxmlstring",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pretty": {
+                "description": "If True, format the XML in a visually-pleasing manner.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume.update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "xag": {
+                "description": "DEPRECATED - do not use.",
+                "is_optional": true
+            },
+            "timeout": {
+                "description": "(Optional) Integer number of seconds after which to\n                time out the POST request.  -1, the default, causes the\n                request to use the timeout value configured on the\n                Session belonging to the Adapter.",
+                "is_optional": true
+            },
+            "force": {
+                "description": "True if this is called as part of force resize.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.tasks.network_bridger.CONF",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.tasks.network_bridger._MAX_VEAS_PER_SEA",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.tasks.network_bridger.cfg",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.tasks.slot_map.base64utils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.tasks.vterm._get_lpar_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.tasks.vterm.bp",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.base_partition._ASSOC_PMEM_CONFIG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.base_partition._CUR_DRAM_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.base_partition._CUR_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.base_partition._MAX_DRAM_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.base_partition._MAX_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._ASSOC_PMEM_CONFIG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._CUR_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._DRAM_PMEM_VOLUME_BLKSIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._DRAM_PMEM_VOLUME_CURSIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._DRAM_PMEM_VOLUME_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._MAX_AIXLX_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._MAX_OS400_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._MAX_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._MAX_VIOS_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._PERSISTENT_MEM_CAPABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._SUPPORTED_IBMI_CONSOLE_CODEPAGE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.managed_system._SUPP_PMEM_VOLUME_DEVTYPE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryDevice",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.PersistentMemoryVolume",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.VirtualPMEMVolume",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._LPAR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_BSIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_CUR_NUM_VOL",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_DYNAMIC_RECONF_CONNECT_INDEX",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_EL_ORDER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_FSIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_MAX_NUM_VOL",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_PHY_LOC_CODE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_PHY_SERIAL_NUM",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_STATUS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_TSIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PDEV_TYPE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMCONF_CUR_PMEM_CONF",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMCONF_EL_ORDER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMCONF_MAX_PMEM_CONF",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_EL_ORDER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_ASC_PARTITION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_ASC_PART_ID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_ASC_PART_NAME",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_DYN_RECONF_INDEX",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_ID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_NAME",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._PMEM_VOL_UUID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_CUR_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_DRAM_CUR_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_DRAM_VOL_BSIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_DRAM_VOL_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_EL_ORDER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_MAX_AIX_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_MAX_OS400_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_MAX_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_MAX_VIOS_PMEM_VOLUMES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._SYS_PMEM_SUP_DEV_TYPES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_EL_ORDER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_AFFINITY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_ASC_PART",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_ASC_PARTID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_ASC_PARTNAME",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_CURSIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_ID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_NAME",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem._VIRT_PMEM_VOL_UUID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.c",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.ewrap",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypowervm.wrappers.pmem.u",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

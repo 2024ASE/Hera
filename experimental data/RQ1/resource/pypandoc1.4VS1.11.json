@@ -1,0 +1,597 @@
+[
+    {
+        "old_api": "pypandoc.convert_text",
+        "new_api": "pypandoc.convert_text",
+        "old_parameter": {
+            "source": {
+                "description": null,
+                "is_optional": false
+            },
+            "to": {
+                "description": null,
+                "is_optional": false
+            },
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_args": {
+                "description": null,
+                "is_optional": true
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "outputfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "source": {
+                "description": null,
+                "is_optional": false
+            },
+            "to": {
+                "description": null,
+                "is_optional": false
+            },
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_args": {
+                "description": null,
+                "is_optional": true
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "outputfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            },
+            "verify_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "sandbox": {
+                "description": null,
+                "is_optional": true
+            },
+            "cworkdir": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "cworkdir"
+    },
+    {
+        "old_api": "pypandoc.download_pandoc",
+        "new_api": "pypandoc.download_pandoc",
+        "old_parameter": {
+            "url": {
+                "description": null,
+                "is_optional": true
+            },
+            "targetfolder": {
+                "description": null,
+                "is_optional": true
+            },
+            "version": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "url": {
+                "description": null,
+                "is_optional": true
+            },
+            "targetfolder": {
+                "description": null,
+                "is_optional": true
+            },
+            "version": {
+                "description": null,
+                "is_optional": true
+            },
+            "delete_installer": {
+                "description": null,
+                "is_optional": true
+            },
+            "download_folder": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "download_folder"
+    },
+    {
+        "old_api": "pypandoc.convert_file",
+        "new_api": "pypandoc.convert_file",
+        "old_parameter": {
+            "source_file": {
+                "description": null,
+                "is_optional": false
+            },
+            "to": {
+                "description": null,
+                "is_optional": false
+            },
+            "format": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_args": {
+                "description": null,
+                "is_optional": true
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "outputfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "source_file": {
+                "description": null,
+                "is_optional": false
+            },
+            "to": {
+                "description": null,
+                "is_optional": false
+            },
+            "format": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_args": {
+                "description": null,
+                "is_optional": true
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "outputfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            },
+            "verify_format": {
+                "description": null,
+                "is_optional": true
+            },
+            "sandbox": {
+                "description": null,
+                "is_optional": true
+            },
+            "cworkdir": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "cworkdir"
+    },
+    {
+        "old_api": "pypandoc.convert",
+        "new_api": "",
+        "old_parameter": {
+            "source": {
+                "description": null,
+                "is_optional": false
+            },
+            "to": {
+                "description": null,
+                "is_optional": false
+            },
+            "format": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_args": {
+                "description": null,
+                "is_optional": true
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "outputfile": {
+                "description": null,
+                "is_optional": true
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pypandoc.warnings",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.Generator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.Iterable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.Union",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.ensure_pandoc_installed",
+        "old_parameter": {},
+        "new_parameter": {
+            "url": {
+                "description": null,
+                "is_optional": true
+            },
+            "targetfolder": {
+                "description": null,
+                "is_optional": true
+            },
+            "version": {
+                "description": null,
+                "is_optional": true
+            },
+            "delete_installer": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.ensure_pandoc_maximal_version",
+        "old_parameter": {},
+        "new_parameter": {
+            "major": {
+                "description": null,
+                "is_optional": false
+            },
+            "minor": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.ensure_pandoc_minimal_version",
+        "old_parameter": {},
+        "new_parameter": {
+            "major": {
+                "description": null,
+                "is_optional": false
+            },
+            "minor": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.logger",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.normalize_format",
+        "old_parameter": {},
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.url2path",
+        "old_parameter": {},
+        "new_parameter": {
+            "url": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.handler.logger",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.Path",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.__author_email__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.__classifiers__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.__description__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.__maintainer__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.__python_requires__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.__setup_requires__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.__url__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc._check_log_handler",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc._classify_pandoc_logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc._is_network_path",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.glob",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.handler",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.handler._check_log_handler",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.handler.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.pandoc_download.Union",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.pandoc_download._check_log_handler",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.pandoc_download.logger",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.pandoc_download.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pypandoc.pandoc_download.urllib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
