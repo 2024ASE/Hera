@@ -1,0 +1,199 @@
+[
+    {
+        "old_api": "beaker.ext.database.DatabaseNamespaceManager.__init__",
+        "new_api": "beaker.ext.database.DatabaseNamespaceManager.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "namespace": {
+                "description": null,
+                "is_optional": false
+            },
+            "url": {
+                "description": null,
+                "is_optional": true
+            },
+            "sa_opts": {
+                "description": null,
+                "is_optional": true
+            },
+            "optimistic": {
+                "description": null,
+                "is_optional": true
+            },
+            "table_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "lock_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "schema_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "namespace": {
+                "description": null,
+                "is_optional": false
+            },
+            "url": {
+                "description": null,
+                "is_optional": true
+            },
+            "sa_opts": {
+                "description": null,
+                "is_optional": true
+            },
+            "table_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "lock_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "schema_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_removal",
+        "IC": "FIC",
+        "change": "optimistic"
+    },
+    {
+        "old_api": "beaker.ext.database.pool",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.session.CookieSession.clear",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.session.CookieSession.serialize_cookie_date",
+        "old_parameter": {},
+        "new_parameter": {
+            "v": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.session.Session.clear",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.session.Session.serialize_cookie_date",
+        "old_parameter": {},
+        "new_parameter": {
+            "v": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.session.months",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.session.weekdays",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.ext.database.SqlaNamespaceManager",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "beaker.session._ConfigurableSession",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

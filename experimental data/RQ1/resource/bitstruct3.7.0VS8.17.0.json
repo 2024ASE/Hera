@@ -1,0 +1,1138 @@
+[
+    {
+        "old_api": "bitstruct.compile",
+        "new_api": "bitstruct.compile",
+        "old_parameter": {
+            "fmt": {
+                "description": "Bitstruct format string. See :func:`~bitstruct.pack()`",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "text_errors"
+    },
+    {
+        "old_api": "bitstruct.unpack",
+        "new_api": "bitstruct.unpack",
+        "old_parameter": {
+            "fmt": {
+                "description": "Bitstruct format string. See :func:`~bitstruct.pack()`",
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "text_errors"
+    },
+    {
+        "old_api": "bitstruct.CompiledFormat.__init__",
+        "new_api": "bitstruct.CompiledFormat.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "text_encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "text_errors"
+    },
+    {
+        "old_api": "bitstruct.CompiledFormat.unpack",
+        "new_api": "bitstruct.CompiledFormat.unpack",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": "Byte string of values to unpack.",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "allow_truncated"
+    },
+    {
+        "old_api": "bitstruct._pack_boolean",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._pack_float",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._pack_integer",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._pack_text",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._unpack_boolean",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._unpack_float",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._unpack_signed_integer",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._unpack_text",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "bitstruct._unpack_unsigned_integer",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormat.pack_any",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "values": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormat.pack_into",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "buf": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormat.pack_into_any",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "buf": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormat.pack_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "info": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "bits": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormat.unpack_from",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormat.unpack_from_any",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.calcsize",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.pack",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.pack_any",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "values": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.pack_into",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "buf": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.pack_into_any",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "buf": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.pack_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "info": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "bits": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.unpack",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.unpack_from",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict.unpack_from_any",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.CompiledFormatDict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.Error",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.pack_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.pack_into",
+        "old_parameter": {},
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "buf": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.pack_into_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": false
+            },
+            "buf": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.unpack_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.unpack_from",
+        "old_parameter": {},
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.unpack_from_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "fmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "offset": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_truncated": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_encoding": {
+                "description": null,
+                "is_optional": true
+            },
+            "text_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.BytesIO",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._Boolean",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._CompiledFormat",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._Float",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._Info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._OnePadding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._Padding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._Raw",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._SignedInteger",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._Text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._UnsignedInteger",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct._ZeroPadding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.__path__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.version",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.CompiledFormat",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.CompiledFormatDict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.byteswap",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.calcsize",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.compile",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.pack_dict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.pack_into",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.pack_into_dict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.unpack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.unpack_dict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.unpack_from",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.c.unpack_from_dict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "bitstruct.version.__version__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

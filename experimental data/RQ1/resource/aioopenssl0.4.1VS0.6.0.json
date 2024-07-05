@@ -1,0 +1,153 @@
+[
+    {
+        "old_api": "aioopenssl.STARTTLSTransport.__init__",
+        "new_api": "aioopenssl.STARTTLSTransport.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "loop": {
+                "description": null,
+                "is_optional": false
+            },
+            "rawsock": {
+                "description": null,
+                "is_optional": false
+            },
+            "protocol": {
+                "description": null,
+                "is_optional": false
+            },
+            "ssl_context_factory": {
+                "description": null,
+                "is_optional": false
+            },
+            "waiter": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_starttls": {
+                "description": null,
+                "is_optional": true
+            },
+            "post_handshake_callback": {
+                "description": null,
+                "is_optional": true
+            },
+            "peer_hostname": {
+                "description": null,
+                "is_optional": true
+            },
+            "server_hostname": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "loop": {
+                "description": null,
+                "is_optional": false
+            },
+            "rawsock": {
+                "description": null,
+                "is_optional": false
+            },
+            "protocol": {
+                "description": null,
+                "is_optional": false
+            },
+            "ssl_context_factory": {
+                "description": null,
+                "is_optional": true
+            },
+            "waiter": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_starttls": {
+                "description": null,
+                "is_optional": true
+            },
+            "post_handshake_callback": {
+                "description": null,
+                "is_optional": true
+            },
+            "peer_hostname": {
+                "description": null,
+                "is_optional": true
+            },
+            "server_hostname": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "ssl_context_factory"
+    },
+    {
+        "old_api": "aioopenssl.__warningregistry__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "aioopenssl.ensure_future",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "aioopenssl.PostHandshakeCallback",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "aioopenssl.SSLContextFactory",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "aioopenssl.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "aioopenssl.utils.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

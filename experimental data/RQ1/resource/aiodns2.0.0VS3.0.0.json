@@ -1,0 +1,71 @@
+[
+    {
+        "old_api": "aiodns.DNSResolver.query",
+        "new_api": "aiodns.DNSResolver.query",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": false
+            },
+            "qtype": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": false
+            },
+            "qtype": {
+                "description": null,
+                "is_optional": false
+            },
+            "qclass": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "qclass"
+    },
+    {
+        "old_api": "",
+        "new_api": "aiodns.Set",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "aiodns.query_class_map",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "aiodns.socket",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

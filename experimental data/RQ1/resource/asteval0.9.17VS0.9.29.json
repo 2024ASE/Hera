@@ -1,0 +1,509 @@
+[
+    {
+        "old_api": "asteval.Interpreter.eval",
+        "new_api": "asteval.Interpreter.eval",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "expr": {
+                "description": null,
+                "is_optional": false
+            },
+            "lineno": {
+                "description": null,
+                "is_optional": true
+            },
+            "show_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "expr": {
+                "description": null,
+                "is_optional": false
+            },
+            "lineno": {
+                "description": null,
+                "is_optional": true
+            },
+            "show_errors": {
+                "description": null,
+                "is_optional": true
+            },
+            "raise_errors": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "raise_errors"
+    },
+    {
+        "old_api": "asteval.Interpreter.__init__",
+        "new_api": "asteval.Interpreter.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "symtable": {
+                "description": null,
+                "is_optional": true
+            },
+            "usersyms": {
+                "description": null,
+                "is_optional": true
+            },
+            "writer": {
+                "description": null,
+                "is_optional": true
+            },
+            "err_writer": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_numpy": {
+                "description": null,
+                "is_optional": true
+            },
+            "minimal": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_if": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_for": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_while": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_try": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_functiondef": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_ifexp": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_listcomp": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_augassign": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_assert": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_delete": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_raise": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_print": {
+                "description": null,
+                "is_optional": true
+            },
+            "max_time": {
+                "description": null,
+                "is_optional": true
+            },
+            "readonly_symbols": {
+                "description": null,
+                "is_optional": true
+            },
+            "builtins_readonly": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "symtable": {
+                "description": null,
+                "is_optional": true
+            },
+            "usersyms": {
+                "description": null,
+                "is_optional": true
+            },
+            "writer": {
+                "description": null,
+                "is_optional": true
+            },
+            "err_writer": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_numpy": {
+                "description": null,
+                "is_optional": true
+            },
+            "max_statement_length": {
+                "description": null,
+                "is_optional": true
+            },
+            "minimal": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_if": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_for": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_while": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_try": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_functiondef": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_ifexp": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_listcomp": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_augassign": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_assert": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_delete": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_raise": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_print": {
+                "description": null,
+                "is_optional": true
+            },
+            "max_time": {
+                "description": null,
+                "is_optional": true
+            },
+            "readonly_symbols": {
+                "description": null,
+                "is_optional": true
+            },
+            "builtins_readonly": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "max_statement_length"
+    },
+    {
+        "old_api": "asteval.Interpreter.on_print",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "node": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.check_pyversion",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.asteval.PY3",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.asteval.builtins",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.asteval.division",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.asteval.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.asteval.version_info",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.astutils.check_pyversion",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.astutils.division",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.astutils.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.astutils.version_info",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval._version",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval._version.get_versions",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval._version.json",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval._version.version_json",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "asteval.asteval.check_pyversion",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.astutils.BUILTINS_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.astutils.MATH_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.astutils.NUMPY_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.version.version_tuple",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.version",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.asteval.copy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.astutils.ndarr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.version.__version__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.version.__version_tuple__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "asteval.version.version",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

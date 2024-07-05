@@ -1,0 +1,533 @@
+[
+    {
+        "old_api": "catkin_pkg.packages.find_packages_allowing_duplicates",
+        "new_api": "catkin_pkg.packages.find_packages_allowing_duplicates",
+        "old_parameter": {
+            "basepath": {
+                "description": "The path to search in, ``str``",
+                "is_optional": false
+            },
+            "exclude_paths": {
+                "description": "A list of paths which should not be searched, ``list``",
+                "is_optional": true
+            },
+            "exclude_subspaces": {
+                "description": "The flag is subfolders containing a .catkin file should not be",
+                "is_optional": true
+            },
+            "warnings": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "basepath": {
+                "description": "The path to search in, ``str``",
+                "is_optional": false
+            },
+            "exclude_paths": {
+                "description": "A list of paths which should not be searched, ``list``",
+                "is_optional": true
+            },
+            "exclude_subspaces": {
+                "description": "The flag is subfolders containing a .catkin file should not be",
+                "is_optional": true
+            },
+            "warnings": {
+                "description": null,
+                "is_optional": true
+            },
+            "ignore_markers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "ignore_markers"
+    },
+    {
+        "old_api": "catkin_pkg.changelog_generator.get_forthcoming_changes",
+        "new_api": "catkin_pkg.changelog_generator.get_forthcoming_changes",
+        "old_parameter": {
+            "vcs_client": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "vcs_client": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            },
+            "only_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "only_merges"
+    },
+    {
+        "old_api": "catkin_pkg.changelog_generator_vcs.VcsClientBase.get_log_entries",
+        "new_api": "catkin_pkg.changelog_generator_vcs.VcsClientBase.get_log_entries",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "to_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "to_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            },
+            "only_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "only_merges"
+    },
+    {
+        "old_api": "catkin_pkg.changelog_generator_vcs.HgClient.get_log_entries",
+        "new_api": "catkin_pkg.changelog_generator_vcs.HgClient.get_log_entries",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "to_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "to_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            },
+            "only_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "only_merges"
+    },
+    {
+        "old_api": "catkin_pkg.changelog_generator.get_all_changes",
+        "new_api": "catkin_pkg.changelog_generator.get_all_changes",
+        "old_parameter": {
+            "vcs_client": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "vcs_client": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            },
+            "only_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "only_merges"
+    },
+    {
+        "old_api": "catkin_pkg.packages.find_packages",
+        "new_api": "catkin_pkg.packages.find_packages",
+        "old_parameter": {
+            "basepath": {
+                "description": "The path to search in, ``str``",
+                "is_optional": false
+            },
+            "exclude_paths": {
+                "description": "A list of paths which should not be searched, ``list``",
+                "is_optional": true
+            },
+            "exclude_subspaces": {
+                "description": "The flag is subfolders containing a .catkin file should not be",
+                "is_optional": true
+            },
+            "warnings": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "basepath": {
+                "description": "The path to search in, ``str``",
+                "is_optional": false
+            },
+            "exclude_paths": {
+                "description": "A list of paths which should not be searched, ``list``",
+                "is_optional": true
+            },
+            "exclude_subspaces": {
+                "description": "The flag is subfolders containing a .catkin file should not be",
+                "is_optional": true
+            },
+            "warnings": {
+                "description": null,
+                "is_optional": true
+            },
+            "ignore_markers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "ignore_markers"
+    },
+    {
+        "old_api": "catkin_pkg.packages.find_package_paths",
+        "new_api": "catkin_pkg.packages.find_package_paths",
+        "old_parameter": {
+            "basepath": {
+                "description": "The path to search in, ``str``",
+                "is_optional": false
+            },
+            "exclude_paths": {
+                "description": "A list of paths which should not be searched, ``list``",
+                "is_optional": true
+            },
+            "exclude_subspaces": {
+                "description": "The flag is subfolders containing a .catkin file should not be",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "basepath": {
+                "description": "The path to search in, ``str``",
+                "is_optional": false
+            },
+            "exclude_paths": {
+                "description": "A list of paths which should not be searched, ``list``",
+                "is_optional": true
+            },
+            "exclude_subspaces": {
+                "description": "The flag is subfolders containing a .catkin file should not be",
+                "is_optional": true
+            },
+            "ignore_markers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "ignore_markers"
+    },
+    {
+        "old_api": "catkin_pkg.changelog_generator_vcs.GitClient.get_log_entries",
+        "new_api": "catkin_pkg.changelog_generator_vcs.GitClient.get_log_entries",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "to_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "from_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "to_tag": {
+                "description": null,
+                "is_optional": false
+            },
+            "skip_merges": {
+                "description": null,
+                "is_optional": true
+            },
+            "only_merges": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "only_merges"
+    },
+    {
+        "old_api": "catkin_pkg.condition._evaluate",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "catkin_pkg.condition.pyparsing",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.changelog_generator.version_from_tag",
+        "old_parameter": {},
+        "new_parameter": {
+            "tag_name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.package.Package.get_unconditional_build_types",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.package_templates.PackageTemplate.get_unconditional_build_types",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.packages.DEFAULT_IGNORE_MARKERS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition._And",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition._BinOp",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition._Condition",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition._Identifier",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition._Operator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition._Or",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition._Value",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition.infixNotation",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.condition.pp",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.package.ExpatError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.package._get_node_text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "catkin_pkg.package_version._replace_setup_py_version",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

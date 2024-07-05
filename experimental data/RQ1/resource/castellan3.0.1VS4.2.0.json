@@ -1,0 +1,1488 @@
+[
+    {
+        "old_api": "castellan.common.objects.certificate.Certificate.__init__",
+        "new_api": "castellan.common.objects.certificate.Certificate.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of the managed object.",
+                "is_optional": true
+            },
+            "created": {
+                "description": "the time a managed object was created.",
+                "is_optional": true
+            },
+            "id": {
+                "description": "the ID of the object, generated after storing the object.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of the managed object.",
+                "is_optional": true
+            },
+            "created": {
+                "description": "the time a managed object was created.",
+                "is_optional": true
+            },
+            "id": {
+                "description": "the ID of the object, generated after storing the object.",
+                "is_optional": true
+            },
+            "consumers": {
+                "description": "the list of object's consumers.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.common.objects.passphrase.Passphrase.__init__",
+        "new_api": "castellan.common.objects.passphrase.Passphrase.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "passphrase": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "passphrase": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            },
+            "consumers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.common.objects.key.Key.__init__",
+        "new_api": "castellan.common.objects.key.Key.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of the managed object.",
+                "is_optional": true
+            },
+            "created": {
+                "description": "the time a managed object was created.",
+                "is_optional": true
+            },
+            "id": {
+                "description": "the ID of the object, generated after storing the object.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of the managed object.",
+                "is_optional": true
+            },
+            "created": {
+                "description": "the time a managed object was created.",
+                "is_optional": true
+            },
+            "id": {
+                "description": "the ID of the object, generated after storing the object.",
+                "is_optional": true
+            },
+            "consumers": {
+                "description": "the list of object's consumers.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.key_manager.vault_key_manager.VaultKeyManager.delete",
+        "new_api": "castellan.key_manager.vault_key_manager.VaultKeyManager.delete",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "key_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "key_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "force": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "force"
+    },
+    {
+        "old_api": "castellan.options.set_defaults",
+        "new_api": "castellan.options.set_defaults",
+        "old_parameter": {
+            "conf": {
+                "description": "Config instance in which to set default options.",
+                "is_optional": false
+            },
+            "backend": {
+                "description": null,
+                "is_optional": true
+            },
+            "barbican_endpoint": {
+                "description": "Use this endpoint to connect to Barbican.",
+                "is_optional": true
+            },
+            "barbican_api_version": {
+                "description": "Version of the Barbican API.",
+                "is_optional": true
+            },
+            "auth_endpoint": {
+                "description": "Use this endpoint to connect to Keystone.",
+                "is_optional": true
+            },
+            "retry_delay": {
+                "description": "Use this attribute to set retry delay.",
+                "is_optional": true
+            },
+            "number_of_retries": {
+                "description": "Use this attribute to set number of retries.",
+                "is_optional": true
+            },
+            "verify_ssl": {
+                "description": "Use this to specify if ssl should be verified.",
+                "is_optional": true
+            },
+            "api_class": {
+                "description": "The full class name of the key manager API class.",
+                "is_optional": true
+            },
+            "vault_root_token_id": {
+                "description": "Use this for the root token id for vault.",
+                "is_optional": true
+            },
+            "vault_approle_role_id": {
+                "description": "Use this for the approle role_id for vault.",
+                "is_optional": true
+            },
+            "vault_approle_secret_id": {
+                "description": "Use this for the approle secret_id\n                                for vault.",
+                "is_optional": true
+            },
+            "vault_kv_mountpoint": {
+                "description": "Mountpoint of KV store in vault to use.",
+                "is_optional": true
+            },
+            "vault_url": {
+                "description": "Use this for the url for vault.",
+                "is_optional": true
+            },
+            "vault_ssl_ca_crt_file": {
+                "description": "Use this for the CA file for vault.",
+                "is_optional": true
+            },
+            "vault_use_ssl": {
+                "description": "Use this to force vault driver to use ssl.",
+                "is_optional": true
+            },
+            "barbican_endpoint_type": {
+                "description": "Use this to specify the type of URL.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "conf": {
+                "description": "Config instance in which to set default options.",
+                "is_optional": false
+            },
+            "backend": {
+                "description": null,
+                "is_optional": true
+            },
+            "barbican_endpoint": {
+                "description": "Use this endpoint to connect to Barbican.",
+                "is_optional": true
+            },
+            "barbican_api_version": {
+                "description": "Version of the Barbican API.",
+                "is_optional": true
+            },
+            "auth_endpoint": {
+                "description": "Use this endpoint to connect to Keystone.",
+                "is_optional": true
+            },
+            "retry_delay": {
+                "description": "Use this attribute to set retry delay.",
+                "is_optional": true
+            },
+            "number_of_retries": {
+                "description": "Use this attribute to set number of retries.",
+                "is_optional": true
+            },
+            "verify_ssl": {
+                "description": "Use this to specify if ssl should be verified.",
+                "is_optional": true
+            },
+            "verify_ssl_path": {
+                "description": "Use this to specify the CA path.",
+                "is_optional": true
+            },
+            "api_class": {
+                "description": "The full class name of the key manager API class.",
+                "is_optional": true
+            },
+            "vault_root_token_id": {
+                "description": "Use this for the root token id for vault.",
+                "is_optional": true
+            },
+            "vault_approle_role_id": {
+                "description": "Use this for the approle role_id for vault.",
+                "is_optional": true
+            },
+            "vault_approle_secret_id": {
+                "description": "Use this for the approle secret_id\n                                for vault.",
+                "is_optional": true
+            },
+            "vault_kv_mountpoint": {
+                "description": "Mountpoint of KV store in vault to use.",
+                "is_optional": true
+            },
+            "vault_kv_path": {
+                "description": "Path relative to root of KV store in Vault to use.",
+                "is_optional": true
+            },
+            "vault_url": {
+                "description": "Use this for the url for vault.",
+                "is_optional": true
+            },
+            "vault_ssl_ca_crt_file": {
+                "description": "Use this for the CA file for vault.",
+                "is_optional": true
+            },
+            "vault_use_ssl": {
+                "description": "Use this to force vault driver to use ssl.",
+                "is_optional": true
+            },
+            "vault_namespace": {
+                "description": "Namespace to use for all requests to Vault.",
+                "is_optional": true
+            },
+            "barbican_endpoint_type": {
+                "description": "Use this to specify the type of URL.",
+                "is_optional": true
+            },
+            "vault_kv_version": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "vault_kv_version"
+    },
+    {
+        "old_api": "castellan.key_manager.key_manager.KeyManager.delete",
+        "new_api": "castellan.key_manager.key_manager.KeyManager.delete",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "force": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "force"
+    },
+    {
+        "old_api": "castellan.common.objects.public_key.PublicKey.__init__",
+        "new_api": "castellan.common.objects.public_key.PublicKey.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "algorithm": {
+                "description": null,
+                "is_optional": false
+            },
+            "bit_length": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "algorithm": {
+                "description": null,
+                "is_optional": false
+            },
+            "bit_length": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            },
+            "consumers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.common.objects.opaque_data.OpaqueData.__init__",
+        "new_api": "castellan.common.objects.opaque_data.OpaqueData.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            },
+            "consumers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.common.objects.private_key.PrivateKey.__init__",
+        "new_api": "castellan.common.objects.private_key.PrivateKey.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "algorithm": {
+                "description": null,
+                "is_optional": false
+            },
+            "bit_length": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "algorithm": {
+                "description": null,
+                "is_optional": false
+            },
+            "bit_length": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            },
+            "consumers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.key_manager.barbican_key_manager.BarbicanKeyManager.delete",
+        "new_api": "castellan.key_manager.barbican_key_manager.BarbicanKeyManager.delete",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": "contains information of the user and the environment",
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": "contains information of the user and the environment",
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "force": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "force"
+    },
+    {
+        "old_api": "castellan.common.objects.x_509.X509.__init__",
+        "new_api": "castellan.common.objects.x_509.X509.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            },
+            "consumers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.common.objects.symmetric_key.SymmetricKey.__init__",
+        "new_api": "castellan.common.objects.symmetric_key.SymmetricKey.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "algorithm": {
+                "description": null,
+                "is_optional": false
+            },
+            "bit_length": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "algorithm": {
+                "description": null,
+                "is_optional": false
+            },
+            "bit_length": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "created": {
+                "description": null,
+                "is_optional": true
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            },
+            "consumers": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.common.objects.managed_object.ManagedObject.__init__",
+        "new_api": "castellan.common.objects.managed_object.ManagedObject.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of the managed object.",
+                "is_optional": true
+            },
+            "created": {
+                "description": "the time a managed object was created.",
+                "is_optional": true
+            },
+            "id": {
+                "description": "the ID of the object, generated after storing the object.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "the name of the managed object.",
+                "is_optional": true
+            },
+            "created": {
+                "description": "the time a managed object was created.",
+                "is_optional": true
+            },
+            "id": {
+                "description": "the ID of the object, generated after storing the object.",
+                "is_optional": true
+            },
+            "consumers": {
+                "description": "the list of object's consumers.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "consumers"
+    },
+    {
+        "old_api": "castellan.key_manager.not_implemented_key_manager.NotImplementedKeyManager.delete",
+        "new_api": "castellan.key_manager.not_implemented_key_manager.NotImplementedKeyManager.delete",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "force": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "kwargs"
+    },
+    {
+        "old_api": "castellan.options._DEFAULT_LOGGING_CONTEXT_FORMAT",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "castellan.tests.unit.objects.__path__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.exception.InvalidManagedObjectDictError.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_arg": {
+                "description": null,
+                "is_optional": true
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.exception.InvalidManagedObjectDictError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.exception.UnknownManagedObjectTypeError.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message_arg": {
+                "description": null,
+                "is_optional": true
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.exception.UnknownManagedObjectTypeError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.from_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.barbican_key_manager.BarbicanKeyManager.add_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": "contains information of the user and the environment",
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.barbican_key_manager.BarbicanKeyManager.remove_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.key_manager.KeyManager.add_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.key_manager.KeyManager.remove_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.not_implemented_key_manager.NotImplementedKeyManager.add_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.not_implemented_key_manager.NotImplementedKeyManager.remove_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.vault_key_manager.VaultKeyManager.add_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.vault_key_manager.VaultKeyManager.remove_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "managed_object_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.certificate.Certificate.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "metadata_only": {
+                "description": "A switch to create an dictionary with metadata\n                      only, without the secret itself.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.key.Key.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.managed_object.ManagedObject.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "metadata_only": {
+                "description": "A switch to create an dictionary with metadata\n                      only, without the secret itself.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.opaque_data.OpaqueData.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "metadata_only": {
+                "description": "A switch to create an dictionary with metadata\n                      only, without the secret itself.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.passphrase.Passphrase.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "metadata_only": {
+                "description": "A switch to create an dictionary with metadata\n                      only, without the secret itself.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.private_key.PrivateKey.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.public_key.PublicKey.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.symmetric_key.SymmetricKey.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.x_509.X509.to_dict",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "metadata_only": {
+                "description": "A switch to create an dictionary with metadata\n                      only, without the secret itself.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects._managed_objects_by_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.certificate",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.exception",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.opaque_data",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.passphrase",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.private_key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.public_key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.x_509",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.key.binascii",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.key.exception",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.managed_object.binascii",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.common.objects.managed_object.exception",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.barbican_key_manager._BARBICAN_SERVICE_USER_OPT_GROUP",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.barbican_key_manager.service_token",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.key_manager.vault_key_manager._DEFAULT_VERSION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "castellan.tests.functional.key_manager.test_key_manager.uuidutils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

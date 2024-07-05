@@ -1,0 +1,1321 @@
+[
+    {
+        "old_api": "boltons.fileutils.iter_find_files",
+        "new_api": "boltons.fileutils.iter_find_files",
+        "old_parameter": {
+            "directory": {
+                "description": null,
+                "is_optional": false
+            },
+            "patterns": {
+                "description": null,
+                "is_optional": false
+            },
+            "ignored": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "directory": {
+                "description": null,
+                "is_optional": false
+            },
+            "patterns": {
+                "description": null,
+                "is_optional": false
+            },
+            "ignored": {
+                "description": null,
+                "is_optional": true
+            },
+            "include_dirs": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "include_dirs"
+    },
+    {
+        "old_api": "boltons.jsonutils.reverse_iter_lines",
+        "new_api": "boltons.jsonutils.reverse_iter_lines",
+        "old_parameter": {
+            "file_obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "blocksize": {
+                "description": null,
+                "is_optional": true
+            },
+            "preseek": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "file_obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "blocksize": {
+                "description": null,
+                "is_optional": true
+            },
+            "preseek": {
+                "description": null,
+                "is_optional": true
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "encoding"
+    },
+    {
+        "old_api": "boltons.strutils.ANSI_ESCAPE_BEGIN",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "boltons.strutils.ANSI_TERMINATORS",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "boltons.dictutils._SELF_INIT_MARKER",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "boltons.ecoutils._fake_json_dumps",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "boltons.ecoutils._real_safe_repr",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "boltons.fileutils._CUR_DIR",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "boltons.iterutils.hashlib",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "boltons.iterutils.socket",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.dictutils.FrozenDict.__ior__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "a": {
+                "description": null,
+                "is_optional": false
+            },
+            "kw": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ecoutils.dumps",
+        "old_parameter": {},
+        "new_parameter": {
+            "val": {
+                "description": null,
+                "is_optional": false
+            },
+            "indent": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.CachedInstancePartial.__set_name__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "obj_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.format_exp_repr",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos_names": {
+                "description": null,
+                "is_optional": false
+            },
+            "req_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "opt_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "opt_key": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.format_invocation",
+        "old_parameter": {},
+        "new_parameter": {
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "args": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": true
+            },
+            "kw": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.format_nonexp_repr",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "req_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "opt_names": {
+                "description": null,
+                "is_optional": true
+            },
+            "opt_key": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.inspect_formatargspec",
+        "old_parameter": {},
+        "new_parameter": {
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "varargs": {
+                "description": null,
+                "is_optional": true
+            },
+            "varkw": {
+                "description": null,
+                "is_optional": true
+            },
+            "defaults": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwonlyargs": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwonlydefaults": {
+                "description": null,
+                "is_optional": true
+            },
+            "annotations": {
+                "description": null,
+                "is_optional": true
+            },
+            "formatarg": {
+                "description": null,
+                "is_optional": true
+            },
+            "formatvarargs": {
+                "description": null,
+                "is_optional": true
+            },
+            "formatvarkw": {
+                "description": null,
+                "is_optional": true
+            },
+            "formatvalue": {
+                "description": null,
+                "is_optional": true
+            },
+            "formatreturns": {
+                "description": null,
+                "is_optional": true
+            },
+            "formatannotation": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.noop",
+        "old_parameter": {},
+        "new_parameter": {
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.partial.__set_name__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "obj_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.update_wrapper",
+        "old_parameter": {},
+        "new_parameter": {
+            "wrapper": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            },
+            "injected": {
+                "description": null,
+                "is_optional": true
+            },
+            "expected": {
+                "description": null,
+                "is_optional": true
+            },
+            "build_from": {
+                "description": null,
+                "is_optional": true
+            },
+            "kw": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledBytesIO.__del__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledBytesIO.readable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledBytesIO.seekable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledBytesIO.writable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledBytesIO.writelines",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "lines": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledIOBase.__del__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledIOBase.readable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledIOBase.seekable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledIOBase.writable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledIOBase.writelines",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "lines": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledStringIO.__del__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledStringIO.readable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledStringIO.seekable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledStringIO.writable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.SpooledStringIO.writelines",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "lines": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.chunk_ranges",
+        "old_parameter": {},
+        "new_parameter": {
+            "input_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "chunk_size": {
+                "description": null,
+                "is_optional": false
+            },
+            "input_offset": {
+                "description": null,
+                "is_optional": true
+            },
+            "overlap_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "align": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.lstrip",
+        "old_parameter": {},
+        "new_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            },
+            "strip_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.lstrip_iter",
+        "old_parameter": {},
+        "new_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            },
+            "strip_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.rstrip",
+        "old_parameter": {},
+        "new_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            },
+            "strip_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.rstrip_iter",
+        "old_parameter": {},
+        "new_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            },
+            "strip_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.strip",
+        "old_parameter": {},
+        "new_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            },
+            "strip_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.strip_iter",
+        "old_parameter": {},
+        "new_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            },
+            "strip_value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.untyped_sorted",
+        "old_parameter": {},
+        "new_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": true
+            },
+            "reverse": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.augpath",
+        "old_parameter": {},
+        "new_parameter": {
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "suffix": {
+                "description": null,
+                "is_optional": true
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": true
+            },
+            "ext": {
+                "description": null,
+                "is_optional": true
+            },
+            "base": {
+                "description": null,
+                "is_optional": true
+            },
+            "dpath": {
+                "description": null,
+                "is_optional": true
+            },
+            "multidot": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.expandpath",
+        "old_parameter": {},
+        "new_parameter": {
+            "path": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.print_function",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.shrinkuser",
+        "old_parameter": {},
+        "new_parameter": {
+            "path": {
+                "description": null,
+                "is_optional": false
+            },
+            "home": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.strutils.ANSI_SEQUENCES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.strutils.complement_int_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "range_string": {
+                "description": null,
+                "is_optional": false
+            },
+            "range_start": {
+                "description": null,
+                "is_optional": true
+            },
+            "range_end": {
+                "description": null,
+                "is_optional": true
+            },
+            "delim": {
+                "description": null,
+                "is_optional": true
+            },
+            "range_delim": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.strutils.int_ranges_from_int_list",
+        "old_parameter": {},
+        "new_parameter": {
+            "range_string": {
+                "description": null,
+                "is_optional": false
+            },
+            "delim": {
+                "description": null,
+                "is_optional": true
+            },
+            "range_delim": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.strutils.unwrap_text",
+        "old_parameter": {},
+        "new_parameter": {
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "ending": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.debugutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.dictutils._OTO_INV_MARKER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.dictutils._OTO_UNIQUE_MARKER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.dictutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ecoutils.json",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils._IS_PY35",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.formatannotation",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.funcutils.partialmethod",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.IOBase",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.ioutils.zip_longest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils._validate_positive_int",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.iterutils.unicode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.jsonutils.io",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.listutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.__all__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.expanduser",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.expandvars",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.join",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.normpath",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.split",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.pathutils.splitext",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.queueutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.setutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.socketutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.strutils.builtins",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.tableutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.typeutils.sys",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "boltons.urlutils.make_sentinel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
