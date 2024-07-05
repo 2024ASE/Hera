@@ -1,0 +1,1260 @@
+[
+    {
+        "old_api": "gabbi.suite.GabbiSuite.start",
+        "new_api": "gabbi.suite.GabbiSuite.start",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "result": {
+                "description": null,
+                "is_optional": false
+            },
+            "tests": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "result": {
+                "description": null,
+                "is_optional": false
+            },
+            "tests": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "tests"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.assertEquals",
+        "new_api": "gabbi.case.HTTPTestCase.assertEquals",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "expected": {
+                "description": "The expected value.",
+                "is_optional": false
+            },
+            "observed": {
+                "description": "The observed value.",
+                "is_optional": false
+            },
+            "message": {
+                "description": "An optional message to include in the error.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "observed"
+    },
+    {
+        "old_api": "gabbi.httpclient.VerboseHttp.request",
+        "new_api": "gabbi.httpclient.VerboseHttp.request",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "absolute_uri": {
+                "description": null,
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": false
+            },
+            "body": {
+                "description": null,
+                "is_optional": false
+            },
+            "headers": {
+                "description": null,
+                "is_optional": false
+            },
+            "redirect": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "absolute_uri": {
+                "description": null,
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": false
+            },
+            "body": {
+                "description": null,
+                "is_optional": false
+            },
+            "headers": {
+                "description": null,
+                "is_optional": false
+            },
+            "redirect": {
+                "description": null,
+                "is_optional": false
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "timeout"
+    },
+    {
+        "old_api": "gabbi.httpclient.Http.connection_from_pool_key",
+        "new_api": "gabbi.httpclient.Http.connection_from_pool_key",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pool_key": {
+                "description": null,
+                "is_optional": false
+            },
+            "request_context": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pool_key": {
+                "description": null,
+                "is_optional": false
+            },
+            "request_context": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "request_context"
+    },
+    {
+        "old_api": "gabbi.httpclient.Http.request",
+        "new_api": "gabbi.httpclient.Http.request",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "absolute_uri": {
+                "description": null,
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": false
+            },
+            "body": {
+                "description": null,
+                "is_optional": false
+            },
+            "headers": {
+                "description": null,
+                "is_optional": false
+            },
+            "redirect": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "absolute_uri": {
+                "description": null,
+                "is_optional": false
+            },
+            "method": {
+                "description": null,
+                "is_optional": false
+            },
+            "body": {
+                "description": null,
+                "is_optional": false
+            },
+            "headers": {
+                "description": null,
+                "is_optional": false
+            },
+            "redirect": {
+                "description": null,
+                "is_optional": false
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "timeout"
+    },
+    {
+        "old_api": "gabbi.runner.run_suite",
+        "new_api": "gabbi.runner.run_suite",
+        "old_parameter": {
+            "handle": {
+                "description": null,
+                "is_optional": false
+            },
+            "handler_objects": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "force_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "failfast": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "verbosity": {
+                "description": null,
+                "is_optional": true
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "safe_yaml": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "handle": {
+                "description": null,
+                "is_optional": false
+            },
+            "handler_objects": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": false
+            },
+            "force_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "failfast": {
+                "description": null,
+                "is_optional": true
+            },
+            "data_dir": {
+                "description": null,
+                "is_optional": true
+            },
+            "verbosity": {
+                "description": null,
+                "is_optional": true
+            },
+            "name": {
+                "description": null,
+                "is_optional": true
+            },
+            "safe_yaml": {
+                "description": null,
+                "is_optional": true
+            },
+            "quiet": {
+                "description": null,
+                "is_optional": true
+            },
+            "cert_validate": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "cert_validate"
+    },
+    {
+        "old_api": "gabbi.runner.initialize_handlers",
+        "new_api": "gabbi.runner.initialize_handlers",
+        "old_parameter": {
+            "response_handlers": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "response_handlers": {
+                "description": null,
+                "is_optional": false
+            },
+            "local_handlers": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "local_handlers"
+    },
+    {
+        "old_api": "gabbi.httpclient.VerboseHttp.connection_from_pool_key",
+        "new_api": "gabbi.httpclient.VerboseHttp.connection_from_pool_key",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pool_key": {
+                "description": null,
+                "is_optional": false
+            },
+            "request_context": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pool_key": {
+                "description": null,
+                "is_optional": false
+            },
+            "request_context": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "request_context"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.__init__",
+        "new_api": "gabbi.case.HTTPTestCase.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "methodName": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "kwargs"
+    },
+    {
+        "old_api": "gabbi.driver.py_test_generator",
+        "new_api": "gabbi.driver.py_test_generator",
+        "old_parameter": {
+            "test_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": true
+            },
+            "port": {
+                "description": null,
+                "is_optional": true
+            },
+            "intercept": {
+                "description": null,
+                "is_optional": true
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": true
+            },
+            "test_loader_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "fixture_module": {
+                "description": null,
+                "is_optional": true
+            },
+            "response_handlers": {
+                "description": null,
+                "is_optional": true
+            },
+            "content_handlers": {
+                "description": null,
+                "is_optional": true
+            },
+            "require_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "url": {
+                "description": null,
+                "is_optional": true
+            },
+            "metafunc": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_prior_test": {
+                "description": null,
+                "is_optional": true
+            },
+            "inner_fixtures": {
+                "description": null,
+                "is_optional": true
+            },
+            "safe_yaml": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "test_dir": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": true
+            },
+            "port": {
+                "description": null,
+                "is_optional": true
+            },
+            "intercept": {
+                "description": null,
+                "is_optional": true
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": true
+            },
+            "test_loader_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "fixture_module": {
+                "description": null,
+                "is_optional": true
+            },
+            "response_handlers": {
+                "description": null,
+                "is_optional": true
+            },
+            "content_handlers": {
+                "description": null,
+                "is_optional": true
+            },
+            "require_ssl": {
+                "description": null,
+                "is_optional": true
+            },
+            "url": {
+                "description": null,
+                "is_optional": true
+            },
+            "metafunc": {
+                "description": null,
+                "is_optional": true
+            },
+            "use_prior_test": {
+                "description": null,
+                "is_optional": true
+            },
+            "inner_fixtures": {
+                "description": null,
+                "is_optional": true
+            },
+            "safe_yaml": {
+                "description": null,
+                "is_optional": true
+            },
+            "cert_validate": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "cert_validate"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.failUnlessEqual",
+        "new_api": "gabbi.case.HTTPTestCase.failUnlessEqual",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "expected": {
+                "description": "The expected value.",
+                "is_optional": false
+            },
+            "observed": {
+                "description": "The observed value.",
+                "is_optional": false
+            },
+            "message": {
+                "description": "An optional message to include in the error.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "observed"
+    },
+    {
+        "old_api": "gabbi.httpclient.get_http",
+        "new_api": "gabbi.httpclient.get_http",
+        "old_parameter": {
+            "verbose": {
+                "description": null,
+                "is_optional": true
+            },
+            "caption": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "verbose": {
+                "description": null,
+                "is_optional": true
+            },
+            "caption": {
+                "description": null,
+                "is_optional": true
+            },
+            "cert_validate": {
+                "description": null,
+                "is_optional": true
+            },
+            "hostname": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "timeout"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.addDetail",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "The name to give this detail.",
+                "is_optional": false
+            },
+            "content_object": {
+                "description": "The content object for this detail. See",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.addDetailUniqueName",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "The name to give this detail.",
+                "is_optional": false
+            },
+            "content_object": {
+                "description": "The content object for this detail. See",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.addOnException",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "handler": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.assertItemsEqual",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "first": {
+                "description": null,
+                "is_optional": false
+            },
+            "second": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.assertThat",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "matchee": {
+                "description": "An object to match with matcher.",
+                "is_optional": false
+            },
+            "matcher": {
+                "description": "An object meeting the testtools.Matcher protocol.",
+                "is_optional": false
+            },
+            "message": {
+                "description": null,
+                "is_optional": true
+            },
+            "verbose": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.expectFailure",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "reason": {
+                "description": null,
+                "is_optional": false
+            },
+            "predicate": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.expectThat",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "matchee": {
+                "description": "An object to match with matcher.",
+                "is_optional": false
+            },
+            "matcher": {
+                "description": "An object meeting the testtools.Matcher protocol.",
+                "is_optional": false
+            },
+            "message": {
+                "description": "If specified, show this message with any failed match.",
+                "is_optional": true
+            },
+            "verbose": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.getDetails",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.getUniqueInteger",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.getUniqueString",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "prefix": {
+                "description": "The prefix of the string. If not provided, defaults",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.onException",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "exc_info": {
+                "description": null,
+                "is_optional": false
+            },
+            "tb_label": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.patch",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "obj": {
+                "description": "The object to patch. Can be anything.",
+                "is_optional": false
+            },
+            "attribute": {
+                "description": "The attribute on 'obj' to patch.",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The value to set 'obj.attribute' to.",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.skip",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "reason": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.HTTPTestCase.useFixture",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fixture": {
+                "description": "The fixture to use.",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.testcase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "gabbi.case.testtools",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.case.APPROVED_CASTS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.exception.GabbiDataLoadError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.case.unittest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.handlers.jsonhandler.GabbiDataLoadError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.httpclient.certifi",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.httpclient.six",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.suitemaker.unittest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_data_to_string.TestDataToString",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_data_to_string.case",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_data_to_string.handlers",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_data_to_string.unittest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_handlers.TestJSONHandlerAccept",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_history.sys",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.BUILD_TEST_ARGS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.COUNT_INNER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.COUNT_OUTER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.InnerFixture",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.OuterFixture",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.TESTS_DIR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.driver",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.fixture",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.load_tests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.os",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.pytest_generate_tests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.simple_wsgi",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.sys",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_inner_fixture.test_pytest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "gabbi.tests.test_intercept.EnvironFixture",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

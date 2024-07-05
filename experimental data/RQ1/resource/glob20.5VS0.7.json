@@ -1,0 +1,381 @@
+[
+    {
+        "old_api": "glob2.Globber.walk",
+        "new_api": "glob2.Globber.walk",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "top": {
+                "description": null,
+                "is_optional": false
+            },
+            "followlinks": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "top": {
+                "description": null,
+                "is_optional": false
+            },
+            "followlinks": {
+                "description": null,
+                "is_optional": true
+            },
+            "sep": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "sep"
+    },
+    {
+        "old_api": "glob2.fnmatch.filter",
+        "new_api": "glob2.fnmatch.filter",
+        "old_parameter": {
+            "names": {
+                "description": null,
+                "is_optional": false
+            },
+            "pat": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "names": {
+                "description": null,
+                "is_optional": false
+            },
+            "pat": {
+                "description": null,
+                "is_optional": false
+            },
+            "norm_paths": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            },
+            "sep": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "sep"
+    },
+    {
+        "old_api": "glob2.Globber.iglob",
+        "new_api": "glob2.Globber.iglob",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pathname": {
+                "description": null,
+                "is_optional": false
+            },
+            "with_matches": {
+                "description": null,
+                "is_optional": true
+            },
+            "include_hidden": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pathname": {
+                "description": null,
+                "is_optional": false
+            },
+            "with_matches": {
+                "description": null,
+                "is_optional": true
+            },
+            "include_hidden": {
+                "description": null,
+                "is_optional": true
+            },
+            "recursive": {
+                "description": null,
+                "is_optional": true
+            },
+            "norm_paths": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            },
+            "sep": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "sep"
+    },
+    {
+        "old_api": "glob2.Globber.resolve_pattern",
+        "new_api": "glob2.Globber.resolve_pattern",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dirname": {
+                "description": null,
+                "is_optional": false
+            },
+            "pattern": {
+                "description": null,
+                "is_optional": false
+            },
+            "globstar_with_root": {
+                "description": null,
+                "is_optional": false
+            },
+            "include_hidden": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dirname": {
+                "description": null,
+                "is_optional": false
+            },
+            "pattern": {
+                "description": null,
+                "is_optional": false
+            },
+            "globstar_with_root": {
+                "description": null,
+                "is_optional": false
+            },
+            "include_hidden": {
+                "description": null,
+                "is_optional": false
+            },
+            "norm_paths": {
+                "description": null,
+                "is_optional": false
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": false
+            },
+            "sep": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "sep"
+    },
+    {
+        "old_api": "glob2.fnmatch.fnmatchcase",
+        "new_api": "glob2.fnmatch.fnmatchcase",
+        "old_parameter": {
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "pat": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "pat": {
+                "description": null,
+                "is_optional": false
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "case_sensitive"
+    },
+    {
+        "old_api": "glob2.fnmatch.fnmatch",
+        "new_api": "glob2.fnmatch.fnmatch",
+        "old_parameter": {
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "pat": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "pat": {
+                "description": null,
+                "is_optional": false
+            },
+            "norm_paths": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            },
+            "sep": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "sep"
+    },
+    {
+        "old_api": "glob2.Globber.glob",
+        "new_api": "glob2.Globber.glob",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pathname": {
+                "description": null,
+                "is_optional": false
+            },
+            "with_matches": {
+                "description": null,
+                "is_optional": true
+            },
+            "include_hidden": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "pathname": {
+                "description": null,
+                "is_optional": false
+            },
+            "with_matches": {
+                "description": null,
+                "is_optional": true
+            },
+            "include_hidden": {
+                "description": null,
+                "is_optional": true
+            },
+            "recursive": {
+                "description": null,
+                "is_optional": true
+            },
+            "norm_paths": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            },
+            "sep": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "sep"
+    },
+    {
+        "old_api": "glob2.fnmatch.posixpath",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "glob2.join",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "glob2.fnmatch._norm_paths",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "glob2.impl._join_paths",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "glob2.impl.join",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
