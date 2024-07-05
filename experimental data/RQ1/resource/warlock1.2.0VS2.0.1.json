@@ -1,0 +1,164 @@
+[
+    {
+        "old_api": "warlock.core.model_factory",
+        "new_api": "warlock.core.model_factory",
+        "old_parameter": {
+            "schema": {
+                "description": "dict representing valid JSON schema",
+                "is_optional": false
+            },
+            "base_class": {
+                "description": null,
+                "is_optional": true
+            },
+            "name": {
+                "description": "A name to give the class, if `name` is not in `schema`",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "schema": {
+                "description": "dict representing valid JSON schema",
+                "is_optional": false
+            },
+            "base_class": {
+                "description": null,
+                "is_optional": true
+            },
+            "name": {
+                "description": "A name to give the class, if `name` is not in `schema`",
+                "is_optional": true
+            },
+            "resolver": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "resolver"
+    },
+    {
+        "old_api": "warlock.model_factory",
+        "new_api": "warlock.model_factory",
+        "old_parameter": {
+            "schema": {
+                "description": "dict representing valid JSON schema",
+                "is_optional": false
+            },
+            "base_class": {
+                "description": null,
+                "is_optional": true
+            },
+            "name": {
+                "description": "A name to give the class, if `name` is not in `schema`",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "schema": {
+                "description": "dict representing valid JSON schema",
+                "is_optional": false
+            },
+            "base_class": {
+                "description": null,
+                "is_optional": true
+            },
+            "name": {
+                "description": "A name to give the class, if `name` is not in `schema`",
+                "is_optional": true
+            },
+            "resolver": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "resolver"
+    },
+    {
+        "old_api": "warlock.model.Model.iteritems",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "warlock.model.Model.itervalues",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "warlock.model.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "warlock.model.Model.__copy__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "warlock.model.Model.__deepcopy__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "memo": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "warlock.core.validator_for",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

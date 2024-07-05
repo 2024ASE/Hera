@@ -1,0 +1,7022 @@
+[
+    {
+        "old_api": "urwid.CheckBox.__init__",
+        "new_api": "urwid.CheckBox.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "label": {
+                "description": null,
+                "is_optional": false
+            },
+            "state": {
+                "description": "False, True or \"mixed\"",
+                "is_optional": true
+            },
+            "has_mixed": {
+                "description": "True if \"mixed\" is a state to cycle through",
+                "is_optional": true
+            },
+            "on_state_change": {
+                "description": "shorthand for connect_signal()\n                        function call for a single callback",
+                "is_optional": true
+            },
+            "user_data": {
+                "description": "user_data for on_state_change",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "label": {
+                "description": null,
+                "is_optional": false
+            },
+            "state": {
+                "description": "False, True or \"mixed\"",
+                "is_optional": true
+            },
+            "has_mixed": {
+                "description": "True if \"mixed\" is a state to cycle through",
+                "is_optional": true
+            },
+            "on_state_change": {
+                "description": "shorthand for connect_signal()\n                        function call for a single callback",
+                "is_optional": true
+            },
+            "user_data": {
+                "description": "user_data for on_state_change",
+                "is_optional": true
+            },
+            "checked_symbol": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "checked_symbol"
+    },
+    {
+        "old_api": "urwid.Terminal.__init__",
+        "new_api": "urwid.Terminal.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": null,
+                "is_optional": false
+            },
+            "env": {
+                "description": null,
+                "is_optional": true
+            },
+            "main_loop": {
+                "description": null,
+                "is_optional": true
+            },
+            "escape_sequence": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": null,
+                "is_optional": false
+            },
+            "env": {
+                "description": null,
+                "is_optional": true
+            },
+            "main_loop": {
+                "description": null,
+                "is_optional": true
+            },
+            "escape_sequence": {
+                "description": null,
+                "is_optional": true
+            },
+            "encoding": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "encoding"
+    },
+    {
+        "old_api": "urwid.Pile.options",
+        "new_api": "urwid.Pile.options",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "height_type": {
+                "description": "``'pack'``, ``'given'`` or ``'weight'``",
+                "is_optional": true
+            },
+            "height_amount": {
+                "description": "``None`` for ``'pack'``, a number of rows for",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "height_type": {
+                "description": "``'pack'``, ``'given'`` or ``'weight'``",
+                "is_optional": true
+            },
+            "height_amount": {
+                "description": "``None`` for ``'pack'``, a number of rows for",
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "self"
+    },
+    {
+        "old_api": "urwid.Columns.options",
+        "new_api": "urwid.Columns.options",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "width_type": {
+                "description": "``'pack'``, ``'given'`` or ``'weight'``",
+                "is_optional": true
+            },
+            "width_amount": {
+                "description": "``None`` for ``'pack'``, a number of screen columns",
+                "is_optional": true
+            },
+            "box_widget": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "width_type": {
+                "description": "``'pack'``, ``'given'`` or ``'weight'``",
+                "is_optional": true
+            },
+            "width_amount": {
+                "description": "``None`` for ``'pack'``, a number of screen columns",
+                "is_optional": true
+            },
+            "box_widget": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "self"
+    },
+    {
+        "old_api": "urwid.Overlay.options",
+        "new_api": "urwid.Overlay.options",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "align_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "align_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "width_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "width_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "valign_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "valign_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "height_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "height_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "min_width": {
+                "description": null,
+                "is_optional": true
+            },
+            "min_height": {
+                "description": null,
+                "is_optional": true
+            },
+            "left": {
+                "description": null,
+                "is_optional": true
+            },
+            "right": {
+                "description": null,
+                "is_optional": true
+            },
+            "top": {
+                "description": null,
+                "is_optional": true
+            },
+            "bottom": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "align_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "align_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "width_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "width_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "valign_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "valign_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "height_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "height_amount": {
+                "description": null,
+                "is_optional": false
+            },
+            "min_width": {
+                "description": null,
+                "is_optional": true
+            },
+            "min_height": {
+                "description": null,
+                "is_optional": true
+            },
+            "left": {
+                "description": null,
+                "is_optional": true
+            },
+            "right": {
+                "description": null,
+                "is_optional": true
+            },
+            "top": {
+                "description": null,
+                "is_optional": true
+            },
+            "bottom": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "self"
+    },
+    {
+        "old_api": "urwid.SimpleFocusListWalker.__init__",
+        "new_api": "urwid.SimpleFocusListWalker.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "contents": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "contents": {
+                "description": null,
+                "is_optional": false
+            },
+            "wrap_around": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "wrap_around"
+    },
+    {
+        "old_api": "urwid.LineBox.__init__",
+        "new_api": "urwid.LineBox.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "original_widget": {
+                "description": null,
+                "is_optional": false
+            },
+            "title": {
+                "description": null,
+                "is_optional": true
+            },
+            "title_align": {
+                "description": null,
+                "is_optional": true
+            },
+            "tlcorner": {
+                "description": null,
+                "is_optional": true
+            },
+            "tline": {
+                "description": null,
+                "is_optional": true
+            },
+            "lline": {
+                "description": null,
+                "is_optional": true
+            },
+            "trcorner": {
+                "description": null,
+                "is_optional": true
+            },
+            "blcorner": {
+                "description": null,
+                "is_optional": true
+            },
+            "rline": {
+                "description": null,
+                "is_optional": true
+            },
+            "bline": {
+                "description": null,
+                "is_optional": true
+            },
+            "brcorner": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "original_widget": {
+                "description": null,
+                "is_optional": false
+            },
+            "title": {
+                "description": null,
+                "is_optional": true
+            },
+            "title_align": {
+                "description": null,
+                "is_optional": true
+            },
+            "title_attr": {
+                "description": null,
+                "is_optional": true
+            },
+            "tlcorner": {
+                "description": null,
+                "is_optional": true
+            },
+            "tline": {
+                "description": null,
+                "is_optional": true
+            },
+            "lline": {
+                "description": null,
+                "is_optional": true
+            },
+            "trcorner": {
+                "description": null,
+                "is_optional": true
+            },
+            "blcorner": {
+                "description": null,
+                "is_optional": true
+            },
+            "rline": {
+                "description": null,
+                "is_optional": true
+            },
+            "bline": {
+                "description": null,
+                "is_optional": true
+            },
+            "brcorner": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "title_attr"
+    },
+    {
+        "old_api": "urwid.SimpleListWalker.__init__",
+        "new_api": "urwid.SimpleListWalker.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "contents": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "contents": {
+                "description": null,
+                "is_optional": false
+            },
+            "wrap_around": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "wrap_around"
+    },
+    {
+        "old_api": "urwid.PollingListWalker.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "contents": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.PollingListWalker.get_focus",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.PollingListWalker.get_next",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "start_from": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.PollingListWalker.get_prev",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "start_from": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.PollingListWalker.set_focus",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "position": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.PollingListWalker",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.clear",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.draw_screen",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            },
+            "r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.get_cols_rows",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.get_input",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "raw_keys": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.register_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "palette": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.register_palette_entry",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "foreground": {
+                "description": null,
+                "is_optional": false
+            },
+            "background": {
+                "description": null,
+                "is_optional": false
+            },
+            "mono": {
+                "description": null,
+                "is_optional": true
+            },
+            "foreground_high": {
+                "description": null,
+                "is_optional": true
+            },
+            "background_high": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.run_wrapper",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fn": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.set_input_timeouts",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "max_wait": {
+                "description": null,
+                "is_optional": true
+            },
+            "complete_wait": {
+                "description": null,
+                "is_optional": true
+            },
+            "resize_wait": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.set_mouse_tracking",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "enable": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.start",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.stop",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.curses_display.Screen.tty_signal_keys",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "intr": {
+                "description": null,
+                "is_optional": true
+            },
+            "quit": {
+                "description": null,
+                "is_optional": true
+            },
+            "start": {
+                "description": null,
+                "is_optional": true
+            },
+            "stop": {
+                "description": null,
+                "is_optional": true
+            },
+            "susp": {
+                "description": null,
+                "is_optional": true
+            },
+            "fileno": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.clear",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.draw_screen",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            },
+            "r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.get_cols_rows",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.get_input",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "raw_keys": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.register_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "palette": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.register_palette_entry",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "foreground": {
+                "description": null,
+                "is_optional": false
+            },
+            "background": {
+                "description": null,
+                "is_optional": false
+            },
+            "mono": {
+                "description": null,
+                "is_optional": true
+            },
+            "foreground_high": {
+                "description": null,
+                "is_optional": true
+            },
+            "background_high": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.reset_default_terminal_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.run_wrapper",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fn": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.set_input_timeouts",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.set_mouse_tracking",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "enable": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.set_terminal_properties",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "colors": {
+                "description": null,
+                "is_optional": true
+            },
+            "bright_is_bold": {
+                "description": null,
+                "is_optional": true
+            },
+            "has_underline": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.start",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.html_fragment.HtmlGenerator.stop",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "device_path": {
+                "description": null,
+                "is_optional": false
+            },
+            "baud": {
+                "description": null,
+                "is_optional": true
+            },
+            "repeat_delay": {
+                "description": null,
+                "is_optional": true
+            },
+            "repeat_next": {
+                "description": null,
+                "is_optional": true
+            },
+            "key_map": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.clear",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.draw_screen",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            },
+            "canvas": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.get_cols_rows",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.get_input_descriptors",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.get_input_nonblocking",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.program_cgram",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "index": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.queue_command",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.register_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "palette": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.register_palette_entry",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "foreground": {
+                "description": null,
+                "is_optional": false
+            },
+            "background": {
+                "description": null,
+                "is_optional": false
+            },
+            "mono": {
+                "description": null,
+                "is_optional": true
+            },
+            "foreground_high": {
+                "description": null,
+                "is_optional": true
+            },
+            "background_high": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.reset_default_terminal_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.run_wrapper",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fn": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.set_backlight",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.set_cursor_style",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "style": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.set_input_timeouts",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.set_lcd_contrast",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.set_led_pin",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "led": {
+                "description": null,
+                "is_optional": false
+            },
+            "rg": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.set_mouse_tracking",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "enable": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.set_terminal_properties",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "colors": {
+                "description": null,
+                "is_optional": true
+            },
+            "bright_is_bold": {
+                "description": null,
+                "is_optional": true
+            },
+            "has_underline": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.start",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CF635Screen.stop",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "device_path": {
+                "description": null,
+                "is_optional": false
+            },
+            "baud": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.clear",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.draw_screen",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            },
+            "r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.get_cols_rows",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.register_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "palette": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.register_palette_entry",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "foreground": {
+                "description": null,
+                "is_optional": false
+            },
+            "background": {
+                "description": null,
+                "is_optional": false
+            },
+            "mono": {
+                "description": null,
+                "is_optional": true
+            },
+            "foreground_high": {
+                "description": null,
+                "is_optional": true
+            },
+            "background_high": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.reset_default_terminal_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.run_wrapper",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fn": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.set_input_timeouts",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.set_mouse_tracking",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "enable": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.set_terminal_properties",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "colors": {
+                "description": null,
+                "is_optional": true
+            },
+            "bright_is_bold": {
+                "description": null,
+                "is_optional": true
+            },
+            "has_underline": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.start",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.CFLCDScreen.stop",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.KeyRepeatSimulator.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "repeat_delay": {
+                "description": null,
+                "is_optional": false
+            },
+            "repeat_next": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.KeyRepeatSimulator.next_event",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.KeyRepeatSimulator.press",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.KeyRepeatSimulator.release",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.KeyRepeatSimulator.sent_event",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.clear",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.draw_screen",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            },
+            "r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.get_cols_rows",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.register_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "palette": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.register_palette_entry",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "foreground": {
+                "description": null,
+                "is_optional": false
+            },
+            "background": {
+                "description": null,
+                "is_optional": false
+            },
+            "mono": {
+                "description": null,
+                "is_optional": true
+            },
+            "foreground_high": {
+                "description": null,
+                "is_optional": true
+            },
+            "background_high": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.reset_default_terminal_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.run_wrapper",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fn": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.set_input_timeouts",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.set_mouse_tracking",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "enable": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.set_terminal_properties",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "colors": {
+                "description": null,
+                "is_optional": true
+            },
+            "bright_is_bold": {
+                "description": null,
+                "is_optional": true
+            },
+            "has_underline": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.start",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.lcd_display.LCDScreen.stop",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.util.rle_append_beginning_modify",
+        "new_api": "",
+        "old_parameter": {
+            "rle": {
+                "description": null,
+                "is_optional": false
+            },
+            "a_r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.ErrorLog.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "errfile": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.ErrorLog.write",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "err": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.clear",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.draw_screen",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            },
+            "r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.get_cols_rows",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.get_input",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "raw_keys": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.register_palette",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "l": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.register_palette_entry",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "foreground": {
+                "description": null,
+                "is_optional": false
+            },
+            "background": {
+                "description": null,
+                "is_optional": false
+            },
+            "mono": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.run_wrapper",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fn": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.set_input_timeouts",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.set_mouse_tracking",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "enable": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.start",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.stop",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.web_display.Screen.tty_signal_keys",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "vargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.listbox.PollingListWalker",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "urwid.split_repr.getargspec",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.attr_map",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.focus_map",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.keypress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.mouse_event",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrMap.sizing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.background",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.background_basic",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.background_high",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.background_number",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.background_true",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.blink",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.bold",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.colors",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.foreground",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.foreground_basic",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.foreground_high",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.foreground_number",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.foreground_true",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.italics",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.standout",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.strikethrough",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrSpec.underline",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.attr_map",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.focus_attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.focus_map",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.keypress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.mouse_event",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.AttrWrap.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BarGraph.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BarGraph.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BarGraph.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BarGraph.get_data",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BaseScreen.started",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BigText.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BigText.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BigText.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BlankCanvas.attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BlankCanvas.cs",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BlankCanvas.cursor",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BlankCanvas.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BlankCanvas.widget_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxAdapter.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxAdapter.box_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxAdapter.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxAdapter.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxAdapter.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxWidget.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxWidget.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.BoxWidget.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.label",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Button.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Canvas.attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Canvas.cs",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Canvas.cursor",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Canvas.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Canvas.widget_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.label",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.state",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CheckBox.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.box_columns",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.column_types",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.focus_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.has_flow_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Columns.widget_list",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CompositeCanvas.attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CompositeCanvas.cs",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CompositeCanvas.cursor",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CompositeCanvas.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.CompositeCanvas.widget_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Divider.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Divider.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Divider.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.align",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.attrib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.caption",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.edit_pos",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.edit_text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.layout",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Edit.wrap",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Filler.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Filler.body",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Filler.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Filler.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Filler.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.FixedWidget.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.FixedWidget.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.FixedWidget.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.FlowWidget.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.FlowWidget.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.FlowWidget.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.body",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.footer",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Frame.header",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GraphVScale.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GraphVScale.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GraphVScale.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.cell_width",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.cells",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.focus_cell",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.GridFlow.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.align",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.attrib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.caption",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.edit_pos",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.edit_text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.layout",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.IntEdit.wrap",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.pack",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": "``None`` for unlimited screen columns or (*maxcol*,) to",
+                "is_optional": true
+            },
+            "focus": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.keypress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.mouse_event",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.LineBox.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ListBox.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ListBox.body",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ListBox.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ListBox.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ListBox.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.MainLoop.pop_ups",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.MainLoop.widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.MonitoredFocusList.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Overlay.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Overlay.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Overlay.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Overlay.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Padding.align",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Padding.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Padding.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Padding.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Padding.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Padding.width",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Pile.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Pile.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Pile.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Pile.focus_item",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Pile.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Pile.item_types",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Pile.widget_list",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.keypress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.mouse_event",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpLauncher.sizing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpTarget.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpTarget.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpTarget.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.PopUpTarget.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ProgressBar.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ProgressBar.current",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ProgressBar.done",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ProgressBar.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.ProgressBar.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.label",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.state",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.RadioButton.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.align",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.attrib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.layout",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SelectableIcon.wrap",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SimpleFocusListWalker.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SimpleListWalker.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidCanvas.attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidCanvas.cs",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidCanvas.cursor",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidCanvas.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidCanvas.widget_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidFill.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidFill.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.SolidFill.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TermCanvas.attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TermCanvas.cs",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TermCanvas.cursor",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TermCanvas.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TermCanvas.widget_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Terminal.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Terminal.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Terminal.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Terminal.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.align",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.attrib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.layout",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Text.wrap",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TextCanvas.attr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TextCanvas.cs",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TextCanvas.cursor",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TextCanvas.text",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TextCanvas.widget_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeListBox.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeListBox.body",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeListBox.contents",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeListBox.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeListBox.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.sizing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TreeWidget.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.alarm",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "seconds": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.enter_idle",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.remove_alarm",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "handle": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.remove_enter_idle",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "handle": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.remove_watch_file",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "handle": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.run",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.run_async",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.set_signal_handler",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "signum": {
+                "description": null,
+                "is_optional": false
+            },
+            "handler": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop.watch_file",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fd": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.TrioEventLoop",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Widget.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Widget.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.Widget.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDecoration.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDecoration.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDecoration.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDecoration.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDisable.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDisable.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDisable.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetDisable.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.keypress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.mouse_event",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.original_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetPlaceholder.sizing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.get_cursor_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.get_pref_col",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.keypress",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.mouse_event",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.move_cursor_to_coords",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.pack",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.rows",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.selectable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.sizing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.WidgetWrap.w",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common.StoppingContext.__enter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common.StoppingContext.__exit__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "exc_info": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common.StoppingContext.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "wrapped": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.graphics.PythonLogo.base_widget",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.graphics.PythonLogo.focus",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.graphics.PythonLogo.focus_position",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.graphics.ord2",
+        "old_parameter": {},
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.StoppingContext.__enter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.StoppingContext.__exit__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "exc_info": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.StoppingContext.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "wrapped": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.Screen.started",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.split_repr.getfullargspec",
+        "old_parameter": {},
+        "new_parameter": {
+            "func": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.util.rle_prepend_modify",
+        "old_parameter": {},
+        "new_parameter": {
+            "rle": {
+                "description": null,
+                "is_optional": false
+            },
+            "a_r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.vterm.EOF",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.widget.ELLIPSIS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common.signals.Key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common.signals.disconnect_signal_by_key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common.signals.setdefaultattr",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.escape.str_util.decode_one",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.escape.str_util.decode_one_right",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.escape.str_util.get_byte_encoding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.escape.str_util.get_width",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.escape.str_util.set_byte_encoding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.font.str_util.decode_one",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.font.str_util.decode_one_right",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.font.str_util.get_byte_encoding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.font.str_util.get_width",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.font.str_util.set_byte_encoding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.listbox.signals.Key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.listbox.signals.disconnect_signal_by_key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.listbox.signals.setdefaultattr",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.signals.Key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.signals.disconnect_signal_by_key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.signals.setdefaultattr",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.signals.Key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.signals.disconnect_signal_by_key",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.signals.setdefaultattr",
+        "old_parameter": {},
+        "new_parameter": {
+            "obj": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.util.detect_encoding",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.util.rle_factor",
+        "old_parameter": {},
+        "new_parameter": {
+            "rle": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.util.rle_get_at",
+        "old_parameter": {},
+        "new_parameter": {
+            "rle": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.util.rle_prepend_modify",
+        "old_parameter": {},
+        "new_parameter": {
+            "rle": {
+                "description": null,
+                "is_optional": false
+            },
+            "a_r": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.raw_display.util.rle_subseg",
+        "old_parameter": {},
+        "new_parameter": {
+            "rle": {
+                "description": null,
+                "is_optional": false
+            },
+            "start": {
+                "description": null,
+                "is_optional": false
+            },
+            "end": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid._async_kw_event_loop",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid._async_kw_event_loop.EventLoop",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid._async_kw_event_loop.ExitMainLoop",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid._async_kw_event_loop.TrioEventLoop",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.curses_display.ord2",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common._BG_TRUE_COLOR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common._FG_TRUE_COLOR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common._HIGH_TRUE_COLOR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common._color_desc_true",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common._parse_color_true",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.display_common._true_to_256",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.escape.urwid",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.TrioEventLoop",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.main_loop.sys",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.numedit.Decimal",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.numedit.Edit",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.numedit.FloatEdit",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.numedit.IntegerEdit",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.numedit.NumEdit",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.numedit.re",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_container.mock",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_escapes.InputEscapeSequenceParserTest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_escapes.unittest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_escapes.urwid",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_util.PortabilityTest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_util.RleTest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_util.locale",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_vterm.BoxAdapter",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "urwid.tests.test_vterm.ListBox",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
