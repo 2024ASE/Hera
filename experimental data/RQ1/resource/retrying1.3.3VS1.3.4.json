@@ -1,0 +1,256 @@
+[
+    {
+        "old_api": "retrying.Retrying.never_reject",
+        "new_api": "retrying.Retrying.never_reject",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "result": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "result": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "self"
+    },
+    {
+        "old_api": "retrying.Retrying.__init__",
+        "new_api": "retrying.Retrying.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "stop": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait": {
+                "description": null,
+                "is_optional": true
+            },
+            "stop_max_attempt_number": {
+                "description": null,
+                "is_optional": true
+            },
+            "stop_max_delay": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_fixed": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_random_min": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_random_max": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_incrementing_start": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_incrementing_increment": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_exponential_multiplier": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_exponential_max": {
+                "description": null,
+                "is_optional": true
+            },
+            "retry_on_exception": {
+                "description": null,
+                "is_optional": true
+            },
+            "retry_on_result": {
+                "description": null,
+                "is_optional": true
+            },
+            "wrap_exception": {
+                "description": null,
+                "is_optional": true
+            },
+            "stop_func": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_func": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_jitter_max": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "stop": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait": {
+                "description": null,
+                "is_optional": true
+            },
+            "stop_max_attempt_number": {
+                "description": null,
+                "is_optional": true
+            },
+            "stop_max_delay": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_fixed": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_random_min": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_random_max": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_incrementing_start": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_incrementing_increment": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_incrementing_max": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_exponential_multiplier": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_exponential_max": {
+                "description": null,
+                "is_optional": true
+            },
+            "retry_on_exception": {
+                "description": null,
+                "is_optional": true
+            },
+            "retry_on_result": {
+                "description": null,
+                "is_optional": true
+            },
+            "wrap_exception": {
+                "description": null,
+                "is_optional": true
+            },
+            "stop_func": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_func": {
+                "description": null,
+                "is_optional": true
+            },
+            "wait_jitter_max": {
+                "description": null,
+                "is_optional": true
+            },
+            "before_attempts": {
+                "description": null,
+                "is_optional": true
+            },
+            "after_attempts": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "after_attempts"
+    },
+    {
+        "old_api": "retrying.Retrying.always_reject",
+        "new_api": "retrying.Retrying.always_reject",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "result": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "result": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "self"
+    },
+    {
+        "old_api": "retrying.Retrying.no_sleep",
+        "new_api": "retrying.Retrying.no_sleep",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "previous_attempt_number": {
+                "description": null,
+                "is_optional": false
+            },
+            "delay_since_first_attempt_ms": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "previous_attempt_number": {
+                "description": null,
+                "is_optional": false
+            },
+            "delay_since_first_attempt_ms": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "self"
+    },
+    {
+        "old_api": "",
+        "new_api": "retrying._retry_if_exception_of_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

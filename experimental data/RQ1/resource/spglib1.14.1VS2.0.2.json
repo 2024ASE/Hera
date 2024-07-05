@@ -1,0 +1,282 @@
+[
+    {
+        "old_api": "spglib.get_symmetry",
+        "new_api": "spglib.get_symmetry",
+        "old_parameter": {
+            "cell": {
+                "description": null,
+                "is_optional": false
+            },
+            "symprec": {
+                "description": null,
+                "is_optional": true
+            },
+            "angle_tolerance": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "cell": {
+                "description": null,
+                "is_optional": false
+            },
+            "symprec": {
+                "description": null,
+                "is_optional": true
+            },
+            "angle_tolerance": {
+                "description": null,
+                "is_optional": true
+            },
+            "mag_symprec": {
+                "description": null,
+                "is_optional": true
+            },
+            "is_magnetic": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "is_magnetic"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.get_magnetic_spacegroup_type",
+        "old_parameter": {},
+        "new_parameter": {
+            "uni_number": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.get_magnetic_symmetry",
+        "old_parameter": {},
+        "new_parameter": {
+            "cell": {
+                "description": null,
+                "is_optional": false
+            },
+            "symprec": {
+                "description": null,
+                "is_optional": true
+            },
+            "angle_tolerance": {
+                "description": null,
+                "is_optional": true
+            },
+            "mag_symprec": {
+                "description": null,
+                "is_optional": true
+            },
+            "is_axial": {
+                "description": null,
+                "is_optional": true
+            },
+            "with_time_reversal": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.get_magnetic_symmetry_dataset",
+        "old_parameter": {},
+        "new_parameter": {
+            "cell": {
+                "description": null,
+                "is_optional": false
+            },
+            "is_axial": {
+                "description": null,
+                "is_optional": true
+            },
+            "symprec": {
+                "description": null,
+                "is_optional": true
+            },
+            "angle_tolerance": {
+                "description": null,
+                "is_optional": true
+            },
+            "mag_symprec": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.get_magnetic_symmetry_from_database",
+        "old_parameter": {},
+        "new_parameter": {
+            "uni_number": {
+                "description": null,
+                "is_optional": false
+            },
+            "hall_number": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.get_spacegroup_type_from_symmetry",
+        "old_parameter": {},
+        "new_parameter": {
+            "rotations": {
+                "description": null,
+                "is_optional": false
+            },
+            "translations": {
+                "description": null,
+                "is_optional": false
+            },
+            "lattice": {
+                "description": null,
+                "is_optional": true
+            },
+            "symprec": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib._spglib.magnetic_dataset",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib._spglib.magnetic_spacegroup_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib._spglib.magnetic_symmetry_from_database",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib._spglib.spacegroup_type_from_symmetry",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib._spglib.symmetry_with_site_tensors",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.spglib.get_magnetic_spacegroup_type",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.spglib.get_magnetic_symmetry",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.spglib.get_magnetic_symmetry_dataset",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.spglib.get_magnetic_symmetry_from_database",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.spglib.get_spacegroup_type_from_symmetry",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "spglib.spglib.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
