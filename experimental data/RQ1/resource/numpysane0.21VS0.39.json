@@ -1,0 +1,83 @@
+[
+    {
+        "old_api": "numpysane.dummy",
+        "new_api": "numpysane.dummy",
+        "old_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "axis": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "x": {
+                "description": null,
+                "is_optional": false
+            },
+            "axis": {
+                "description": null,
+                "is_optional": false
+            },
+            "axes_rest": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "axes_rest"
+    },
+    {
+        "old_api": "numpysane.mag",
+        "new_api": "numpysane.mag",
+        "old_parameter": {
+            "a": {
+                "description": null,
+                "is_optional": false
+            },
+            "out": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "a": {
+                "description": null,
+                "is_optional": false
+            },
+            "out": {
+                "description": null,
+                "is_optional": true
+            },
+            "dtype": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "dtype"
+    },
+    {
+        "old_api": "",
+        "new_api": "numpysane.broadcast_extra_dims",
+        "old_parameter": {},
+        "new_parameter": {
+            "prototype": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

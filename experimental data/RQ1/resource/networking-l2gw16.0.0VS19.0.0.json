@@ -1,0 +1,2895 @@
+[
+    {
+        "old_api": "networking_l2gw.services.l2gateway.agent.ovsdb.api.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "networking_l2gw.services.l2gateway.agent.ovsdb.base_connection.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "networking_l2gw.services.l2gateway.service_drivers.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2GatewayPluginBase.create_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2GatewayPluginBase.delete_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2GatewayPluginBase.get_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2GatewayPluginBase.get_l2_gateways",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            },
+            "sorts": {
+                "description": null,
+                "is_optional": true
+            },
+            "limit": {
+                "description": null,
+                "is_optional": true
+            },
+            "marker": {
+                "description": null,
+                "is_optional": true
+            },
+            "page_reverse": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2GatewayPluginBase.update_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2GatewayPluginBase",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway.get_actions",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway.get_extended_resources",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "version": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway.get_optional_extensions",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway.get_pecan_resources",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway.get_plugin_interface",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway.get_request_extensions",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway.get_required_extensions",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.L2gateway",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.RESOURCE_ATTRIBUTE_MAP",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.create_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.create_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.delete_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.delete_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.get_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.get_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.get_l2_gateway_connections",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            },
+            "sorts": {
+                "description": null,
+                "is_optional": true
+            },
+            "limit": {
+                "description": null,
+                "is_optional": true
+            },
+            "marker": {
+                "description": null,
+                "is_optional": true
+            },
+            "page_reverse": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.get_l2_gateway_connections_count",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.get_l2_gateways",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            },
+            "sorts": {
+                "description": null,
+                "is_optional": true
+            },
+            "limit": {
+                "description": null,
+                "is_optional": true
+            },
+            "marker": {
+                "description": null,
+                "is_optional": true
+            },
+            "page_reverse": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.get_l2gateway_devices_by_gateway_id",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.get_l2gateway_interfaces_by_device_id",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "device_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.update_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.validate_device_name",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "device_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2gw_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.validate_l2_gateway_connection_for_create",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.validate_l2_gateway_connection_for_delete",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_conn_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.validate_l2_gateway_for_create",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.validate_l2_gateway_for_delete",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2gw_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin.validate_l2_gateway_for_update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.L2GatewayMixin",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.LOG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.l2gw_callback",
+        "old_parameter": {},
+        "new_parameter": {
+            "resource": {
+                "description": null,
+                "is_optional": false
+            },
+            "event": {
+                "description": null,
+                "is_optional": false
+            },
+            "trigger": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.subscribe",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.add_port_mac",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_dict": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.create_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.create_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.delete_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.delete_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.delete_port_mac",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_l2_gateway_connections",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            },
+            "sorts": {
+                "description": null,
+                "is_optional": true
+            },
+            "limit": {
+                "description": null,
+                "is_optional": true
+            },
+            "marker": {
+                "description": null,
+                "is_optional": true
+            },
+            "page_reverse": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_l2_gateway_connections_count",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_l2_gateways",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            },
+            "fields": {
+                "description": null,
+                "is_optional": true
+            },
+            "sorts": {
+                "description": null,
+                "is_optional": true
+            },
+            "limit": {
+                "description": null,
+                "is_optional": true
+            },
+            "marker": {
+                "description": null,
+                "is_optional": true
+            },
+            "page_reverse": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_l2gateway_devices_by_gateway_id",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_l2gateway_interfaces_by_device_id",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "device_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_plugin_description",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.get_plugin_type",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.update_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.validate_device_name",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "device_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2gw_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.validate_l2_gateway_connection_for_create",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.validate_l2_gateway_connection_for_delete",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_conn_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.validate_l2_gateway_for_create",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.validate_l2_gateway_for_delete",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2gw_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin.validate_l2_gateway_for_update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.L2GatewayPlugin",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.LOG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.L2GatewayOVSDBCallbacks.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "plugin": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.L2GatewayOVSDBCallbacks.get_ovsdbdata_object",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ovsdb_identifier": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.L2GatewayOVSDBCallbacks.notify_ovsdb_states",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "ovsdb_states": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.L2GatewayOVSDBCallbacks.update_ovsdb_changes",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "activity": {
+                "description": null,
+                "is_optional": false
+            },
+            "ovsdb_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.L2GatewayOVSDBCallbacks",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.LOG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.OVSDBData.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ovsdb_identifier": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.OVSDBData.notify_ovsdb_states",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "ovsdb_states": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.OVSDBData.update_ovsdb_changes",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "activity": {
+                "description": null,
+                "is_optional": false
+            },
+            "ovsdb_data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.OVSDBData",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2GW",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2GW_CALLBACK",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "service_plugin": {
+                "description": null,
+                "is_optional": false
+            },
+            "validator": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.add_port_mac",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_dict": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.create_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.create_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.create_l2_gateway_connection_postcommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.create_l2_gateway_connection_precommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.create_l2_gateway_postcommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.create_l2_gateway_precommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.create_rpc_conn",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.delete_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.delete_l2_gateway_connection",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.delete_l2_gateway_connection_postcommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.delete_l2_gateway_connection_precommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_connection_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.delete_l2_gateway_postcommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.delete_l2_gateway_precommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.delete_port_mac",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.start_l2gateway_agent_scheduler",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.update_l2_gateway",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.update_l2_gateway_postcommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver.update_l2_gateway_precommit",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "l2_gateway": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.LOG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.config",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.db_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.db_query",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.directory",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.events",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.exceptions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.l2gateway",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.l2gatewayconnection",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.l2gw_exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.l2gw_validators",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.model_query",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.models",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.registry",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.resources",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.sa_orm_exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.l2gateway_db.uuidutils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.db.l2gateway.ovsdb.lib.db_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gatewayconnection",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.abc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.api_extensions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.common_config",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.extensions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.l2gw_extensions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.l2gw_validators",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.resource_helper",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.extensions.l2gateway.validators",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.agent_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.cfg",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.db",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.directory",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.l2gateway_db",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.l2gw_exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.messaging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.n_const",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.ovsdb_schema",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.portbindings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.topics",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.ovsdb.data.tunnel_calls",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.config",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.db_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.directory",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.excutils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.l2gateway_db",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.n_exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.pconf",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.service_base",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.plugin.st_db",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.agent_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.L2gwRpcDriver",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw._",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.abc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.agent_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.agent_scheduler",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.agents_db",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.cfg",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.db",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.exceptions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.importutils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.l2_gw_db",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.l2gw_exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.l2gw_validators",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.managers",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.messaging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.n_const",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.n_rpc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.ovsdb_schema",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.portbindings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.service_drivers",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "networking_l2gw.services.l2gateway.service_drivers.rpc_l2gw.topics",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

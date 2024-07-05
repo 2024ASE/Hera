@@ -1,0 +1,408 @@
+[
+    {
+        "old_api": "ntlm_auth.compute_response.ComputeResponse.get_nt_challenge_response",
+        "new_api": "ntlm_auth.compute_response.ComputeResponse.get_nt_challenge_response",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "lm_challenge_response": {
+                "description": "The LmChallengeResponse calculated",
+                "is_optional": false
+            },
+            "server_certificate_hash": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "lm_challenge_response": {
+                "description": "The LmChallengeResponse calculated",
+                "is_optional": false
+            },
+            "server_certificate_hash": {
+                "description": null,
+                "is_optional": true
+            },
+            "cbt_data": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "server_certificate_hash"
+    },
+    {
+        "old_api": "ntlm_auth.messages.AuthenticateMessage.__init__",
+        "new_api": "ntlm_auth.messages.AuthenticateMessage.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "user_name": {
+                "description": "The user name of the user we are trying to",
+                "is_optional": false
+            },
+            "password": {
+                "description": null,
+                "is_optional": false
+            },
+            "domain_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "workstation": {
+                "description": null,
+                "is_optional": false
+            },
+            "challenge_message": {
+                "description": null,
+                "is_optional": false
+            },
+            "ntlm_compatibility": {
+                "description": null,
+                "is_optional": false
+            },
+            "server_certificate_hash": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "user_name": {
+                "description": "The user name of the user we are trying to",
+                "is_optional": false
+            },
+            "password": {
+                "description": null,
+                "is_optional": false
+            },
+            "domain_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "workstation": {
+                "description": null,
+                "is_optional": false
+            },
+            "challenge_message": {
+                "description": null,
+                "is_optional": false
+            },
+            "ntlm_compatibility": {
+                "description": null,
+                "is_optional": false
+            },
+            "server_certificate_hash": {
+                "description": null,
+                "is_optional": true
+            },
+            "cbt_data": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "server_certificate_hash"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.exceptions.NoAuthContextError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "username": {
+                "description": "The username to authenticate with",
+                "is_optional": false
+            },
+            "password": {
+                "description": "The password for the username",
+                "is_optional": false
+            },
+            "domain": {
+                "description": "The domain part of the username (None if n/a)",
+                "is_optional": true
+            },
+            "workstation": {
+                "description": "The localworkstation (None if n/a)",
+                "is_optional": true
+            },
+            "cbt_data": {
+                "description": "A GssChannelBindingsStruct or None to bind channel",
+                "is_optional": true
+            },
+            "ntlm_compatibility": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext.reset_rc4_state",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "outgoing": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext.sign",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext.step",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "input_token": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext.unwrap",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext.verify",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            },
+            "signature": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext.wrap",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.rc4.HAS_CRYPTOGRAPHY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.session_security.SessionSecurity.get_signature",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message": {
+                "description": "The message data that will be signed",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.session_security.SessionSecurity.reset_rc4_state",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "outgoing": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.session_security.SessionSecurity.verify_signature",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message": {
+                "description": "The message data that is received from the server",
+                "is_optional": false
+            },
+            "signature": {
+                "description": "The signature of the message received from the server",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.exceptions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NoAuthContextError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.ntlm.NtlmContext",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.rc4._CryptographyARC4",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ntlm_auth.rc4._PythonARC4",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

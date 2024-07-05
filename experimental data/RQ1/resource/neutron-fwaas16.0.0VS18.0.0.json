@@ -1,0 +1,1778 @@
+[
+    {
+        "old_api": "neutron_fwaas.extensions.firewall_v2.convert_to_string",
+        "new_api": "",
+        "old_parameter": {
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.extensions.firewall_v2.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.conntrack_base.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.fwaas_base.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.fwaas_base_v2.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.driver_base.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.services.firewall.service_drivers.agents.l2.fwaas_v2.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "neutron_fwaas.services.firewall.service_drivers.driver_api.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.fwaas_plugin_v2.FirewallPluginV2.get_firewall_groups_count",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "filters": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "agent_api": {
+                "description": null,
+                "is_optional": false
+            },
+            "sg_with_ovs": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.add_flows_from_rules",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.create_firewall_group",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ports_for_fwg": {
+                "description": null,
+                "is_optional": false
+            },
+            "firewall_group": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.create_rules_generator_for_port",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.defer_apply",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.delete_all_port_flows",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.delete_firewall_group",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ports_for_fwg": {
+                "description": null,
+                "is_optional": false
+            },
+            "firewall_group": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.filter_defer_apply_off",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.filter_defer_apply_on",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.get_ofport",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.get_or_create_ofport",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.get_ovs_port",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.initialize_bridge",
+        "old_parameter": {},
+        "new_parameter": {
+            "int_br": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.initialize_port_flows",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": "OFPort instance",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.is_port_managed",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.prepare_port_filter",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.process_trusted_ports",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ports": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.remove_port_filter",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.remove_trusted_ports",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_ids": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.update_firewall_group",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ports_for_fwg": {
+                "description": null,
+                "is_optional": false
+            },
+            "firewall_group": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.update_firewall_group_rules",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fwg_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "ingress_rules": {
+                "description": null,
+                "is_optional": false
+            },
+            "egress_rules": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver.update_port_filter",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.CT_MARK_INVALID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.CT_MARK_NORMAL",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.FW_ACCEPT_OR_INGRESS_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.FW_BASE_EGRESS_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.FW_BASE_INGRESS_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.FW_RULES_EGRESS_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.FW_RULES_INGRESS_TABLE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_ESTABLISHED",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_ESTABLISHED_NOT_REPLY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_ESTABLISHED_REPLY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_INVALID",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_NEW",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_NEW_NOT_ESTABLISHED",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_NOT_ESTABLISHED",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_NOT_REPLY_NOT_NEW",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_NOT_TRACKED",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_RELATED",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OF_STATE_TRACKED",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.OVS_FIREWALL_TABLES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.PROTOCOLS_WITH_PORTS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.REG_NET",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.REVERSE_IP_PROTOCOL_MAP_WITH_PORTS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.ethertype_to_dl_type_map",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSPortNotFound.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSPortNotFound.__str__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSPortNotFound.use_fatal_exceptions",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSPortNotFound",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSTagNotFound.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSTagNotFound.__str__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSTagNotFound.use_fatal_exceptions",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.OVSFWaaSTagNotFound",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.ACTION_ALLOW",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.create_port",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_dict": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.delete_fwg",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fwg_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.get_fwg",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fwg_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.get_or_create_fwg",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fwg_id": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.remove_port",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.update_members",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fwg_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "members": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.update_port",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_dict": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap.update_rules",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fwg_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "ingress_rules": {
+                "description": null,
+                "is_optional": false
+            },
+            "egress_rules": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FWGPortMap",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FirewallGroup.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "id_": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FirewallGroup.get_ethertype_filtered_addresses",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ethertype": {
+                "description": null,
+                "is_optional": false
+            },
+            "exclude_addresses": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FirewallGroup.update_rules",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ingress_rules": {
+                "description": null,
+                "is_optional": false
+            },
+            "egress_rules": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.FirewallGroup",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.LOG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.OFPort.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_dict": {
+                "description": null,
+                "is_optional": false
+            },
+            "ovs_port": {
+                "description": null,
+                "is_optional": false
+            },
+            "vlan_tag": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.OFPort.update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "port_dict": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.create_reg_numbers",
+        "old_parameter": {},
+        "new_parameter": {
+            "flow_params": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.CT_STATES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.FLOW_FIELD_FOR_IPVER_AND_DIRECTION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.FORBIDDEN_PREFIXES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.LOG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.create_accept_flows",
+        "old_parameter": {},
+        "new_parameter": {
+            "flow": {
+                "description": null,
+                "is_optional": false
+            },
+            "sg_enabled": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.create_drop_flows",
+        "old_parameter": {},
+        "new_parameter": {
+            "flow": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.create_flows_from_rule_and_port",
+        "old_parameter": {},
+        "new_parameter": {
+            "rule": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.create_icmp_flows",
+        "old_parameter": {},
+        "new_parameter": {
+            "flow_template": {
+                "description": null,
+                "is_optional": false
+            },
+            "rule": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.create_port_range_flows",
+        "old_parameter": {},
+        "new_parameter": {
+            "flow_template": {
+                "description": null,
+                "is_optional": false
+            },
+            "rule": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.create_protocol_flows",
+        "old_parameter": {},
+        "new_parameter": {
+            "direction": {
+                "description": null,
+                "is_optional": false
+            },
+            "flow_template": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            },
+            "rule": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.is_valid_prefix",
+        "old_parameter": {},
+        "new_parameter": {
+            "ip_prefix": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.populate_flow_common",
+        "old_parameter": {},
+        "new_parameter": {
+            "direction": {
+                "description": null,
+                "is_optional": false
+            },
+            "flow_template": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.resubmit_to_sg",
+        "old_parameter": {},
+        "new_parameter": {
+            "flow": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.cmd.v1_to_v2_db_migration._",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.fwaas_plugin_v2.db_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.agents.db_api",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.OVSFirewallDriver",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.__path__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.REG_PORT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.constants.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions._",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.exceptions.exceptions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.OFPort",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.OVSFirewallDriver",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall._replace_register",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.driver_base",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.exceptions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.firewall",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.fwaas_ovs_consts",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.lib_const",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.netaddr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.netutils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.ovs_consts",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.firewall.rules",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.fwaas_ovs_consts",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.n_consts",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.netaddr",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.ovs_consts",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "neutron_fwaas.services.firewall.service_drivers.agents.drivers.linux.l2.openvswitch_firewall.rules.utils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
