@@ -1,0 +1,675 @@
+[
+    {
+        "old_api": "yaql.create_context",
+        "new_api": "yaql.create_context",
+        "old_parameter": {
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "context": {
+                "description": null,
+                "is_optional": true
+            },
+            "system": {
+                "description": null,
+                "is_optional": true
+            },
+            "common": {
+                "description": null,
+                "is_optional": true
+            },
+            "boolean": {
+                "description": null,
+                "is_optional": true
+            },
+            "strings": {
+                "description": null,
+                "is_optional": true
+            },
+            "math": {
+                "description": null,
+                "is_optional": true
+            },
+            "collections": {
+                "description": null,
+                "is_optional": true
+            },
+            "queries": {
+                "description": null,
+                "is_optional": true
+            },
+            "regex": {
+                "description": null,
+                "is_optional": true
+            },
+            "branching": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_sets": {
+                "description": null,
+                "is_optional": true
+            },
+            "finalizer": {
+                "description": null,
+                "is_optional": true
+            },
+            "delegates": {
+                "description": null,
+                "is_optional": true
+            },
+            "convention": {
+                "description": null,
+                "is_optional": true
+            },
+            "datetime": {
+                "description": null,
+                "is_optional": true
+            },
+            "yaqlized": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "context": {
+                "description": null,
+                "is_optional": true
+            },
+            "system": {
+                "description": null,
+                "is_optional": true
+            },
+            "common": {
+                "description": null,
+                "is_optional": true
+            },
+            "boolean": {
+                "description": null,
+                "is_optional": true
+            },
+            "strings": {
+                "description": null,
+                "is_optional": true
+            },
+            "math": {
+                "description": null,
+                "is_optional": true
+            },
+            "collections": {
+                "description": null,
+                "is_optional": true
+            },
+            "queries": {
+                "description": null,
+                "is_optional": true
+            },
+            "regex": {
+                "description": null,
+                "is_optional": true
+            },
+            "branching": {
+                "description": null,
+                "is_optional": true
+            },
+            "no_sets": {
+                "description": null,
+                "is_optional": true
+            },
+            "finalizer": {
+                "description": null,
+                "is_optional": true
+            },
+            "delegates": {
+                "description": null,
+                "is_optional": true
+            },
+            "convention": {
+                "description": null,
+                "is_optional": true
+            },
+            "datetime": {
+                "description": null,
+                "is_optional": true
+            },
+            "yaqlized": {
+                "description": null,
+                "is_optional": true
+            },
+            "group_by_agg_fallback": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "group_by_agg_fallback"
+    },
+    {
+        "old_api": "yaql.standard_library.queries.register",
+        "new_api": "yaql.standard_library.queries.register",
+        "old_parameter": {
+            "context": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_group_by_agg_fallback": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "allow_group_by_agg_fallback"
+    },
+    {
+        "old_api": "yaql.std_queries.register",
+        "new_api": "yaql.std_queries.register",
+        "old_parameter": {
+            "context": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "context": {
+                "description": null,
+                "is_optional": false
+            },
+            "allow_group_by_agg_fallback": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "allow_group_by_agg_fallback"
+    },
+    {
+        "old_api": "yaql.std_queries.group_by",
+        "new_api": "",
+        "old_parameter": {
+            "engine": {
+                "description": null,
+                "is_optional": false
+            },
+            "collection": {
+                "description": null,
+                "is_optional": false
+            },
+            "key_selector": {
+                "description": null,
+                "is_optional": false
+            },
+            "value_selector": {
+                "description": null,
+                "is_optional": true
+            },
+            "aggregator": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.cli.cli_functions.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.cli.run.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.queries.group_by",
+        "new_api": "",
+        "old_parameter": {
+            "engine": {
+                "description": null,
+                "is_optional": false
+            },
+            "collection": {
+                "description": null,
+                "is_optional": false
+            },
+            "key_selector": {
+                "description": null,
+                "is_optional": false
+            },
+            "value_selector": {
+                "description": null,
+                "is_optional": true
+            },
+            "aggregator": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.cli.cli_functions.locale",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.cli.cli_functions.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.contexts.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.conventions.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.expressions.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.lexer.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.parser.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.runner.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.specs.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.utils.__warningregistry__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.utils.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.language.yaqltypes.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.collections.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.legacy.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.math.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.queries.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.regex.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.strings.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.system.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.standard_library.yaqlized.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.yaql_interface.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "yaql.yaqlization.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.std_queries.GroupAggregator.__call__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "group_item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.std_queries.GroupAggregator.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "aggregator_func": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_fallback": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.std_queries.GroupAggregator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.std_queries.group_by_function",
+        "old_parameter": {},
+        "new_parameter": {
+            "allow_aggregator_fallback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.standard_library.queries.GroupAggregator.__call__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "group_item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.standard_library.queries.GroupAggregator.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "aggregator_func": {
+                "description": null,
+                "is_optional": true
+            },
+            "allow_fallback": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.standard_library.queries.GroupAggregator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.standard_library.queries.group_by_function",
+        "old_parameter": {},
+        "new_parameter": {
+            "allow_aggregator_fallback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.language.parser.types",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.standard_library.queries.collections",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.standard_library.queries.exceptions",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "yaql.standard_library.queries.functools",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
