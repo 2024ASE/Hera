@@ -1,0 +1,489 @@
+[
+    {
+        "old_api": "osprofiler.pkg_resources",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "osprofiler._utils.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "osprofiler.cmd.commands.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "osprofiler.profiler.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "osprofiler.web.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.LOG",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.enable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.send",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.OTLP.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connection_str": {
+                "description": null,
+                "is_optional": false
+            },
+            "project": {
+                "description": null,
+                "is_optional": true
+            },
+            "service": {
+                "description": null,
+                "is_optional": true
+            },
+            "host": {
+                "description": null,
+                "is_optional": true
+            },
+            "conf": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.OTLP.create_span_tags",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "payload": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.OTLP.get_report",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "base_id": {
+                "description": "Base id of trace elements.",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.OTLP.list_error_traces",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.OTLP.list_traces",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "fields": {
+                "description": "Set of trace fields to return. Defaults to 'base_id'",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.OTLP.notify",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "payload": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.OTLP",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.importlib_metadata",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler._utils.uuid_to_int128",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.base",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.cfg",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.collections",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.jsonutils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.parser",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.drivers.otlp.utils",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.initializer.requests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._JAEGER_OPTS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._OTLP_OPTS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._jaegerprofiler_opt_group",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._otlp_profiler_opt_group",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._otlp_service_name_prefix",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._process_tags",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._service_name_prefix",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.opts._trace_requests_opt",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.HTTPAdapter",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests._FUNC",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.log",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.parser",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.profiler",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "osprofiler.requests.web",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

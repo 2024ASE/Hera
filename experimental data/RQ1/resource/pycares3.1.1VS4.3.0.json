@@ -1,0 +1,434 @@
+[
+    {
+        "old_api": "pycares.ares_query_ptr_result.__init__",
+        "new_api": "pycares.ares_query_ptr_result.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "hostent": {
+                "description": null,
+                "is_optional": false
+            },
+            "ttl": {
+                "description": null,
+                "is_optional": false
+            },
+            "aliases": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "hostent": {
+                "description": null,
+                "is_optional": false
+            },
+            "aliases": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "ttl"
+    },
+    {
+        "old_api": "pycares.Channel.query",
+        "new_api": "pycares.Channel.query",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "query_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "query_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            },
+            "query_class": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "query_class"
+    },
+    {
+        "old_api": "pycares.Channel.search",
+        "new_api": "pycares.Channel.search",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "query_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "query_type": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            },
+            "query_class": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "query_class"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.Channel.getaddrinfo",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "host": {
+                "description": null,
+                "is_optional": false
+            },
+            "port": {
+                "description": null,
+                "is_optional": false
+            },
+            "callback": {
+                "description": null,
+                "is_optional": false
+            },
+            "family": {
+                "description": null,
+                "is_optional": true
+            },
+            "type": {
+                "description": null,
+                "is_optional": true
+            },
+            "proto": {
+                "description": null,
+                "is_optional": true
+            },
+            "flags": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.QUERY_CLASS_ANY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.QUERY_CLASS_CHAOS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.QUERY_CLASS_HS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.QUERY_CLASS_IN",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.QUERY_CLASS_NONE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.QUERY_TYPE_CAA",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_cname_result.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ares_cname": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_cname_result.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_cname_result",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_node_result.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ares_node": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_node_result.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_node_result",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_result.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "ares_addrinfo": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_result.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_addrinfo_result",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_query_caa_result.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "caa": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_query_caa_result.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.ares_query_caa_result",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares.errno.ARES_ESERVICE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pycares._addrinfo_cb",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

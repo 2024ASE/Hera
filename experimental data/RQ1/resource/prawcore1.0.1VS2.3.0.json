@@ -1,0 +1,657 @@
+[
+    {
+        "old_api": "prawcore.DeviceIDAuthorizer.__init__",
+        "new_api": "prawcore.DeviceIDAuthorizer.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "authenticator": {
+                "description": "An instance of :class:`UntrustedAuthenticator`.",
+                "is_optional": false
+            },
+            "device_id": {
+                "description": "(optional) A unique ID (20-30 character ASCII string)",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "authenticator": {
+                "description": "An instance of :class:`UntrustedAuthenticator`.",
+                "is_optional": false
+            },
+            "device_id": {
+                "description": "(optional) A unique ID (20-30 character ASCII string) (default",
+                "is_optional": true
+            },
+            "scopes": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "scopes"
+    },
+    {
+        "old_api": "prawcore.Requestor.__init__",
+        "new_api": "prawcore.Requestor.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "user_agent": {
+                "description": "The user-agent for your application. Please follow",
+                "is_optional": false
+            },
+            "oauth_url": {
+                "description": null,
+                "is_optional": true
+            },
+            "reddit_url": {
+                "description": null,
+                "is_optional": true
+            },
+            "session": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "user_agent": {
+                "description": "The user-agent for your application. Please follow reddit's",
+                "is_optional": false
+            },
+            "oauth_url": {
+                "description": null,
+                "is_optional": true
+            },
+            "reddit_url": {
+                "description": null,
+                "is_optional": true
+            },
+            "session": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "timeout"
+    },
+    {
+        "old_api": "prawcore.Session.request",
+        "new_api": "prawcore.Session.request",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "method": {
+                "description": "The request verb. E.g., get, post, put.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The path of the request. This path will be combined with",
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "files": {
+                "description": null,
+                "is_optional": true
+            },
+            "json": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "method": {
+                "description": "The request verb. E.g., get, post, put.",
+                "is_optional": false
+            },
+            "path": {
+                "description": "The path of the request. This path will be combined with the",
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": true
+            },
+            "files": {
+                "description": null,
+                "is_optional": true
+            },
+            "json": {
+                "description": null,
+                "is_optional": true
+            },
+            "params": {
+                "description": null,
+                "is_optional": true
+            },
+            "timeout": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "timeout"
+    },
+    {
+        "old_api": "prawcore.ScriptAuthorizer.__init__",
+        "new_api": "prawcore.ScriptAuthorizer.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "authenticator": {
+                "description": "An instance of :class:`TrustedAuthenticator`.",
+                "is_optional": false
+            },
+            "username": {
+                "description": "The Reddit username of one of the application's",
+                "is_optional": false
+            },
+            "password": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "authenticator": {
+                "description": "An instance of :class:`TrustedAuthenticator`.",
+                "is_optional": false
+            },
+            "username": {
+                "description": "The Reddit username of one of the application's developers.",
+                "is_optional": false
+            },
+            "password": {
+                "description": "The password associated with ``username``.",
+                "is_optional": false
+            },
+            "two_factor_callback": {
+                "description": "A function that returns OTPs (One-Time",
+                "is_optional": true
+            },
+            "scopes": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "scopes"
+    },
+    {
+        "old_api": "prawcore.Authorizer.__init__",
+        "new_api": "prawcore.Authorizer.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "authenticator": {
+                "description": "An instance of a subclass of",
+                "is_optional": false
+            },
+            "refresh_token": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "authenticator": {
+                "description": "An instance of a subclass of :class:`BaseAuthenticator`.",
+                "is_optional": false
+            },
+            "post_refresh_callback": {
+                "description": "(Optional) When a single-argument",
+                "is_optional": true
+            },
+            "pre_refresh_callback": {
+                "description": null,
+                "is_optional": true
+            },
+            "refresh_token": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "pre_refresh_callback"
+    },
+    {
+        "old_api": "prawcore.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "prawcore.exceptions.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.TooManyRequests.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": "A requests.response instance that may contain a retry-after",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.TooManyRequests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.URITooLong.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response": {
+                "description": "A requests.response instance.",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.URITooLong",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.BaseAuthorizer.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "authenticator": {
+                "description": "An instance of :class:`BaseAuthenticator`.",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.BaseAuthorizer.is_valid",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.BaseAuthorizer.revoke",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.FiniteRetryStrategy.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "retries": {
+                "description": "Number of times to attempt a request.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.FiniteRetryStrategy.consume_available_retry",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.FiniteRetryStrategy.should_retry_on_failure",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.FiniteRetryStrategy.sleep",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.FiniteRetryStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.RateLimiter.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.RateLimiter.call",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "request_function": {
+                "description": "A function call that returns an HTTP response object.",
+                "is_optional": false
+            },
+            "set_header_callback": {
+                "description": "A callback function used to set the request headers.",
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.RateLimiter.delay",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.RateLimiter.update",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "response_headers": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.RetryStrategy.sleep",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.RetryStrategy",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.TIMEOUT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.auth.const.ACCESS_TOKEN_PATH",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.auth.const.AUTHORIZATION_PATH",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.auth.const.REVOKE_TOKEN_PATH",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.auth.const.TIMEOUT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.exceptions.TooManyRequests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.exceptions.URITooLong",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.TooManyRequests",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "prawcore.sessions.URITooLong",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

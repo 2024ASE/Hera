@@ -1,0 +1,3227 @@
+[
+    {
+        "old_api": "pgq.CascadeAdmin.set_paused",
+        "new_api": "pgq.CascadeAdmin.set_paused",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "node": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer": {
+                "description": null,
+                "is_optional": false
+            },
+            "pause_flag": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "node": {
+                "description": null,
+                "is_optional": false
+            },
+            "consumer": {
+                "description": null,
+                "is_optional": false
+            },
+            "pause_flag": {
+                "description": null,
+                "is_optional": false
+            },
+            "queue_name": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "queue_name"
+    },
+    {
+        "old_api": "pgq.NodeInfo.__init__",
+        "new_api": "pgq.NodeInfo.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "queue_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "row": {
+                "description": null,
+                "is_optional": false
+            },
+            "main_worker": {
+                "description": null,
+                "is_optional": true
+            },
+            "node_name": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "queue_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "row": {
+                "description": null,
+                "is_optional": false
+            },
+            "main_worker": {
+                "description": null,
+                "is_optional": true
+            },
+            "node_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "location": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "location"
+    },
+    {
+        "old_api": "pgq.Event.iterkeys",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.Event.itervalues",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.absolute_import",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.division",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.baseconsumer.division",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.baseconsumer.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.division",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.consumer.RetriableEvent.iterkeys",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.consumer.RetriableEvent.itervalues",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.consumer.RetriableWalkerEvent.iterkeys",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.consumer.RetriableWalkerEvent.itervalues",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.consumer.division",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.consumer.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.coopconsumer.division",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.coopconsumer.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.event.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.localconsumer.print_function",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.admin.RESURRECT_DUMP_FILE",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.admin.command_usage",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.admin.standalone_usage",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.consumer.PDB",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.nodeinfo.BRANCH",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.nodeinfo.LEAF",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.nodeinfo.ROOT",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.nodeinfo.ival2str",
+        "new_api": "",
+        "old_parameter": {
+            "iv": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.worker.WorkerState.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "queue_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "nst": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pgq.cascade.worker.WorkerState",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadeAdmin.get_node_info_opt",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "node_name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadeAdmin.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadeAdmin.load_merge_queues",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "node_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "queue_list": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadeAdmin.load_other_node_info",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "our_node_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "other_queue_name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadeAdmin.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadeAdmin.pause_and_wait_merge_workers",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "old_info": {
+                "description": null,
+                "is_optional": false
+            },
+            "new_info": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadeAdmin.resume_merge_workers",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "old_node_name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadedConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadedConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadedWorker.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CascadedWorker.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.Consumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.Consumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CoopConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.CoopConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.LocalConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.LocalConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.PGQStatus.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.PGQStatus.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.QueueInfo.print_tree_compact",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.RemoteConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.RemoteConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.SerialConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.SerialConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.Any",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.BaseConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.BaseConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.BatchInfo",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.Dict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.EventList",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.Iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.List",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.Optional",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.Sequence",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.baseconsumer.Union",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseBatchWalker.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "curs": {
+                "description": null,
+                "is_optional": false
+            },
+            "batch_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "queue_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "fetch_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "consumer_filter": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseBatchWalker.__iter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseBatchWalker.__len__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseBatchWalker",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "service_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "db_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.add_connect_string_profile",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connstr": {
+                "description": null,
+                "is_optional": false
+            },
+            "profile": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.close_database",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.connection_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "conn": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.exception_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "det": {
+                "description": null,
+                "is_optional": false
+            },
+            "emsg": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.exec_cmd",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db_or_curs": {
+                "description": null,
+                "is_optional": false
+            },
+            "q": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "commit": {
+                "description": null,
+                "is_optional": true
+            },
+            "quiet": {
+                "description": null,
+                "is_optional": true
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.exec_cmd_many",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db_or_curs": {
+                "description": null,
+                "is_optional": false
+            },
+            "sql": {
+                "description": null,
+                "is_optional": false
+            },
+            "baseargs": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_list": {
+                "description": null,
+                "is_optional": false
+            },
+            "commit": {
+                "description": null,
+                "is_optional": true
+            },
+            "quiet": {
+                "description": null,
+                "is_optional": true
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.execute_with_retry",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "stmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "exceptions": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.get_database",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "autocommit": {
+                "description": null,
+                "is_optional": true
+            },
+            "isolation_level": {
+                "description": null,
+                "is_optional": true
+            },
+            "cache": {
+                "description": null,
+                "is_optional": true
+            },
+            "connstr": {
+                "description": null,
+                "is_optional": true
+            },
+            "profile": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.hook_sighup",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "sig": {
+                "description": null,
+                "is_optional": false
+            },
+            "frame": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.hook_sigint",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "sig": {
+                "description": null,
+                "is_optional": false
+            },
+            "frame": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.init_optparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.listen",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "channel": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.load_config",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.print_ini",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.print_version",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.process_batch",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db": {
+                "description": null,
+                "is_optional": false
+            },
+            "batch_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "event_list": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.process_event",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db": {
+                "description": null,
+                "is_optional": false
+            },
+            "event": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.register_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.reload",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.reset",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.run",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.run_func_safely",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            },
+            "prefer_looping": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.run_once",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.send_signal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "sig": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.send_stats",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.set_database_defaults",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.set_single_loop",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "do_single_loop": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.shutdown",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.sleep",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "secs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.sleep_on_exception",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.start",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.startup",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stat_add",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stat_end",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "count": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stat_get",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stat_inc",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "increase": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stat_increase",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "increase": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stat_put",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stat_start",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.stop",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.unlisten",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "channel": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.unregister_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer.work",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.BaseConsumer",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.Dict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.EventList",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.Iterator",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.Optional",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.consumer.Tuple",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.coopconsumer.Optional",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.coopconsumer.Sequence",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.event.Any",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.event.Iterable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.event.Optional",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.event.Tuple",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "service_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "db_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.add_connect_string_profile",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "connstr": {
+                "description": null,
+                "is_optional": false
+            },
+            "profile": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.close_database",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.connection_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "conn": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.exception_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "det": {
+                "description": null,
+                "is_optional": false
+            },
+            "emsg": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.exec_cmd",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db_or_curs": {
+                "description": null,
+                "is_optional": false
+            },
+            "q": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "commit": {
+                "description": null,
+                "is_optional": true
+            },
+            "quiet": {
+                "description": null,
+                "is_optional": true
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.exec_cmd_many",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db_or_curs": {
+                "description": null,
+                "is_optional": false
+            },
+            "sql": {
+                "description": null,
+                "is_optional": false
+            },
+            "baseargs": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_list": {
+                "description": null,
+                "is_optional": false
+            },
+            "commit": {
+                "description": null,
+                "is_optional": true
+            },
+            "quiet": {
+                "description": null,
+                "is_optional": true
+            },
+            "prefix": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.execute_with_retry",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "stmt": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "exceptions": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.get_database",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "autocommit": {
+                "description": null,
+                "is_optional": true
+            },
+            "isolation_level": {
+                "description": null,
+                "is_optional": true
+            },
+            "cache": {
+                "description": null,
+                "is_optional": true
+            },
+            "connstr": {
+                "description": null,
+                "is_optional": true
+            },
+            "profile": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.hook_sighup",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "sig": {
+                "description": null,
+                "is_optional": false
+            },
+            "frame": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.hook_sigint",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "sig": {
+                "description": null,
+                "is_optional": false
+            },
+            "frame": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.init_argparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.init_optparse",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.listen",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "channel": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.load_config",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.parse_args",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.print_ini",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.print_version",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.process_batch",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db": {
+                "description": null,
+                "is_optional": false
+            },
+            "batch_id": {
+                "description": null,
+                "is_optional": false
+            },
+            "event_list": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.process_event",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "db": {
+                "description": null,
+                "is_optional": false
+            },
+            "event": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.register_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.reload",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.reset",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.run",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.run_func_safely",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            },
+            "prefer_looping": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.run_once",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.send_signal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "sig": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.send_stats",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.set_database_defaults",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.set_single_loop",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "do_single_loop": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.shutdown",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.sleep",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "secs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.sleep_on_exception",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.start",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.startup",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stat_add",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stat_end",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "count": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stat_get",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stat_inc",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "increase": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stat_increase",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "increase": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stat_put",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "key": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stat_start",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.stop",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.unlisten",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "dbname": {
+                "description": null,
+                "is_optional": false
+            },
+            "channel": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.unregister_consumer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer.work",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.BaseConsumer",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.EventList",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.localconsumer.Optional",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.remoteconsumer.EventList",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.remoteconsumer.Optional",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.remoteconsumer.Sequence",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.status.List",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.status.Optional",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pgq.status.Sequence",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

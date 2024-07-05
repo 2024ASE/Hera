@@ -1,0 +1,184 @@
+[
+    {
+        "old_api": "pbr.packaging.override_get_script_args",
+        "new_api": "pbr.packaging.override_get_script_args",
+        "old_parameter": {
+            "dist": {
+                "description": null,
+                "is_optional": false
+            },
+            "executable": {
+                "description": null,
+                "is_optional": true
+            },
+            "is_wininst": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "dist": {
+                "description": null,
+                "is_optional": false
+            },
+            "executable": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_removal",
+        "IC": "FIC",
+        "change": "is_wininst"
+    },
+    {
+        "old_api": "pbr.util.D1_D2_SETUP_ARGS",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.build.build_sdist",
+        "old_parameter": {},
+        "new_parameter": {
+            "sdist_directory": {
+                "description": null,
+                "is_optional": false
+            },
+            "config_settings": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.build.build_wheel",
+        "old_parameter": {},
+        "new_parameter": {
+            "wheel_directory": {
+                "description": null,
+                "is_optional": false
+            },
+            "config_settings": {
+                "description": null,
+                "is_optional": true
+            },
+            "metadata_directory": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.build.get_requires_for_build_sdist",
+        "old_parameter": {},
+        "new_parameter": {
+            "config_settings": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.build.get_requires_for_build_wheel",
+        "old_parameter": {},
+        "new_parameter": {
+            "config_settings": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.build.prepare_metadata_for_build_wheel",
+        "old_parameter": {},
+        "new_parameter": {
+            "metadata_directory": {
+                "description": null,
+                "is_optional": false
+            },
+            "config_settings": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.util.CFG_TO_PY_SETUP_ARGS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.version.use_importlib",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.build.__all__",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.build.build_meta",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pbr.version.importlib_metadata",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

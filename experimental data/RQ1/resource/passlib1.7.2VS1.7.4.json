@@ -1,0 +1,943 @@
+[
+    {
+        "old_api": "passlib.exc.UnknownHashError.__init__",
+        "new_api": "passlib.exc.UnknownHashError.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "message": {
+                "description": null,
+                "is_optional": true
+            },
+            "value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "name"
+    },
+    {
+        "old_api": "passlib.utils.compat.suppress_cause",
+        "new_api": "passlib.utils.compat.suppress_cause",
+        "old_parameter": {
+            "exc": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "exc": {
+                "description": null,
+                "is_optional": false
+            },
+            "cause": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "cause"
+    },
+    {
+        "old_api": "passlib.crypto.digest.HashInfo.__init__",
+        "new_api": "passlib.crypto.digest.HashInfo.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "const": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "const": {
+                "description": null,
+                "is_optional": false
+            },
+            "names": {
+                "description": null,
+                "is_optional": false
+            },
+            "required": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "required"
+    },
+    {
+        "old_api": "passlib.crypto.digest.lookup_hash",
+        "new_api": "passlib.crypto.digest.lookup_hash",
+        "old_parameter": {
+            "digest": {
+                "description": null,
+                "is_optional": false
+            },
+            "return_unknown": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "digest": {
+                "description": null,
+                "is_optional": false
+            },
+            "return_unknown": {
+                "description": null,
+                "is_optional": true
+            },
+            "required": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "required"
+    },
+    {
+        "old_api": "passlib.handlers.digests.create_hex_hash",
+        "new_api": "passlib.handlers.digests.create_hex_hash",
+        "old_parameter": {
+            "digest": {
+                "description": null,
+                "is_optional": false
+            },
+            "module": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "digest": {
+                "description": null,
+                "is_optional": false
+            },
+            "module": {
+                "description": null,
+                "is_optional": true
+            },
+            "django_name": {
+                "description": null,
+                "is_optional": true
+            },
+            "required": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "required"
+    },
+    {
+        "old_api": "passlib.utils.suppress_cause",
+        "new_api": "passlib.utils.suppress_cause",
+        "old_parameter": {
+            "exc": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "exc": {
+                "description": null,
+                "is_optional": false
+            },
+            "cause": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "cause"
+    },
+    {
+        "old_api": "passlib.tests.test_ext_django.conditionally_available_hashes",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "passlib.tests.test_ext_django.stock_rounds",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.apps.django21_context",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.exc.CryptBackendError",
+        "old_parameter": {},
+        "new_parameter": {
+            "handler": {
+                "description": null,
+                "is_optional": false
+            },
+            "config": {
+                "description": null,
+                "is_optional": false
+            },
+            "hash": {
+                "description": null,
+                "is_optional": false
+            },
+            "source": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.exc.ENABLE_DEBUG_ONLY_REPR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.exc.InternalBackendError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.exc.PasswordValueError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.exc.UnknownHashError.__str__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.exc.debug_only_repr",
+        "old_parameter": {},
+        "new_parameter": {
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "param": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.PYPY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.crypt_accepts_bytes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.crypt_needs_lock",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.is_safe_crypt_input",
+        "old_parameter": {},
+        "new_parameter": {
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.unicode_or_str",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.utf8_repeat_string",
+        "old_parameter": {},
+        "new_parameter": {
+            "source": {
+                "description": null,
+                "is_optional": false
+            },
+            "size": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.utf8_truncate",
+        "old_parameter": {},
+        "new_parameter": {
+            "source": {
+                "description": null,
+                "is_optional": false
+            },
+            "index": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.ldap_salted_sha256.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "salt": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwds": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.ldap_salted_sha256.to_string",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.ldap_salted_sha256",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.ldap_salted_sha512.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "salt": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwds": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.ldap_salted_sha512.to_string",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.ldap_salted_sha512",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.sha256",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.ldap_digests.sha512",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.compat.error_from",
+        "old_parameter": {},
+        "new_parameter": {
+            "exc": {
+                "description": null,
+                "is_optional": false
+            },
+            "cause": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.ext.django.utils.quirks",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.apps._django21_schemes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.apps._django_110_schemes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.context.exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.crypto.digest._fallback_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.crypto.digest._fips_algorithms",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.crypto.digest._gen_fallback_info",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.crypto.digest._set_mock_fips_mode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.crypto.digest.as_bool",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.crypto.digest.error_from",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.crypto.digest.mock_fips_mode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.bcrypt.PY3",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.bcrypt.compile_hmac",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.bcrypt.crypt_accepts_bytes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.bcrypt.error_from",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.bcrypt.utf8_repeat_string",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.handlers.bcrypt.utf8_truncate",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.hash.ldap_salted_sha256",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.hash.ldap_salted_sha512",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_crypto_digest.UnknownHashError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_ext_django.PASS1",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_ext_django.WRONG1",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_ext_django._modify_django_config",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_ext_django.check_django_hasher_has_backend",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_ext_django.quirks",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_ext_django.re",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_handlers.exc",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_handlers.ldap_salted_sha256_test",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_handlers.ldap_salted_sha512_test",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_handlers_bcrypt.PY3",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_handlers_bcrypt.is_safe_crypt_input",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_handlers_django.check_django_hasher_has_backend",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_handlers_django.re",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.test_utils.to_bytes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.utils.doesnt_require_backend",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.tests.utils.nullcontext",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.ExpectedTypeError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils._safe_crypt_lock",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.nullcontext",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.threading",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "passlib.utils.compat.nullcontext",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

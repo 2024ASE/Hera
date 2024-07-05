@@ -1,0 +1,2738 @@
+[
+    {
+        "old_api": "pamqp.encode.support_deprecated_rabbitmq",
+        "new_api": "pamqp.encode.support_deprecated_rabbitmq",
+        "old_parameter": {},
+        "new_parameter": {
+            "enabled": {
+                "description": "Specify if deprecated RabbitMQ versions are supported",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "enabled"
+    },
+    {
+        "old_api": "pamqp.body.ContentBody.__init__",
+        "new_api": "pamqp.body.ContentBody.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "value"
+    },
+    {
+        "old_api": "pamqp.ContentHeader.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "weight": {
+                "description": null,
+                "is_optional": true
+            },
+            "body_size": {
+                "description": null,
+                "is_optional": true
+            },
+            "properties": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.ContentHeader.marshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.ContentHeader.unmarshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.ContentHeader",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.PYTHON3",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.ProtocolHeader.__init__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "major_version": {
+                "description": null,
+                "is_optional": true
+            },
+            "minor_version": {
+                "description": null,
+                "is_optional": true
+            },
+            "revision": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.ProtocolHeader.marshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.ProtocolHeader.unmarshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.ProtocolHeader",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.decode.Struct",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.frame.AMQP",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.frame.DECODE_FRAME_END_CHAR",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.frame.FRAME_END_CHAR",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.frame.FRAME_HEADER_SIZE",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.header.AMQP",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.heartbeat.Heartbeat.marshal",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPAccessRefused",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPChannelError",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPCommandInvalid",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPConnectionForced",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPContentTooLarge",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPFrameError",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPInternalError",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPInvalidPath",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPNoConsumers",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPNoRoute",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPNotAllowed",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPNotFound",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPNotImplemented",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPPreconditionFailed",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPResourceError",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPResourceLocked",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPSyntaxError",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.AMQPUnexpectedFrame",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Basic",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Channel",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Confirm",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Connection",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DATA_TYPES",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DEFAULT_HOST",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DEFAULT_PASS",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DEFAULT_PORT",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DEFAULT_USER",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DEFAULT_VHOST",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DEPRECATION_WARNING",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.DOMAINS",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.ERRORS",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Exchange",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.FRAME_BODY",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.FRAME_END",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.FRAME_HEADER",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.FRAME_HEARTBEAT",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.FRAME_MAX_SIZE",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.FRAME_MIN_SIZE",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame.__contains__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame.__getitem__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame.__iter__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame.__len__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame.__repr__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame.marshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame.unmarshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Frame",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.INDEX_MAPPING",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase.__contains__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase.__delattr__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase.__iter__",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase.encode_property",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_name": {
+                "description": null,
+                "is_optional": false
+            },
+            "property_value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase.marshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase.to_dict",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase.unmarshal",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "flags": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.PropertiesBase",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Queue",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.REPLY_SUCCESS",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.Tx",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "class",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.VERSION",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.constants",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.decode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.encode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.header",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.codec.__all__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.codec.__path__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.codec.__warningregistry__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.codec.decode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.codec.encode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.codec.warnings",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.constants.PYTHON3",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.constants.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.decode.PYTHON3",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.decode._embedded_value",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.decode._to_str",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.decode.struct",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.decode.time",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.encode.PYTHON3",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.encode._utf8_encode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.encode.long",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.encode.unicode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.frame.PYTHON3",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.frame.specification",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.header.specification",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.heartbeat.PYTHON3",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.heartbeat.specification",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.FRAME_METHOD",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.__since__",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.decode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.encode",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.struct",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "pamqp.specification.warnings",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.version",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.__contains__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.__eq__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.__getitem__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": "The key to use to retrieve the value",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.__iter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.__len__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.encode_property",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "The name of the property to encode",
+                "is_optional": false
+            },
+            "value": {
+                "description": "The property to encode",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.marshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.unmarshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "flags": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties.validate",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.BasicProperties",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.__contains__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.__getitem__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "item": {
+                "description": "The key to use to retrieve the value",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.__iter__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.__len__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.marshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.unmarshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": "The raw AMQP frame data",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame.validate",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.Frame",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.LOGGER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.Basic",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.Channel",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.Confirm",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.Connection",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.Exchange",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.INDEX_MAPPING",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.Queue",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.Tx",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.Arguments",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.FieldArray",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.FieldTable",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.FieldValue",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.Struct",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.AMQP",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DATA_TYPES",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DEFAULT_HOST",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DEFAULT_PASS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DEFAULT_PORT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DEFAULT_USER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DEFAULT_VHOST",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DEPRECATION_WARNING",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DOMAINS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.DOMAIN_REGEX",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_BODY",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_END",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_END_CHAR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_HEADER",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_HEADER_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_HEARTBEAT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_MAX_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_METHOD",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.FRAME_MIN_SIZE",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.REPLY_SUCCESS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.VERSION",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.decode.TABLE_MAPPING",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.decode.embedded_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "value": {
+                "description": "The binary value to decode",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.decode.short_short_uint",
+        "old_parameter": {},
+        "new_parameter": {
+            "value": {
+                "description": "The binary value to decode",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.decode.void",
+        "old_parameter": {},
+        "new_parameter": {
+            "_": {
+                "description": "The empty bytes object to ignore",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.encode.METHODS",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPAccessRefused",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPChannelError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPCommandInvalid",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPConnectionForced",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPContentTooLarge",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPFrameError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPHardError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPInternalError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPInvalidPath",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPNoConsumers",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPNoRoute",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPNotAllowed",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPNotFound",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPNotImplemented",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPPreconditionFailed",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPResourceError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPResourceLocked",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPSoftError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPSyntaxError",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.AMQPUnexpectedFrame",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.exceptions.CLASS_MAPPING",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.frame.FrameTypes",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.BasicProperties",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.ContentHeader.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "weight": {
+                "description": "The unused content weight field",
+                "is_optional": true
+            },
+            "body_size": {
+                "description": "The size in bytes of the message body",
+                "is_optional": true
+            },
+            "properties": {
+                "description": "The message properties",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.ContentHeader.marshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.ContentHeader.unmarshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": "The raw frame data to unmarshal",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.ProtocolHeader.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "major_version": {
+                "description": "The AMQP major version (``0``)",
+                "is_optional": true
+            },
+            "minor_version": {
+                "description": "The AMQP major version (``9``)",
+                "is_optional": true
+            },
+            "revision": {
+                "description": "The AMQP major version (``1``)",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.ProtocolHeader.marshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.ProtocolHeader.unmarshal",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "data": {
+                "description": "The frame value to unpack",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base._AMQData",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.common",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.decode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.encode",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.struct",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.base.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.base",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.common",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.datetime",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.commands.warnings",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.datetime",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.decimal",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.struct",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.common.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.constants.re",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.decode.common",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.decode.datetime",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.decode.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.encode._string",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.encode.common",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.encode.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.frame.base",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.frame.commands",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.frame.common",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.frame.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.frame.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.commands",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.header.typing",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "pamqp.heartbeat.constants",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

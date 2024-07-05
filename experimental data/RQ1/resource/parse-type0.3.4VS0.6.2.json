@@ -1,0 +1,960 @@
+[
+    {
+        "old_api": "parse_type.parse.date_convert",
+        "new_api": "parse_type.parse.date_convert",
+        "old_parameter": {
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "match": {
+                "description": null,
+                "is_optional": false
+            },
+            "ymd": {
+                "description": null,
+                "is_optional": true
+            },
+            "mdy": {
+                "description": null,
+                "is_optional": true
+            },
+            "dmy": {
+                "description": null,
+                "is_optional": true
+            },
+            "d_m_y": {
+                "description": null,
+                "is_optional": true
+            },
+            "hms": {
+                "description": null,
+                "is_optional": true
+            },
+            "am": {
+                "description": null,
+                "is_optional": true
+            },
+            "tz": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "match": {
+                "description": null,
+                "is_optional": false
+            },
+            "ymd": {
+                "description": null,
+                "is_optional": true
+            },
+            "mdy": {
+                "description": null,
+                "is_optional": true
+            },
+            "dmy": {
+                "description": null,
+                "is_optional": true
+            },
+            "d_m_y": {
+                "description": null,
+                "is_optional": true
+            },
+            "hms": {
+                "description": null,
+                "is_optional": true
+            },
+            "am": {
+                "description": null,
+                "is_optional": true
+            },
+            "tz": {
+                "description": null,
+                "is_optional": true
+            },
+            "mm": {
+                "description": null,
+                "is_optional": true
+            },
+            "dd": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "dd"
+    },
+    {
+        "old_api": "parse_type.parse.Parser.findall",
+        "new_api": "parse_type.parse.Parser.findall",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            },
+            "evaluate_result": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "evaluate_result"
+    },
+    {
+        "old_api": "parse_type.parse.compile",
+        "new_api": "parse_type.parse.compile",
+        "old_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "case_sensitive"
+    },
+    {
+        "old_api": "parse_type.parse_util.make_format_spec",
+        "new_api": "parse_type.parse_util.make_format_spec",
+        "old_parameter": {
+            "type": {
+                "description": null,
+                "is_optional": true
+            },
+            "width": {
+                "description": null,
+                "is_optional": true
+            },
+            "zero": {
+                "description": null,
+                "is_optional": true
+            },
+            "align": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "type": {
+                "description": null,
+                "is_optional": true
+            },
+            "width": {
+                "description": null,
+                "is_optional": true
+            },
+            "zero": {
+                "description": null,
+                "is_optional": true
+            },
+            "align": {
+                "description": null,
+                "is_optional": true
+            },
+            "fill": {
+                "description": null,
+                "is_optional": true
+            },
+            "precision": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "precision"
+    },
+    {
+        "old_api": "parse_type.parse.Parser.parse",
+        "new_api": "parse_type.parse.Parser.parse",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "evaluate_result": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "evaluate_result"
+    },
+    {
+        "old_api": "parse_type.parse.search",
+        "new_api": "parse_type.parse.search",
+        "old_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            },
+            "evaluate_result": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "case_sensitive"
+    },
+    {
+        "old_api": "parse_type.cfparse.Parser.__init__",
+        "new_api": "parse_type.cfparse.Parser.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": " Parse schema (or format) for parser (as string).",
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": " Type dictionary with type converters.",
+                "is_optional": true
+            },
+            "type_builder": {
+                "description": "Type builder to use for missing types.",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "schema": {
+                "description": " Parse schema (or format) for parser (as string).",
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": " Type dictionary with type converters (or None).",
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": "Indicates if case-sensitive regexp are used.",
+                "is_optional": true
+            },
+            "type_builder": {
+                "description": "Type builder to use for missing types.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "case_sensitive"
+    },
+    {
+        "old_api": "parse_type.parse.ResultIterator.__init__",
+        "new_api": "parse_type.parse.ResultIterator.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": false
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": false
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": false
+            },
+            "evaluate_result": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "evaluate_result"
+    },
+    {
+        "old_api": "parse_type.parse.Parser.__init__",
+        "new_api": "parse_type.parse.Parser.__init__",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "case_sensitive"
+    },
+    {
+        "old_api": "parse_type.parse.findall",
+        "new_api": "parse_type.parse.findall",
+        "old_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            },
+            "evaluate_result": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "case_sensitive"
+    },
+    {
+        "old_api": "parse_type.parse.parse",
+        "new_api": "parse_type.parse.parse",
+        "old_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "format": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "extra_types": {
+                "description": null,
+                "is_optional": true
+            },
+            "evaluate_result": {
+                "description": null,
+                "is_optional": true
+            },
+            "case_sensitive": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "case_sensitive"
+    },
+    {
+        "old_api": "parse_type.parse.with_pattern",
+        "new_api": "parse_type.parse.with_pattern",
+        "old_parameter": {
+            "pattern": {
+                "description": "regular expression pattern (as text)",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "pattern": {
+                "description": "regular expression pattern (as text)",
+                "is_optional": false
+            },
+            "regex_group_count": {
+                "description": "Indicates how many regex-groups are in pattern.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "regex_group_count"
+    },
+    {
+        "old_api": "parse_type.parse.Parser.search",
+        "new_api": "parse_type.parse.Parser.search",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "pos": {
+                "description": null,
+                "is_optional": true
+            },
+            "endpos": {
+                "description": null,
+                "is_optional": true
+            },
+            "evaluate_result": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "evaluate_result"
+    },
+    {
+        "old_api": "parse_type.parse_util.FormatSpec.__new__",
+        "new_api": "parse_type.parse_util.FormatSpec.__new__",
+        "old_parameter": {
+            "_cls": {
+                "description": null,
+                "is_optional": false
+            },
+            "type": {
+                "description": null,
+                "is_optional": false
+            },
+            "width": {
+                "description": null,
+                "is_optional": false
+            },
+            "zero": {
+                "description": null,
+                "is_optional": false
+            },
+            "align": {
+                "description": null,
+                "is_optional": false
+            },
+            "fill": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "_cls": {
+                "description": null,
+                "is_optional": false
+            },
+            "type": {
+                "description": null,
+                "is_optional": false
+            },
+            "width": {
+                "description": null,
+                "is_optional": false
+            },
+            "zero": {
+                "description": null,
+                "is_optional": false
+            },
+            "align": {
+                "description": null,
+                "is_optional": false
+            },
+            "fill": {
+                "description": null,
+                "is_optional": false
+            },
+            "precision": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "precision"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.Match.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parser": {
+                "description": null,
+                "is_optional": false
+            },
+            "match": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.Match.evaluate_result",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.Match",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.Parser.evaluate_result",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "m": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.Result.__contains__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.convert_first.__call__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "match": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.convert_first.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "converter": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.convert_first",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.int_convert.__call__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "string": {
+                "description": null,
+                "is_optional": false
+            },
+            "match": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.int_convert.__init__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "base": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.builder.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.cardinality.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.cardinality_field.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.cfparse.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.Decimal",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "parse_type.parse_util.absolute_import",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
