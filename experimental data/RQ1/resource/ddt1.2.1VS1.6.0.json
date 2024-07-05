@@ -1,0 +1,219 @@
+[
+    {
+        "old_api": "ddt.idata",
+        "new_api": "ddt.idata",
+        "old_parameter": {
+            "iterable": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "iterable": {
+                "description": "iterable of the values to provide to the test function.",
+                "is_optional": false
+            },
+            "index_len": {
+                "description": "an optional integer specifying the width to zero-pad the",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "index_len"
+    },
+    {
+        "old_api": "ddt.mk_test_name",
+        "new_api": "ddt.mk_test_name",
+        "old_parameter": {
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "index": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "name": {
+                "description": null,
+                "is_optional": false
+            },
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "index": {
+                "description": null,
+                "is_optional": true
+            },
+            "index_len": {
+                "description": null,
+                "is_optional": true
+            },
+            "name_fmt": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "name_fmt"
+    },
+    {
+        "old_api": "ddt.file_data",
+        "new_api": "ddt.file_data",
+        "old_parameter": {
+            "value": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "value": {
+                "description": null,
+                "is_optional": false
+            },
+            "yaml_loader": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "yaml_loader"
+    },
+    {
+        "old_api": "ddt.ddt",
+        "new_api": "ddt.ddt",
+        "old_parameter": {
+            "cls": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "arg": {
+                "description": null,
+                "is_optional": true
+            },
+            "kwargs": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "arg"
+    },
+    {
+        "old_api": "ddt.index_len",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "module_field",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt.INDEX_LEN",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt.TestNameFormat",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt.YAML_LOADER_ATTR",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "module_field",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt.named_data",
+        "old_parameter": {},
+        "new_parameter": {
+            "named_values": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt.Enum",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt.Sequence",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt._NamedDataDict",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt._NamedDataList",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "ddt.unique",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]

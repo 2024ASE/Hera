@@ -1,0 +1,2610 @@
+[
+    {
+        "old_api": "cliff.interactive.InteractiveApp.basic_complete",
+        "new_api": "cliff.interactive.InteractiveApp.basic_complete",
+        "old_parameter": {
+            "text": {
+                "description": "str - the string prefix we are attempting to match (all returned matches must begin with it)",
+                "is_optional": false
+            },
+            "line": {
+                "description": "str - the current input line with leading whitespace removed",
+                "is_optional": false
+            },
+            "begidx": {
+                "description": "int - the beginning index of the prefix text",
+                "is_optional": false
+            },
+            "endidx": {
+                "description": "int - the ending index of the prefix text",
+                "is_optional": false
+            },
+            "match_against": {
+                "description": "Collection - the list being matched against",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": "the string prefix we are attempting to match (all matches must begin with it)",
+                "is_optional": false
+            },
+            "line": {
+                "description": "the current input line with leading whitespace removed",
+                "is_optional": false
+            },
+            "begidx": {
+                "description": "the beginning index of the prefix text",
+                "is_optional": false
+            },
+            "endidx": {
+                "description": "the ending index of the prefix text",
+                "is_optional": false
+            },
+            "match_against": {
+                "description": "the strings being matched against",
+                "is_optional": false
+            }
+        },
+        "change_type": "param_addition",
+        "IC": "BIC/FIC",
+        "change": "self"
+    },
+    {
+        "old_api": "cliff.utils.terminal_width",
+        "new_api": "cliff.utils.terminal_width",
+        "old_parameter": {
+            "stdout": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "stdout"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.ppaged",
+        "new_api": "cliff.interactive.InteractiveApp.ppaged",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "str - message to print to current stdout - anything convertible to a str with '{}'.format() is OK",
+                "is_optional": false
+            },
+            "end": {
+                "description": "str - string appended after the end of the message if not already present, default a newline",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "object to print",
+                "is_optional": false
+            },
+            "end": {
+                "description": "string appended after the end of the message, default a newline",
+                "is_optional": true
+            },
+            "chop": {
+                "description": "True -> causes lines longer than the screen width to be chopped (truncated) rather than wrapped\n                      - truncated text is still accessible by scrolling with the right & left arrow keys\n                      - chopping is ideal for displaying wide tabular data as is done in utilities like pgcli",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "chop"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.path_complete",
+        "new_api": "cliff.interactive.InteractiveApp.path_complete",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": "str - the string prefix we are attempting to match (all returned matches must begin with it)",
+                "is_optional": false
+            },
+            "line": {
+                "description": "str - the current input line with leading whitespace removed",
+                "is_optional": false
+            },
+            "begidx": {
+                "description": "int - the beginning index of the prefix text",
+                "is_optional": false
+            },
+            "endidx": {
+                "description": "int - the ending index of the prefix text",
+                "is_optional": false
+            },
+            "dir_exe_only": {
+                "description": "bool - only return directories and executables, not non-executable files",
+                "is_optional": true
+            },
+            "dir_only": {
+                "description": "bool - only return directories",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": "the string prefix we are attempting to match (all matches must begin with it)",
+                "is_optional": false
+            },
+            "line": {
+                "description": "the current input line with leading whitespace removed",
+                "is_optional": false
+            },
+            "begidx": {
+                "description": "the beginning index of the prefix text",
+                "is_optional": false
+            },
+            "endidx": {
+                "description": "the ending index of the prefix text",
+                "is_optional": false
+            },
+            "path_filter": {
+                "description": "optional filter function that determines if a path belongs in the results\n                    this function takes a path as its argument and returns True if the path should\n                    be kept in the results",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_removal",
+        "IC": "FIC",
+        "change": "dir_only"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete",
+        "new_api": "cliff.interactive.InteractiveApp.complete",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": "str - the current word that user is typing",
+                "is_optional": false
+            },
+            "state": {
+                "description": "int - non-negative integer",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": "the current word that user is typing",
+                "is_optional": false
+            },
+            "state": {
+                "description": "non-negative integer",
+                "is_optional": false
+            },
+            "custom_settings": {
+                "description": "used when not tab completing the main command line",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "custom_settings"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.pfeedback",
+        "new_api": "cliff.interactive.InteractiveApp.pfeedback",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "object to print",
+                "is_optional": false
+            },
+            "end": {
+                "description": "string appended after the end of the message, default a newline",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "end"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.onecmd",
+        "new_api": "cliff.interactive.InteractiveApp.onecmd",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": "ParsedString - subclass of string including the pyparsing ParseResults",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "statement": {
+                "description": "intended to be a Statement instance parsed command from the input stream, alternative\n                  acceptance of a str is present only for backward compatibility with cmd",
+                "is_optional": false
+            },
+            "add_to_history": {
+                "description": "If True, then add this command to history. Defaults to True.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "add_to_history"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.runcmds_plus_hooks",
+        "new_api": "cliff.interactive.InteractiveApp.runcmds_plus_hooks",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "cmds": {
+                "description": "list - Command strings suitable for onecmd_plus_hooks.",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "cmds": {
+                "description": "commands to run",
+                "is_optional": false
+            },
+            "add_to_history": {
+                "description": "If True, then add these commands to history. Defaults to True.",
+                "is_optional": true
+            },
+            "stop_on_keyboard_interrupt": {
+                "description": "if True, then stop running contents of cmds if Ctrl-C is pressed instead of moving\n                                   to the next command in the list. This is used when the commands are part of a\n                                   group, like a text script, which should stop upon Ctrl-C. Defaults to False.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "stop_on_keyboard_interrupt"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.perror",
+        "new_api": "cliff.interactive.InteractiveApp.perror",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "errmsg": {
+                "description": "str - error message to print out",
+                "is_optional": false
+            },
+            "exception_type": {
+                "description": "str - (optional) type of exception which precipitated this error message",
+                "is_optional": true
+            },
+            "traceback_war": {
+                "description": "bool - (optional) if True, print a message to let user know they can enable debug",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "object to print",
+                "is_optional": true
+            },
+            "end": {
+                "description": "string appended after the end of the message, default a newline",
+                "is_optional": true
+            },
+            "apply_style": {
+                "description": "If True, then ansi.style_error will be applied to the message text. Set to False in cases\n                    where the message text already has the desired style. Defaults to True.",
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "errmsg"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.poutput",
+        "new_api": "cliff.interactive.InteractiveApp.poutput",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "str - message to print to current stdout - anything convertible to a str with '{}'.format() is OK",
+                "is_optional": false
+            },
+            "end": {
+                "description": "str - string appended after the end of the message if not already present, default a newline",
+                "is_optional": true
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "object to print",
+                "is_optional": true
+            },
+            "end": {
+                "description": "string appended after the end of the message, default a newline",
+                "is_optional": true
+            }
+        },
+        "change_type": "param_removal",
+        "IC": "BIC/FIC",
+        "change": "msg"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.onecmd_plus_hooks",
+        "new_api": "cliff.interactive.InteractiveApp.onecmd_plus_hooks",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": "str - line of text read from input",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": "command line to run",
+                "is_optional": false
+            },
+            "add_to_history": {
+                "description": "If True, then add this command to history. Defaults to True.",
+                "is_optional": true
+            },
+            "raise_keyboard_interrupt": {
+                "description": "if True, then KeyboardInterrupt exceptions will be raised if stop isn't already\n                                 True. This is used when running commands in a loop to be able to stop the whole\n                                 loop and not just the current command. Defaults to False.",
+                "is_optional": true
+            },
+            "py_bridge_call": {
+                "description": "This should only ever be set to True by PyBridge to signify the beginning\n                       of an app() call from Python. It is used to enable/disable the storage of the\n                       command's stdout.",
+                "is_optional": true
+            }
+        },
+        "change_type": "optional_param_addition",
+        "IC": "BIC",
+        "change": "py_bridge_call"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.cmd_with_subs_completer",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": "str - the string prefix we are attempting to match (all returned matches must begin with it)",
+                "is_optional": false
+            },
+            "line": {
+                "description": "str - the current input line with leading whitespace removed",
+                "is_optional": false
+            },
+            "begidx": {
+                "description": "int - the beginning index of the prefix text",
+                "is_optional": false
+            },
+            "endidx": {
+                "description": "int - the ending index of the prefix text",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.cmdenvironment",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.colorize",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "val": {
+                "description": null,
+                "is_optional": false
+            },
+            "color": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete_alias",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete_edit",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete_help",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete_load",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete_pyscript",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete_shell",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": "str - the string prefix we are attempting to match (all returned matches must begin with it)",
+                "is_optional": false
+            },
+            "line": {
+                "description": "str - the current input line with leading whitespace removed",
+                "is_optional": false
+            },
+            "begidx": {
+                "description": "int - the beginning index of the prefix text",
+                "is_optional": false
+            },
+            "endidx": {
+                "description": "int - the ending index of the prefix text",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.complete_unalias",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.do__relative_load",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "arglist": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.do_eos",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "_": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.do_load",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "arglist": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.do_pyscript",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "arglist": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.do_unalias",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "arglist": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.get_exes_in_path",
+        "new_api": "",
+        "old_parameter": {
+            "starts_with": {
+                "description": "str - what the exes should start with. leave blank for all exes in path.",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.get_subcommand_completer",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": "command which owns the subcommand",
+                "is_optional": false
+            },
+            "subcommand": {
+                "description": "the subcommand we are querying",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.get_subcommands",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": "the command we are querying",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.is_text_file",
+        "new_api": "",
+        "old_parameter": {
+            "file_path": {
+                "description": "path to the file being checked",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.postparse",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "parse_result": {
+                "description": "pyparsing.ParseResults - parsing results output by the pyparsing parser",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.postparsing_postcmd",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "stop": {
+                "description": "bool - True implies the entire application should exit.",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.postparsing_precmd",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "statement": {
+                "description": "- the parsed command-line statement",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.preparse",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "raw": {
+                "description": "str - raw command line input",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.pseudo_raw_input",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "prompt": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.reset_completion_defaults",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.run_transcript_tests",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "callargs": {
+                "description": "List[str] - list of transcript test file names",
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.interactive.InteractiveApp.show",
+        "new_api": "",
+        "old_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            },
+            "parameter": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "new_parameter": {},
+        "old_type": "member_function",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff._argparse.absolute_import",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff._argparse.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.app.codecs",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.app.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.columns.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.command.pkg_resources",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.command.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.commandmanager.pkg_resources",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.commandmanager.utils",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.complete.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.display.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.formatters.base.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.formatters.commaseparated.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.formatters.commaseparated.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.formatters.shell.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.formatters.table.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.formatters.value.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.formatters.yaml_format.yaml",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.help.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.help.utils",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.hooks.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.lister.operator",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.lister.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.show.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils._get_terminal_width_ioctl",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils._get_terminal_width_windows",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.codecs",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.ctypes",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.getargspec",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.getwriter",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.inspect",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.six",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.struct",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "cliff.utils.sys",
+        "new_api": "",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "dir api",
+        "new_type": "",
+        "change_type": "api_removal",
+        "IC": "FIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.columns.FormattableColumn.__eq__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.columns.FormattableColumn.__lt__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "other": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.columns.FormattableColumn.__repr__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.columns.FormattableColumn.__str__",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.commandmanager.CommandManager.add_command_group",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "group": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.commandmanager.CommandManager.get_command_groups",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.commandmanager.CommandManager.get_command_names",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "group": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.get_choices_callable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "argparse Action being queried",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.get_descriptive_header",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "argparse Action being queried",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.get_nargs_range",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "argparse Action being queried",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.get_suppress_tab_hint",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "argparse Action being queried",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.set_choices_provider",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "action being edited",
+                "is_optional": false
+            },
+            "choices_provider": {
+                "description": "the choices_provider instance to use",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.set_completer",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "action being edited",
+                "is_optional": false
+            },
+            "completer": {
+                "description": "the completer instance to use",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.set_descriptive_header",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "argparse Action being updated",
+                "is_optional": false
+            },
+            "descriptive_header": {
+                "description": "value being assigned",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.set_nargs_range",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "argparse Action being updated",
+                "is_optional": false
+            },
+            "nargs_range": {
+                "description": "value being assigned",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpAction.set_suppress_tab_hint",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": "argparse Action being updated",
+                "is_optional": false
+            },
+            "suppress_tab_hint": {
+                "description": "value being assigned",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.HelpExit",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "class",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.ALPHABETICAL_SORT_KEY",
+        "old_parameter": {},
+        "new_parameter": {
+            "astr": {
+                "description": "input unicode string",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.NATURAL_SORT_KEY",
+        "old_parameter": {},
+        "new_parameter": {
+            "input_str": {
+                "description": "string to convert",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.add_settable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "settable": {
+                "description": "Settable object being added",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.async_alert",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "alert_msg": {
+                "description": "the message to display to the user",
+                "is_optional": false
+            },
+            "new_prompt": {
+                "description": "If you also want to change the prompt that is displayed, then include it here.\n                   See async_update_prompt() docstring for guidance on updating a prompt.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.async_update_prompt",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "new_prompt": {
+                "description": "what to change the prompt to",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.build_settables",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.cmd_func",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": "the name of the command",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.complete_help_command",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.complete_help_subcommands",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "arg_tokens": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.complete_set_value",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "text": {
+                "description": null,
+                "is_optional": false
+            },
+            "line": {
+                "description": null,
+                "is_optional": false
+            },
+            "begidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "endidx": {
+                "description": null,
+                "is_optional": false
+            },
+            "arg_tokens": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.disable_category",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "category": {
+                "description": "the category to disable",
+                "is_optional": false
+            },
+            "message_to_print": {
+                "description": "what to print when anything in this category is run or help is called on it\n                         while disabled. The variable cmd2.COMMAND_NAME can be used as a placeholder for the name\n                         of the command being disabled.\n                         ex: message_to_print = f\"{cmd2.COMMAND_NAME} is currently disabled\"",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.disable_command",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": "the command being disabled",
+                "is_optional": false
+            },
+            "message_to_print": {
+                "description": "what to print when this command is run or help is called on it while disabled",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.do__relative_run_script",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.do_ipy",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "_": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.do_macro",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.do_run_pyscript",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.do_run_script",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "args": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.enable_category",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "category": {
+                "description": "the category to enable",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.enable_command",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command": {
+                "description": "the command being enabled",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.find_commandset_for_command",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "command_name": {
+                "description": "command name to search",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.find_commandsets",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "commandset_type": {
+                "description": "CommandSet sub-class type to search for",
+                "is_optional": false
+            },
+            "subclass_match": {
+                "description": "If True, return all sub-classes of provided type, otherwise only search for exact match",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.in_pyscript",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.in_script",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.pexcept",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "message or Exception to print",
+                "is_optional": false
+            },
+            "end": {
+                "description": "string appended after the end of the message, default a newline",
+                "is_optional": true
+            },
+            "apply_style": {
+                "description": "If True, then ansi.style_error will be applied to the message text. Set to False in cases\n                    where the message text already has the desired style. Defaults to True.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.pwarning",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "msg": {
+                "description": "object to print",
+                "is_optional": true
+            },
+            "end": {
+                "description": "string appended after the end of the message, default a newline",
+                "is_optional": true
+            },
+            "apply_style": {
+                "description": "If True, then ansi.style_warning will be applied to the message text. Set to False in cases\n                    where the message text already has the desired style. Defaults to True.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.read_input",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "prompt": {
+                "description": "prompt to display to user",
+                "is_optional": false
+            },
+            "history": {
+                "description": "optional list of strings to use for up-arrow history. If completion_mode is\n                CompletionMode.COMMANDS and this is None, then cmd2's command list history will\n                be used. The passed in history will not be edited. It is the caller's responsibility\n                to add the returned input to history if desired. Defaults to None.",
+                "is_optional": true
+            },
+            "completion_mode": {
+                "description": "tells what type of tab completion to support. Tab completion only works when\n                        self.use_rawinput is True and sys.stdin is a terminal. Defaults to\n                        CompletionMode.NONE.",
+                "is_optional": true
+            },
+            "preserve_quotes": {
+                "description": null,
+                "is_optional": true
+            },
+            "choices": {
+                "description": null,
+                "is_optional": true
+            },
+            "choices_provider": {
+                "description": null,
+                "is_optional": true
+            },
+            "completer": {
+                "description": null,
+                "is_optional": true
+            },
+            "parser": {
+                "description": null,
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.register_cmdfinalization_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.register_command_set",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "cmdset": {
+                "description": "CommandSet to load",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.register_postcmd_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.register_postloop_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.register_postparsing_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.register_precmd_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.register_preloop_hook",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "func": {
+                "description": null,
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.remove_settable",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "name": {
+                "description": "name of the settable being removed",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.run_editor",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "file_path": {
+                "description": "optional path of the file to edit. Defaults to None.",
+                "is_optional": true
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.set_window_title",
+        "old_parameter": {},
+        "new_parameter": {
+            "title": {
+                "description": "the new window title",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.InteractiveApp.unregister_command_set",
+        "old_parameter": {},
+        "new_parameter": {
+            "self": {
+                "description": null,
+                "is_optional": false
+            },
+            "cmdset": {
+                "description": "CommandSet to uninstall",
+                "is_optional": false
+            }
+        },
+        "old_type": "",
+        "new_type": "member_function",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff._argparse.orig_argparse",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.app._SIGINT_EXIT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.app._SIGPIPE_EXIT",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.app.inspect",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.command.importlib_metadata",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.commandmanager.inspect",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.commandmanager.stevedore",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.help.autopage",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.interactive.autopage",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.lister.logging",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.tests.test_formatters_csv.TestCSVFormatter",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.tests.test_formatters_csv.argparse",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.tests.test_formatters_csv.commaseparated",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.tests.test_formatters_csv.io",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.tests.test_formatters_csv.mock",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.tests.test_formatters_csv.test_columns",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    },
+    {
+        "old_api": "",
+        "new_api": "cliff.tests.test_formatters_csv.unittest",
+        "old_parameter": {},
+        "new_parameter": {},
+        "old_type": "",
+        "new_type": "dir api",
+        "change_type": "api_addition",
+        "IC": "BIC"
+    }
+]
